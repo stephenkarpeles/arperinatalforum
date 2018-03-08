@@ -11,7 +11,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto+Condensed:400,400i,700" rel="stylesheet">
+
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>

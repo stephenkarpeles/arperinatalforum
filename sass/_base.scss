@@ -1,0 +1,17 @@
+body {
+  font-family: $default-font-stack;
+  font-size: 1em;
+  line-height: 1.4;
+  background: red;
+}
+
+img {
+  display: block;
+  max-width: 100%
+}
+
+a,
+a:focused,
+a:visited {
+  outline: none;
+}

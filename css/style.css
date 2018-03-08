@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  background: red; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a,
+a:focused,
+a:visited {
+  outline: none; }
+
+/*# sourceMappingURL=style.css.map */
