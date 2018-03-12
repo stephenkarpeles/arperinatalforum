@@ -1,0 +1,77 @@
+.header {
+  position: relative;
+  z-index: 900;
+  overflow: auto;
+  display: flex;
+
+  &__branding {
+    background: $default-background-color;
+    width: 20em;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: inline-block;
+    }
+
+    &--logo {
+      padding: 1em 1.125em;
+      border-right: solid 1px $alt-background-color;
+
+      img {
+        width: 3.125em;
+      }
+    }
+
+    &--name {
+      padding: 1em 0;
+      font-size: 1em;
+      line-height: 1.06;
+      font-weight: 700;
+      font-family: $alt-font-stack;
+    }
+
+    &--social {
+      width: 6.250em;
+      background: $tertiary-color;
+      text-align: center;
+      padding-top: 1.75em;
+
+      a {
+        margin: 0 5px;
+        display: inline-block;
+        
+        img {
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    margin-left: 1.25em;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 2em 1.25em 0;
+      display: inline-block;
+      list-style-type: none;
+
+      a {
+        font-family: $alt-font-stack;
+        font-size: 1.063em;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__search {
+    margin-left: auto;
+  }
+}

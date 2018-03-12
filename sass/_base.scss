@@ -1,3 +1,11 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: $default-font-stack;
   font-size: 1em;
@@ -13,5 +21,11 @@ img {
 a,
 a:active,
 a:visited {
+  color: $primary-color;
   outline: none;
+  transition: all .2s ease;
+
+  &:hover {
+    opacity: .6;
+  }
 }

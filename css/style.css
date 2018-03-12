@@ -1,3 +1,10 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -11,7 +18,13 @@ img {
 a,
 a:active,
 a:visited {
-  outline: none; }
+  color: #fd3d3d;
+  outline: none;
+  transition: all .2s ease; }
+  a:hover,
+  a:active:hover,
+  a:visited:hover {
+    opacity: .6; }
 
 h1,
 h2,
@@ -62,5 +75,60 @@ p {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   line-height: 1.44;
   font-weight: 400; }
+
+.header {
+  position: relative;
+  z-index: 900;
+  overflow: auto;
+  display: flex; }
+  .header__branding {
+    background: #efefef;
+    width: 20em;
+    height: 5em;
+    display: flex;
+    justify-content: space-between; }
+    .header__branding div {
+      display: inline-block; }
+    .header__branding--logo {
+      padding: 1em 1.125em;
+      border-right: solid 1px #e0dfdf; }
+      .header__branding--logo img {
+        width: 3.125em; }
+    .header__branding--name {
+      padding: 1em 0;
+      font-size: 1em;
+      line-height: 1.06;
+      font-weight: 700;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+    .header__branding--social {
+      width: 6.250em;
+      background: #cceaf4;
+      text-align: center;
+      padding-top: 1.75em; }
+      .header__branding--social a {
+        margin: 0 5px;
+        display: inline-block; }
+        .header__branding--social a img {
+          width: 18px; }
+  .header__nav {
+    margin-left: 1.25em; }
+    .header__nav ul {
+      margin: 0;
+      padding: 0; }
+    .header__nav li {
+      margin: 2em 1.25em 0;
+      display: inline-block;
+      list-style-type: none; }
+      .header__nav li a {
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-size: 1.063em;
+        color: white;
+        text-decoration: none; }
+  .header__search {
+    margin-left: auto; }
+
+.hero {
+  padding: 16em 0;
+  margin-top: -5em; }
 
 /*# sourceMappingURL=style.css.map */
