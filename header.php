@@ -50,7 +50,3 @@
         Search        
       </div>
     </header>
-
-    <section class="hero" style="background: url('img/bg-hero-placeholder.jpg') no-repeat; background-size: cover; background-position: center center;">
-      Test
-    </section>

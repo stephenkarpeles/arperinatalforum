@@ -1,5 +1,9 @@
 <?php include('header.php') ?>
 
+<section class="hero" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+  Test
+</section>
+
 
 <h1>h1: Case Study: EFT in Diabetic and Non-Diabetic Pregnancies</h1>
 <h2>h2: Paragraph Heading</h2>
