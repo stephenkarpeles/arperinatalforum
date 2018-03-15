@@ -21,10 +21,6 @@ a:visited {
   color: #fd3d3d;
   outline: none;
   transition: all .2s ease; }
-  a:hover,
-  a:active:hover,
-  a:visited:hover {
-    opacity: .6; }
 
 h1,
 h2,
@@ -119,11 +115,35 @@ p {
       margin: 2em 1.25em 0;
       display: inline-block;
       list-style-type: none; }
+      .header__nav li:first-child a:after {
+        content: url("../img/triangle.svg");
+        position: absolute;
+        right: -15px; }
       .header__nav li a {
+        position: relative;
         font-family: "Miriam Libre", Georgia, sans-serif;
         font-size: 1.063em;
         color: white;
         text-decoration: none; }
+        .header__nav li a:before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          width: 20px;
+          height: 4px;
+          background: #fd3d3d;
+          opacity: 0;
+          transition: ease all .2s; }
+        .header__nav li a:hover {
+          transition: ease all .2s; }
+          .header__nav li a:hover:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            width: 20px;
+            height: 4px;
+            background: #fd3d3d;
+            opacity: 1; }
   .header__search {
     margin-left: auto; }
 
