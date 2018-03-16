@@ -19,6 +19,7 @@ h2 {
   text-transform: uppercase;
   font-size: .75em;
   line-height: 1;
+  padding-bottom: 2.813em;
 
   &:after {
     content: '';
@@ -44,15 +45,16 @@ h4 {
   font-size: .875em;
 }
 
-.intro {
-  font-size: 1.5em;
-  line-height: 1.33;
-  font-family: $alt-font-stack;
-}
-
 p {
   font-size: 1.125em;
   font-family: $default-font-stack;
   line-height: 1.44;
   font-weight: 400;
+}
+
+.intro {
+  font-size: 1.5em;
+  line-height: 1.33;
+  font-family: $alt-font-stack;
+  padding-bottom: 2.5em;
 }

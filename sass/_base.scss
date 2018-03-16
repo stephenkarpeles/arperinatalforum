@@ -24,4 +24,13 @@ a:visited {
   color: $primary-color;
   outline: none;
   transition: all .2s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1.25em;
 }
