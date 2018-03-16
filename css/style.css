@@ -1,6 +1,16 @@
 .padded-left {
   padding-left: 3.125em; }
 
+.media {
+  display: flex;
+  align-items: flex-start; }
+  .media__img {
+    margin-right: 2.5em; }
+    .media__img--small {
+      max-width: 6.25em; }
+  .media__content {
+    flex: 1; }
+
 *,
 *:before,
 *:after {
@@ -11,7 +21,7 @@
 body {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.44;
   color: #3b3b3b; }
 
 img {
@@ -52,7 +62,7 @@ h2 {
   text-transform: uppercase;
   font-size: .75em;
   line-height: 1;
-  padding-bottom: 2.813em; }
+  padding-bottom: 2.75em; }
   h2:after {
     content: '';
     position: absolute;
@@ -81,9 +91,9 @@ p {
 
 .intro {
   font-size: 1.5em;
-  line-height: 1.33;
+  line-height: 1.4;
   font-family: "Miriam Libre", Georgia, sans-serif;
-  padding-bottom: 2.5em; }
+  padding-bottom: 2em; }
 
 .cta {
   position: relative;
@@ -91,14 +101,14 @@ p {
   font-family: "Miriam Libre", Georgia, sans-serif;
   font-size: 1.125em; }
   .cta--fancy {
-    margin-top: 1.563em; }
+    margin-top: 2.65em; }
     .cta--fancy:before {
       content: '';
       width: 3.125rem;
       height: .25rem;
       background: #a9a9a9;
       position: absolute;
-      top: -1.1em; }
+      top: -1.25em; }
 
 .container {
   width: 90%;
@@ -177,6 +187,11 @@ section {
         content: url("../img/triangle.svg");
         position: absolute;
         right: -1em; }
+      .header__nav li:first-child a.has-open-nav:after {
+        content: url("../img/triangle.svg");
+        position: absolute;
+        right: -1em;
+        transform: rotate(180deg); }
       .header__nav li a {
         position: relative;
         font-family: "Miriam Libre", Georgia, sans-serif;
@@ -205,6 +220,62 @@ section {
             opacity: 1; }
   .header__search {
     margin-left: auto; }
+
+.mega-menu {
+  display: none;
+  position: relative;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  height: 30em;
+  background: white; }
+  .mega-menu.is-visible-mega-menu {
+    display: block; }
+  .mega-menu__highlight-box {
+    padding-top: 1.875em;
+    padding-left: 4.625em;
+    width: 15.625em;
+    height: 6.25em;
+    background: #3b3b3b; }
+    .mega-menu__highlight-box span {
+      display: block;
+      position: relative; }
+      .mega-menu__highlight-box span:nth-child(1) {
+        font-size: .75em;
+        line-height: 1;
+        color: #a9a9a9;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: .35em; }
+        .mega-menu__highlight-box span:nth-child(1):before {
+          content: '';
+          position: absolute;
+          background: #fd3d3d;
+          left: -1em;
+          top: -.25em;
+          height: 3.25em;
+          width: .25em; }
+      .mega-menu__highlight-box span:nth-child(2) {
+        line-height: 1.25;
+        font-size: 1em;
+        color: #efefef;
+        font-family: "Miriam Libre", Georgia, sans-serif; }
+  .mega-menu__close {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    position: absolute;
+    top: 3.125em;
+    right: 3.125em;
+    font-size: .75em;
+    line-height: 1;
+    transition: opacity .2s ease; }
+    .mega-menu__close svg {
+      margin-right: .5em;
+      position: relative;
+      top: .0825em; }
+    .mega-menu__close:hover {
+      opacity: .6; }
 
 .hero {
   padding: 16em 0;

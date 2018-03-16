@@ -71,7 +71,16 @@
           &:after {
             content: url('../img/triangle.svg');
             position: absolute;
-            right: -1em;          
+            right: -1em;  
+          }
+
+          &.has-open-nav {
+            &:after {
+              content: url('../img/triangle.svg');
+              position: absolute;
+              right: -1em;
+              transform: rotate(180deg); 
+            }        
           }
         }
       }
