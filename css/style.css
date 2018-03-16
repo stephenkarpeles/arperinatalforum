@@ -181,39 +181,6 @@ section {
   z-index: 900;
   overflow: auto;
   display: flex; }
-  .header__branding {
-    background: #efefef;
-    width: 20em;
-    height: 5em;
-    display: flex;
-    justify-content: space-between; }
-    .header__branding div {
-      display: inline-block; }
-    .header__branding--logo {
-      width: 5.625em;
-      padding: .95em 1.15em .9em 1.25em;
-      border-right: solid 1px #e0dfdf; }
-      .header__branding--logo img {
-        width: 3.125em; }
-    .header__branding--name {
-      width: 8em;
-      padding: 1em 1.4em;
-      font-size: 1em;
-      line-height: 1.06;
-      font-weight: 700;
-      font-family: "Miriam Libre", Georgia, sans-serif; }
-    .header__branding--social {
-      width: 6.250em;
-      background: #cceaf4;
-      text-align: center;
-      padding-top: 1.75em; }
-      .header__branding--social a {
-        margin: 0 5px;
-        display: inline-block; }
-        .header__branding--social a img {
-          width: 1.125em; }
-        .header__branding--social a:hover {
-          opacity: .7; }
   .header__nav {
     margin-left: 1.25em; }
     .header__nav ul {
@@ -239,7 +206,8 @@ section {
         font-family: "Miriam Libre", Georgia, sans-serif;
         font-size: 1.063em;
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: ease all .2s; }
         .header__nav li a:before {
           content: '';
           position: absolute;
@@ -251,7 +219,8 @@ section {
           transition: ease all .2s; }
         .header__nav li a:hover {
           transition: ease all .2s;
-          opacity: 1; }
+          opacity: 1;
+          color: #cccccc; }
           .header__nav li a:hover:before {
             content: '';
             position: absolute;
@@ -274,8 +243,8 @@ section {
     justify-content: flex-start; }
   .footer__menu {
     font-size: 1.063em;
-    padding-left: 6.25em;
-    padding-top: 7em; }
+    padding: 7em 6.25em 2em 6.25em;
+    border-right: 1px solid #343434; }
     .footer__menu ul {
       margin: 0;
       padding: 0;
