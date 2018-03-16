@@ -27,6 +27,20 @@
           </div>
         </div>
 
+        <div class="footer__menu">
+          <ul>
+            <li><a href="">Workgroups</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">News &amp; Events</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright">
+          &copy; <?php echo date("Y"); ?> Arkansas Perinatal Forum
+        </div>
+
       </div>   
 
     </footer>
