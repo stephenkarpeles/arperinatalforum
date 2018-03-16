@@ -1,0 +1,16 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {    
+    margin-right: 2.5em;
+
+    &--small {
+      max-width: 6.25em;  
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+}
