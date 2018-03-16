@@ -22,24 +22,9 @@
     <?php include('mega-menu.php') ?>
 
     <header class="header">
-      <div class="header__branding">
-        <a href="" class="header__branding--logo">
-          <img src="img/logo.png" alt="Arkansas Perinatal Forum">
-        </a>
-        <div class="header__branding--name">
-          Arkansas<br>
-          Perinatal<br>
-          Forum
-        </div>
-        <div class="header__branding--social">
-          <a href="">
-            <img src="img/icon-facebook.svg" alt="Like Us On Faceboo">
-          </a>
-          <a href="">
-            <img src="img/icon-twitter.svg" alt="Follow Us On Twitter">
-          </a>
-        </div>
-      </div><!-- .branding -->
+
+      <?php include('branding.php') ?>
+
       <nav class="header__nav">
         <ul>
           <li><a href="">Workgroups</a></li>
@@ -49,6 +34,7 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
+
       <div class="header__search">
         Search        
       </div>

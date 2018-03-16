@@ -138,6 +138,40 @@ section {
 @media screen and (max-width: 599px) {
   .grid {
     display: block; } }
+.site__branding {
+  background: #efefef;
+  width: 20em;
+  height: 5em;
+  display: flex;
+  justify-content: space-between; }
+  .site__branding div {
+    display: inline-block; }
+  .site__branding--logo {
+    width: 5.625em;
+    padding: .95em 1.15em .9em 1.25em;
+    border-right: solid 1px #e0dfdf; }
+    .site__branding--logo img {
+      width: 3.125em; }
+  .site__branding--name {
+    width: 8em;
+    padding: 1em 1.4em;
+    font-size: 1em;
+    line-height: 1.06;
+    font-weight: 700;
+    font-family: "Miriam Libre", Georgia, sans-serif; }
+  .site__branding--social {
+    width: 6.250em;
+    background: #cceaf4;
+    text-align: center;
+    padding-top: 1.75em; }
+    .site__branding--social a {
+      margin: 0 5px;
+      display: inline-block; }
+      .site__branding--social a img {
+        width: 1.125em; }
+      .site__branding--social a:hover {
+        opacity: .7; }
+
 .header {
   position: relative;
   z-index: 900;
@@ -152,12 +186,14 @@ section {
     .header__branding div {
       display: inline-block; }
     .header__branding--logo {
-      padding: 1em 1.125em;
+      width: 5.625em;
+      padding: .95em 1.15em .9em 1.25em;
       border-right: solid 1px #e0dfdf; }
       .header__branding--logo img {
         width: 3.125em; }
     .header__branding--name {
-      padding: 1em 0;
+      width: 8em;
+      padding: 1em 1.4em;
       font-size: 1em;
       line-height: 1.06;
       font-weight: 700;
@@ -186,11 +222,13 @@ section {
       .header__nav li:first-child a:after {
         content: url("../img/triangle.svg");
         position: absolute;
-        right: -1em; }
+        right: -1em;
+        top: .025em; }
       .header__nav li:first-child a.has-open-nav:after {
         content: url("../img/triangle.svg");
         position: absolute;
-        right: -1em;
+        right: -1.25em;
+        top: -.1em;
         transform: rotate(180deg); }
       .header__nav li a {
         position: relative;

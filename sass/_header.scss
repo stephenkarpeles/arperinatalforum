@@ -16,7 +16,8 @@
     }
 
     &--logo {
-      padding: 1em 1.125em;
+      width: 5.625em;
+      padding: .95em 1.15em .9em 1.25em;
       border-right: solid 1px $alt-background-color;
 
       img {
@@ -25,7 +26,8 @@
     }
 
     &--name {
-      padding: 1em 0;
+      width: 8em;
+      padding: 1em 1.4em;
       font-size: 1em;
       line-height: 1.06;
       font-weight: 700;
@@ -72,13 +74,15 @@
             content: url('../img/triangle.svg');
             position: absolute;
             right: -1em;  
+            top: .025em;
           }
 
           &.has-open-nav {
             &:after {
               content: url('../img/triangle.svg');
               position: absolute;
-              right: -1em;
+              right: -1.25em;
+              top: -.1em;
               transform: rotate(180deg); 
             }        
           }
