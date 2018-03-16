@@ -1,0 +1,44 @@
+// Featured Posts
+.feat-post {
+  max-width: 20em;
+
+  &__content {
+    padding: 2.813em 3.125em;
+    background: $primary-color;
+  }
+
+  &__date {
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: $default-background-color;
+  }
+
+  &__excerpt {
+    color: white;
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-top: 1.25em;
+  }
+
+  &__cta {
+    padding-top: 2.5em;
+
+    a {
+      color: $secondary-color;
+      font-size: 1.125em;
+      font-family: $alt-font-stack;
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 3.125rem;
+        height: .25rem;
+        background: $alt-text-color;
+        position: absolute;
+        top: -1.15em;
+      }
+    }
+  }
+}

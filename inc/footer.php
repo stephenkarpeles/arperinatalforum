@@ -1,9 +1,34 @@
     </main>
 
-    <footer class="footer">
+    <div class="container--max">
 
-      <?php include('branding.php') ?>
-            
+      <div class="ankle">
+        <?php include('branding.php') ?>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+    
+      <div class="container--max">
+
+        <div class="feat-post">
+          <img src="img/mom_baby.jpg" alt="">
+          <div class="feat-post__content">
+            <div class="feat-post__date">
+              March 16, 2018
+            </div>
+            <div class="feat-post__excerpt">
+              This is a news post title that cuts off after something like 75 characters or so…
+            </div> 
+            <div class="feat-post__cta">
+              <a href="">Read more</a>
+            </div>           
+          </div>
+        </div>
+
+      </div>   
+
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

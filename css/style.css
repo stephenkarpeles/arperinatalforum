@@ -114,6 +114,10 @@ p {
   width: 90%;
   max-width: 68.75em;
   margin: 0 auto; }
+  .container--max {
+    width: 100%;
+    max-width: 87.5em;
+    margin: 0 auto; }
 
 section {
   padding: 2.5em 0; }
@@ -259,6 +263,11 @@ section {
   .header__search {
     margin-left: auto; }
 
+.footer {
+  background: #3b3b3b;
+  height: 25em;
+  width: 100%; }
+
 .mega-menu {
   display: none;
   position: relative;
@@ -314,6 +323,37 @@ section {
       top: .0825em; }
     .mega-menu__close:hover {
       opacity: .6; }
+
+.feat-post {
+  max-width: 20em; }
+  .feat-post__content {
+    padding: 2.813em 3.125em;
+    background: #fd3d3d; }
+  .feat-post__date {
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #efefef; }
+  .feat-post__excerpt {
+    color: white;
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-top: 1.25em; }
+  .feat-post__cta {
+    padding-top: 2.5em; }
+    .feat-post__cta a {
+      color: #f7ce40;
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      position: relative; }
+      .feat-post__cta a:before {
+        content: '';
+        width: 3.125rem;
+        height: .25rem;
+        background: #a9a9a9;
+        position: absolute;
+        top: -1.15em; }
 
 .hero {
   padding: 16em 0;
