@@ -107,7 +107,7 @@ p {
   .context-heading--b {
     color: #a9a9a9; }
   .context-heading--c {
-    color: #cceaf4; }
+    color: #f7ce40; }
 
 .cta {
   position: relative;
@@ -481,19 +481,41 @@ section {
     justify-content: space-around; }
     .hero-base__update-block .col {
       border-right: 4px solid #343434; }
+      .hero-base__update-block .col:nth-child(1) {
+        margin: 5.5em 0 6.5em 5em;
+        padding: 1em 2em 1em 3em; }
+      .hero-base__update-block .col:nth-child(2) {
+        margin: 5.5em 0 6.5em 1.75em;
+        padding: 1em 2em 1em 0;
+        border-right: none; }
       .hero-base__update-block .col .date {
         font-size: .75em;
         text-transform: uppercase;
         font-weight: 700;
-        color: #efefef;
+        color: #a9a9a9;
         padding-bottom: .5em; }
       .hero-base__update-block .col .title {
+        max-width: 10em;
         color: white;
         font-family: "Miriam Libre", Georgia, sans-serif; }
+        .hero-base__update-block .col .title a {
+          color: white;
+          text-decoration: none; }
+      .hero-base__update-block .col .excerpt {
+        color: white;
+        font-size: 1.125em;
+        max-width: 15.5em; }
+        .hero-base__update-block .col .excerpt a {
+          color: white;
+          text-decoration: none; }
+          .hero-base__update-block .col .excerpt a:after {
+            content: url(../img/icon-arrow-red.svg);
+            margin-left: .5em; }
 
 .card {
   position: relative;
-  border: 1px solid #efefef; }
+  border: 1px solid #efefef;
+  transition: all .35s ease; }
   .card:before {
     content: '';
     position: absolute;
@@ -510,6 +532,8 @@ section {
     width: 4.375em;
     bottom: 0;
     left: 0; }
+  .card:hover {
+    box-shadow: 10px 10px 0 #efefef; }
   .card__logo {
     width: 4.375em;
     height: 4.375em; }

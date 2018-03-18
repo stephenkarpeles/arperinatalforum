@@ -17,11 +17,11 @@
     <div class="hero-base__update-block">
       <div class="col">
         <div class="date">March 16, 2018</div>
-        <div class="title">Arkansas Newborn Screening Group</div>
+        <div class="title"><a href="">Arkansas Newborn Screening Group</a></div>
       </div>
       <div class="col">
-        <div class="category">News</div>
-        <div class="excerpt">New screening methods go into effect on May 1, 2018 <span>&rarr;</span></div>
+        <div class="category context-heading context-heading--c">News</div>
+        <div class="excerpt"><a href="">New screening methods go into effect on May 1, 2018</a></div>
       </div>
     </div>
   </div>

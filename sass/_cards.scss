@@ -1,6 +1,7 @@
 .card {
   position: relative;
   border: 1px solid $default-background-color;
+  transition: all .35s ease;
 
   &:before {
     content: '';
@@ -20,6 +21,10 @@
     width: 4.375em;
     bottom: 0;
     left: 0;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 0 rgba($default-background-color, 1);
   }
 
   &__logo {

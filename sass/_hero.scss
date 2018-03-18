@@ -72,19 +72,51 @@
 
     .col {
       border-right: 4px solid $alt-border-color;
+      
+      &:nth-child(1) {
+        margin: 5.5em 0 6.5em 5em;
+        padding: 1em 2em 1em 3em;
+      }
+
+      &:nth-child(2) {
+        margin: 5.5em 0 6.5em 1.75em;
+        padding: 1em 2em 1em 0;
+        border-right: none;
+      }     
 
       .date {
         font-size: .75em;
         text-transform: uppercase;
         font-weight: 700;
-        color: $default-background-color;
+        color: $alt-text-color;
         padding-bottom: .5em;
       }
 
       .title {
+        max-width: 10em;
         color: white;
         font-family: $alt-font-stack;
 
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .excerpt {
+        color: white;
+        font-size: 1.125em;
+        max-width: 15.5em;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:after {
+            content: url(../img/icon-arrow-red.svg);
+            margin-left: .5em;
+          }
+        }
       }
     }
   }
