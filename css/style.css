@@ -292,7 +292,8 @@ section {
   z-index: 9999;
   top: 0;
   width: 100%;
-  height: 30em;
+  height: auto;
+  padding-bottom: 9em;
   background: white; }
   .mega-menu.is-visible-mega-menu {
     display: block; }
@@ -342,17 +343,40 @@ section {
     .mega-menu__close:hover {
       opacity: .6; }
   .mega-menu__container {
-    max-width: 78em;
+    max-width: 79em;
     width: 92%;
     margin: 0 auto;
     padding-top: 3em;
     display: flex;
     justify-content: space-between; }
   .mega-menu__col {
-    width: 22%; }
+    width: 25%; }
+    .mega-menu__col:nth-child(1) {
+      width: 22%;
+      padding-right: 3%; }
+    .mega-menu__col ul {
+      margin: 0;
+      padding: 0; }
+    .mega-menu__col li {
+      list-style-type: none;
+      margin-bottom: .4em; }
+      .mega-menu__col li a {
+        font-size: 1.1em;
+        color: #3b3b3b;
+        transition: all .25s ease;
+        text-decoration: none; }
+        .mega-menu__col li a:hover {
+          padding-left: .5em;
+          border-left: solid #f7ce40 0.2em;
+          color: #a9a9a9; }
+    .mega-menu__col .view-all-link {
+      display: inline-block;
+      padding-top: 1.5em;
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
   .mega-menu__desc {
     padding: .75em 0 1.5em;
-    font-size: 1.5em;
+    font-size: 1.35em;
     font-family: "Miriam Libre", Georgia, sans-serif;
     line-height: 1.33;
     position: relative; }
