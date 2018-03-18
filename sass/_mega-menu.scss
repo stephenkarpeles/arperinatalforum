@@ -1,15 +1,19 @@
 .mega-menu {
-  display: none;
   position: relative;
   z-index: 9999;
   top: 0;
   width: 100%;
   height: auto;
-  padding-bottom: 9em;
+  max-height: 0;
   background: white;
+  overflow-y: hidden;
+
+  transition-property: all;
+  transition-duration: .65s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
   &.is-visible-mega-menu {
-    display: block;
+    max-height: 30em;
   }
 
   &__highlight-box {
@@ -78,6 +82,7 @@
     width: 92%;
     margin: 0 auto;
     padding-top: 3em;
+    padding-bottom: 9em;
     display: flex;
     justify-content: space-between;
   }
@@ -102,11 +107,11 @@
       a {
         font-size: 1.1em;
         color: $default-text-color;
-        transition: all .25s ease;
+        transition: padding .35s ease;
         text-decoration: none;
 
         &:hover {
-          padding-left: .5em;
+          padding-left: .6em;
           border-left: solid $secondary-color .2em;
           color: $alt-text-color;
         }
