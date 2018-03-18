@@ -58,3 +58,21 @@ p {
   font-family: $alt-font-stack;
   padding-bottom: 2em;
 }
+
+.context-heading {
+  font-weight: 700;
+  font-size: .75em;
+  text-transform: uppercase;
+
+  &--a {
+    color: $default-background-color;
+  }
+
+  &--b {
+    color: $alt-text-color;
+  }
+
+  &--c {
+    color: $tertiary-color;
+  }
+}

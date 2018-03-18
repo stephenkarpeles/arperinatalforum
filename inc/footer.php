@@ -12,20 +12,7 @@
     
       <div class="container--max">
 
-        <div class="feat-post">
-          <img src="img/mom_baby.jpg" alt="">
-          <div class="feat-post__content">
-            <div class="feat-post__date">
-              March 16, 2018
-            </div>
-            <div class="feat-post__excerpt">
-              This is a news post title that cuts off after something like 75 characters or so…
-            </div> 
-            <div class="feat-post__cta">
-              <a href="">Read more</a>
-            </div>           
-          </div>
-        </div>
+        <?php include('feat-post.php') ?>
 
         <div class="footer__menu">
           <ul>

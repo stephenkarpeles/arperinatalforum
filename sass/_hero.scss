@@ -2,3 +2,90 @@
   padding: 16em 0;
   margin-top: -5em; // Height of header
 }
+
+.hero-base {
+  position: relative;
+  background: $default-text-color;
+
+  .container--wide {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__clock {
+    position: absolute;
+    top: -1.25em;
+    left: 3.125em;
+    background: $primary-color;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+
+    img {
+      position: relative;
+      top: .625em;
+      display: inline-block;
+    }
+  }
+
+  &__title-block {
+    position: relative;
+    padding: 7.25em 3.125em 5.5em;
+    border-right: 1px solid $alt-border-color;
+    width: 11.875em;
+
+    span {
+      position: relative;
+      display: block;
+
+      &:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $alt-text-color;
+        line-height: 1.8;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -1.85em;
+          width: 4.167em;
+          height: .3333em;
+          background: $primary-color;
+          transition: ease all .2s;
+        }
+      }
+
+      &:nth-child(2) {
+        color: $default-background-color;
+        font-family: $alt-font-stack;
+        font-size: 1em;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  &__update-block {
+    display: flex;
+    justify-content: space-around;
+
+    .col {
+      border-right: 4px solid $alt-border-color;
+
+      .date {
+        font-size: .75em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $default-background-color;
+        padding-bottom: .5em;
+      }
+
+      .title {
+        color: white;
+        font-family: $alt-font-stack;
+
+      }
+    }
+  }
+}

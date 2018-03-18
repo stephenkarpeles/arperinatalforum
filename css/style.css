@@ -1,6 +1,9 @@
 .padded-left {
   padding-left: 3.125em; }
 
+.no-padding {
+  padding: 0; }
+
 .media {
   display: flex;
   align-items: flex-start; }
@@ -94,6 +97,17 @@ p {
   line-height: 1.4;
   font-family: "Miriam Libre", Georgia, sans-serif;
   padding-bottom: 2em; }
+
+.context-heading {
+  font-weight: 700;
+  font-size: .75em;
+  text-transform: uppercase; }
+  .context-heading--a {
+    color: #efefef; }
+  .context-heading--b {
+    color: #a9a9a9; }
+  .context-heading--c {
+    color: #cceaf4; }
 
 .cta {
   position: relative;
@@ -327,6 +341,29 @@ section {
       top: .0825em; }
     .mega-menu__close:hover {
       opacity: .6; }
+  .mega-menu__container {
+    max-width: 78em;
+    width: 92%;
+    margin: 0 auto;
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-between; }
+  .mega-menu__col {
+    width: 22%; }
+  .mega-menu__desc {
+    padding: .75em 0 1.5em;
+    font-size: 1.5em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    line-height: 1.33;
+    position: relative; }
+    .mega-menu__desc:after {
+      content: '';
+      position: absolute;
+      background: #fd3d3d;
+      width: 2.083em;
+      height: .167em;
+      left: 0;
+      bottom: 0; }
 
 .feat-post {
   width: 23%;
@@ -364,6 +401,67 @@ section {
 .hero {
   padding: 16em 0;
   margin-top: -5em; }
+
+.hero-base {
+  position: relative;
+  background: #3b3b3b; }
+  .hero-base .container--wide {
+    display: flex;
+    justify-content: flex-start; }
+  .hero-base__clock {
+    position: absolute;
+    top: -1.25em;
+    left: 3.125em;
+    background: #fd3d3d;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center; }
+    .hero-base__clock img {
+      position: relative;
+      top: .625em;
+      display: inline-block; }
+  .hero-base__title-block {
+    position: relative;
+    padding: 7.25em 3.125em 5.5em;
+    border-right: 1px solid #343434;
+    width: 11.875em; }
+    .hero-base__title-block span {
+      position: relative;
+      display: block; }
+      .hero-base__title-block span:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #a9a9a9;
+        line-height: 1.8; }
+        .hero-base__title-block span:nth-child(1):before {
+          content: '';
+          position: absolute;
+          top: -1.85em;
+          width: 4.167em;
+          height: .3333em;
+          background: #fd3d3d;
+          transition: ease all .2s; }
+      .hero-base__title-block span:nth-child(2) {
+        color: #efefef;
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-size: 1em;
+        line-height: 1.25; }
+  .hero-base__update-block {
+    display: flex;
+    justify-content: space-around; }
+    .hero-base__update-block .col {
+      border-right: 4px solid #343434; }
+      .hero-base__update-block .col .date {
+        font-size: .75em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #efefef;
+        padding-bottom: .5em; }
+      .hero-base__update-block .col .title {
+        color: white;
+        font-family: "Miriam Libre", Georgia, sans-serif; }
 
 .card {
   position: relative;

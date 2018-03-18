@@ -3,6 +3,30 @@
 <section class="hero" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 </section>
 
+<section class="hero-base no-padding">
+  <div class="container--wide">
+    <div class="hero-base__clock">
+      <img src="img/icon-clock.svg" alt="">
+    </div>
+
+    <div class="hero-base__title-block">
+      <span>Latest</span>
+      <span>Workgroup<br>Updates</span>
+    </div>
+
+    <div class="hero-base__update-block">
+      <div class="col">
+        <div class="date">March 16, 2018</div>
+        <div class="title">Arkansas Newborn Screening Group</div>
+      </div>
+      <div class="col">
+        <div class="category">News</div>
+        <div class="excerpt">New screening methods go into effect on May 1, 2018 <span>&rarr;</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="container">
     <div class="content">
