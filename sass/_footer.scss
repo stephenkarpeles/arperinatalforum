@@ -12,7 +12,7 @@
 
   &__menu {
     font-size: 1.063em;
-    padding: 7em 6.25em 2em 6.25em;
+    padding: 7em 8% 2em 8%;
     border-right: 1px solid $alt-border-color;
 
     ul {
@@ -50,5 +50,113 @@
     font-size: .75em;
     color: $alt-text-color;
     line-height: 1;
+  }
+
+  &__clock {
+    position: absolute;
+    top: -1.25em;
+    left: 3.125em;
+    background: $primary-color;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+
+    img {
+      position: relative;
+      top: .625em;
+      display: inline-block;
+    }
+  }
+
+  &__title-block {
+    position: relative;
+    padding: 11em 10% 5.5em 10%;
+    width: 11.875em;
+
+    span {
+      position: relative;
+      display: block;
+
+      &:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $alt-text-color;
+        line-height: 1.8;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -1.85em;
+          width: 4.167em;
+          height: .3333em;
+          background: $primary-color;
+          transition: ease all .2s;
+        }
+      }
+
+      &:nth-child(2) {
+        color: $default-background-color;
+        font-family: $alt-font-stack;
+        font-size: 1em;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  &__update-block {
+    margin: 7em 0 7em;
+    padding: .5em 0 .5em 3.5%;
+    border-left: 4px solid $alt-border-color;
+
+    .col {      
+      &:nth-child(1) {  
+        margin: 0 0 1.25em;      
+      }
+
+      &:nth-child(2) {
+      }     
+
+      .date {
+        font-size: .75em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $alt-text-color;
+        padding-bottom: .5em;
+      }
+
+      .title {
+        max-width: 10em;
+        color: white;
+        font-size: .875em;
+        font-family: $alt-font-stack;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .category {
+        padding-bottom: .35em;
+      }
+
+      .excerpt {
+        color: white;
+        font-size: 1.125em;
+        max-width: 15.5em;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:after {
+            content: url(../img/icon-arrow-red.svg);
+            margin-left: .5em;
+          }
+        }
+      }
+    }
   }
 }

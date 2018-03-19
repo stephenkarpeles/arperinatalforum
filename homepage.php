@@ -24,6 +24,7 @@
         <div class="excerpt"><a href="">New screening methods go into effect on May 1, 2018</a></div>
       </div>
     </div>
+
   </div>
 </section>
 
