@@ -1,6 +1,50 @@
 .hero {
-  padding: 16em 0;
+  padding: 11em 0 9.5em;
   margin-top: -5em; // Height of header
+
+  &__foreground {
+    max-width: 62em;
+    margin: 0 auto;
+  }
+
+  &__subtext {
+    color: $tertiary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75em;
+    padding-bottom: 1.5em;
+  }
+
+  &__title {
+    h1 {
+      max-width: 14em;
+      color: white;
+      line-height: 1.33;
+      font-family: $alt-font-stack;
+      font-size: 1.875em;
+    }
+  }
+
+  &__link {
+    margin-top: 3.5em;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 3.125rem;
+      height: .25rem;
+      background: $alt-text-color;
+      position: absolute;
+      top: -1.5em;
+    }
+
+    a {
+      color: $secondary-color;
+      font-size: 1.125rem;
+      font-family: $alt-font-stack;
+      text-decoration: underline;
+    }
+  }
 }
 
 .hero-base {
@@ -13,16 +57,6 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -985em;
-      width: 1000em;
-      background: $primary-alt-color;
-      height: 100%;
-    }
   }
 
   &__clock {
@@ -138,5 +172,14 @@
         }
       }
     }
+  }
+
+  &__style-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: $primary-alt-color;
+    height: 100%;
+    width: 30vw;
   }
 }

@@ -681,8 +681,38 @@ section {
       border-bottom: 1px solid #f7ce40; }
 
 .hero {
-  padding: 16em 0;
+  padding: 11em 0 9.5em;
   margin-top: -5em; }
+  .hero__foreground {
+    max-width: 62em;
+    margin: 0 auto; }
+  .hero__subtext {
+    color: #cceaf4;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75em;
+    padding-bottom: 1.5em; }
+  .hero__title h1 {
+    max-width: 14em;
+    color: white;
+    line-height: 1.33;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    font-size: 1.875em; }
+  .hero__link {
+    margin-top: 3.5em;
+    position: relative; }
+    .hero__link:before {
+      content: '';
+      width: 3.125rem;
+      height: .25rem;
+      background: #a9a9a9;
+      position: absolute;
+      top: -1.5em; }
+    .hero__link a {
+      color: #f7ce40;
+      font-size: 1.125rem;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      text-decoration: underline; }
 
 .hero-base {
   position: relative;
@@ -693,14 +723,6 @@ section {
     position: relative;
     display: flex;
     justify-content: flex-start; }
-    .hero-base .container--max:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -985em;
-      width: 1000em;
-      background: #ec3939;
-      height: 100%; }
   .hero-base__clock {
     position: absolute;
     top: -1.25em;
@@ -780,6 +802,13 @@ section {
           .hero-base__update-block .col .excerpt a:after {
             content: url(../img/icon-arrow-red.svg);
             margin-left: .5em; }
+  .hero-base__style-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ec3939;
+    height: 100%;
+    width: 30vw; }
 
 .card {
   position: relative;

@@ -1,6 +1,18 @@
 <?php include('inc/header.php') ?>
 
 <section class="hero" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+
+  <div class="hero__foreground">
+    <div class="hero__subtext">
+      Get Connected Arkansas
+    </div>
+    <div class="hero__title">
+      <h1>A network committed to improving perinatal outcomes for women and infants in Arkansas.</h1>
+    </div>
+    <div class="hero__link">
+      <a href="">Get Connected</a>
+    </div>
+  </div>
 </section>
 
 <section class="hero-base no-padding">
@@ -45,7 +57,8 @@
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="hero-base__style-block">
   </div>
 </section>
 

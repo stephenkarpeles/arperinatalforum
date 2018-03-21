@@ -56,7 +56,6 @@ if (searchWrap) {
 
 
 // Set focus on search input field on pageload
-
 const searchInput = document.querySelector('.search__input');
 
 if (searchTrigger) {
