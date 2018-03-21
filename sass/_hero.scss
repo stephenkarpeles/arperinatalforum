@@ -103,9 +103,14 @@
         }
       }
 
+      .category {
+        padding-bottom: .4em;
+      }
+
       .excerpt {
         color: white;
         font-size: 1.125em;
+        line-height: 1.25;
         max-width: 15.5em;
 
         a {

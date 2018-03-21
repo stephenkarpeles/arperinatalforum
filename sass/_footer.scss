@@ -1,7 +1,6 @@
 .footer {
   position: relative;
   background: $default-text-color;
-  overflow: hidden;
   width: 100%;
 
   .container--max {
@@ -55,12 +54,13 @@
   &__clock {
     position: absolute;
     top: -1.25em;
-    left: 3.125em;
+    right: 6.5em;
     background: $primary-color;
     border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
     text-align: center;
+    z-index: 900;
 
     img {
       position: relative;
@@ -139,12 +139,13 @@
       }
 
       .category {
-        padding-bottom: .35em;
+        padding-bottom: .45em;
       }
 
       .excerpt {
         color: white;
         font-size: 1.125em;
+        line-height: 1.25;
         max-width: 15.5em;
 
         a {

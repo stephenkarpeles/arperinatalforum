@@ -42,10 +42,6 @@ a:visited {
   a:visited:hover {
     opacity: .7; }
 
-p {
-  margin: 0;
-  padding: 0 0 1.25em; }
-
 h1,
 h2,
 h3,
@@ -65,11 +61,11 @@ h2 {
   text-transform: uppercase;
   font-size: .75em;
   line-height: 1;
-  padding-bottom: 2.75em; }
+  padding-bottom: 2em; }
   h2:after {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 4px;
     margin-left: 10px;
     height: 4px;
     background: #fd3d3d;
@@ -89,14 +85,53 @@ h4 {
 p {
   font-size: 1.125em;
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
-  line-height: 1.44;
-  font-weight: 400; }
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 0 1.25em;
+  margin: 0; }
+  p + h2 {
+    margin-top: 1.125em; }
+  .content p {
+    padding-left: 3.125em; }
+
+ul {
+  font-size: 1.125rem;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 0 1.25em;
+  margin: 0; }
+  ul + h2 {
+    margin-top: 1.125em; }
+  .content ul {
+    padding-left: 4em; }
+    .content ul ul {
+      padding-left: 3em; }
 
 .intro {
   font-size: 1.5em;
   line-height: 1.4;
   font-family: "Miriam Libre", Georgia, sans-serif;
   padding-bottom: 2em; }
+  .content .intro {
+    padding-left: 0; }
+
+blockquote {
+  padding: 0 0 1.25em;
+  position: relative;
+  padding-left: 1.25em;
+  font-size: 1.25em;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  color: #556367;
+  line-height: 1.4; }
+  blockquote:before {
+    content: '';
+    position: absolute;
+    top: .125em;
+    left: 0;
+    background: #fd3d3d;
+    height: 2.125em;
+    width: .125em; }
 
 .context-heading {
   font-weight: 700;
@@ -204,6 +239,15 @@ section {
       margin: 2em 1.25em 0;
       display: inline-block;
       list-style-type: none; }
+      .header__nav li:first-child a:before {
+        content: '';
+        position: absolute;
+        top: -.625em;
+        width: 1.25em;
+        height: .25em;
+        background: #fd3d3d;
+        opacity: 1;
+        transition: ease all .2s; }
       .header__nav li:first-child a:after {
         content: url("../img/triangle.svg");
         position: absolute;
@@ -222,34 +266,16 @@ section {
         color: white;
         text-decoration: none;
         transition: ease all .2s; }
-        .header__nav li a:before {
-          content: '';
-          position: absolute;
-          top: -.625em;
-          width: 1.25em;
-          height: .25em;
-          background: #fd3d3d;
-          opacity: 0;
-          transition: ease all .2s; }
         .header__nav li a:hover {
           transition: ease all .2s;
           opacity: 1;
           color: #cccccc; }
-          .header__nav li a:hover:before {
-            content: '';
-            position: absolute;
-            top: -.625em;
-            width: 1.25em;
-            height: .25em;
-            background: #fd3d3d;
-            opacity: 1; }
   .header__search {
     margin-left: auto; }
 
 .footer {
   position: relative;
   background: #3b3b3b;
-  overflow: hidden;
   width: 100%; }
   .footer .container--max {
     position: relative;
@@ -288,12 +314,13 @@ section {
   .footer__clock {
     position: absolute;
     top: -1.25em;
-    left: 3.125em;
+    right: 6.5em;
     background: #fd3d3d;
     border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
-    text-align: center; }
+    text-align: center;
+    z-index: 900; }
     .footer__clock img {
       position: relative;
       top: .625em;
@@ -345,10 +372,11 @@ section {
         color: white;
         text-decoration: none; }
     .footer__update-block .col .category {
-      padding-bottom: .35em; }
+      padding-bottom: .45em; }
     .footer__update-block .col .excerpt {
       color: white;
       font-size: 1.125em;
+      line-height: 1.25;
       max-width: 15.5em; }
       .footer__update-block .col .excerpt a {
         color: white;
@@ -572,9 +600,12 @@ section {
         .hero-base__update-block .col .title a {
           color: white;
           text-decoration: none; }
+      .hero-base__update-block .col .category {
+        padding-bottom: .4em; }
       .hero-base__update-block .col .excerpt {
         color: white;
         font-size: 1.125em;
+        line-height: 1.25;
         max-width: 15.5em; }
         .hero-base__update-block .col .excerpt a {
           color: white;

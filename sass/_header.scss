@@ -19,6 +19,17 @@
 
       &:first-child {
         a {
+          &:before {
+            content: '';
+            position: absolute;
+            top: -.625em;
+            width: 1.25em;
+            height: .25em;
+            background: $primary-color;
+            opacity: 1;
+            transition: ease all .2s;
+          }
+        
           &:after {
             content: url('../img/triangle.svg');
             position: absolute;
@@ -46,31 +57,10 @@
         text-decoration: none;
         transition: ease all .2s;
 
-        &:before {
-          content: '';
-          position: absolute;
-          top: -.625em;
-          width: 1.25em;
-          height: .25em;
-          background: $primary-color;
-          opacity: 0;
-          transition: ease all .2s;
-        }
-
         &:hover {
           transition: ease all .2s;
           opacity: 1;
           color: darken(white, 20%);
-
-          &:before {
-            content: '';
-            position: absolute;
-            top: -.625em;
-            width: 1.25em;
-            height: .25em;
-            background: $primary-color;
-            opacity: 1;
-          }
         }
       }
     }

@@ -27,6 +27,10 @@
         <div class="footer__title-block">
           <span>Latest</span>
           <span>Workgroup<br>Updates</span>
+
+          <div class="footer__clock">
+            <img src="img/icon-clock.svg" alt="">
+          </div>
         </div>
 
         <div class="footer__update-block">

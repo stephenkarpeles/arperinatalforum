@@ -19,12 +19,12 @@ h2 {
   text-transform: uppercase;
   font-size: .75em;
   line-height: 1;
-  padding-bottom: 2.75em;
+  padding-bottom: 2em;
 
   &:after {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 4px;
     margin-left: 10px;
     height: 4px;
     background: $primary-color;
@@ -48,8 +48,39 @@ h4 {
 p {
   font-size: 1.125em;
   font-family: $default-font-stack;
-  line-height: 1.44;
+  line-height: 1.5;
   font-weight: 400;
+  padding: 0 0 1.25em;
+  margin: 0;
+
+  + h2 {
+    margin-top: 1.125em;
+  }
+
+  .content & {
+    padding-left: 3.125em;
+  }
+}
+
+ul {
+  font-size: 1.125rem;
+  font-family: $default-font-stack;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 0 1.25em;
+  margin: 0;
+
+  + h2 {
+    margin-top: 1.125em;
+  }
+
+  .content & {
+    padding-left: 4em;
+
+    ul {
+      padding-left: 3em;
+    }
+  }
 }
 
 .intro {
@@ -57,6 +88,30 @@ p {
   line-height: 1.4;
   font-family: $alt-font-stack;
   padding-bottom: 2em;
+
+  .content & {
+    padding-left: 0;
+  }
+}
+
+blockquote {
+  padding: 0 0 1.25em;
+  position: relative;
+  padding-left: 1.25em;
+  font-size: 1.25em;
+  font-family: $alt-font-stack;
+  color: $quote-text-color;
+  line-height: 1.4;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: .125em;
+    left: 0;
+    background: $primary-color;
+    height: 2.125em;
+    width: .125em;
+  }
 }
 
 .context-heading {
