@@ -87,4 +87,55 @@
 	</div><!-- .container -->
 </section>
 
+<section class="no-padding-bottom"> 
+  <div class="container--max">
+
+    <div class="feat-heading__wrap">
+      <div class="feat-heading feat-heading--alt">
+        <div class="feat-heading__content">
+          <span>Meet the</span>
+          <span>APF Team</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="content">
+			<p class="intro">Our team is awesome. Nam porttitor bland itsetam accumsan. Ut vel dictum sem, a pretium dui.</p>
+			<p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent alique.</p>
+		</div>
+	</div>
+</section>
+
+<section class="no-padding-top">
+	<div class="container">
+		<div class="content">
+
+			<div class="grid">
+				<div class="grid__col">
+			    <?php include('inc/card-bio.php') ?>
+			  </div>
+			  <div class="grid__col">
+			    <?php include('inc/card-bio.php') ?>
+			  </div>
+			</div>
+
+			<div class="grid">
+				<div class="grid__col">
+			    <?php include('inc/card-bio.php') ?>
+			  </div>
+			  <div class="grid__col">
+			    <?php include('inc/card-bio.php') ?>
+			  </div>
+			</div>
+
+    </div>
+	</div>
+</section>
+		
+
 <?php include('inc/footer.php') ?>

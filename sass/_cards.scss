@@ -13,6 +13,18 @@
     left: 0;
   }
 
+  &--bio {
+    &:before {
+      content: '';
+      position: absolute;
+      background: $primary-color;
+      height: 1.25em;
+      width: 6.25em;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -21,6 +33,18 @@
     width: 4.375em;
     bottom: 0;
     left: 0;
+  }
+
+  &--bio {
+    &:after {
+      content: '';
+      position: absolute;
+      background: $tertiary-color;
+      height: .313em;
+      width: 6.25em;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   &:hover {
@@ -42,8 +66,30 @@
     }
   }
 
+  &--bio {
+    .card__title {
+      padding: 2.75em 1.875em 1.25em;
+
+      span {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: .75rem;
+        color: $alt-text-color;
+        line-height: 1.35;
+        display: block;
+        padding-top: 1em;
+      }
+    }
+  }
+
   &__content {
     padding: .95em 3.125em 3.125em;
+  }
+
+  &--bio {
+    .card__content {
+      padding: .95em 1.875em 2.5em;
+    }
   }
 
   &__contact {
@@ -61,10 +107,28 @@
     }
   }
 
+  &--bio {
+    .card__contact {
+      a {
+        &:nth-child(1) {
+          padding-right: 1.5em;
+        }
+      }
+    }
+  }
+
   &__description {
     font-size: 1.125em;
     line-height: 1.22;
     padding-bottom: 2.3em;
+  }
+
+  &--bio {
+    .card__description {
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 1.25em;
+    }
   }
 
   &__link {

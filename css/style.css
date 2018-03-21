@@ -828,12 +828,28 @@ section {
     width: 4.375em;
     top: 0;
     left: 0; }
+  .card--bio:before {
+    content: '';
+    position: absolute;
+    background: #fd3d3d;
+    height: 1.25em;
+    width: 6.25em;
+    top: 0;
+    left: 0; }
   .card:after {
     content: '';
     position: absolute;
     background: #cceaf4;
     height: .313em;
     width: 4.375em;
+    bottom: 0;
+    left: 0; }
+  .card--bio:after {
+    content: '';
+    position: absolute;
+    background: #cceaf4;
+    height: .313em;
+    width: 6.25em;
     bottom: 0;
     left: 0; }
   .card:hover {
@@ -847,8 +863,20 @@ section {
     border-bottom: 1px solid #efefef; }
     .card__title h3 {
       margin-bottom: 0; }
+  .card--bio .card__title {
+    padding: 2.75em 1.875em 1.25em; }
+    .card--bio .card__title span {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: .75rem;
+      color: #a9a9a9;
+      line-height: 1.35;
+      display: block;
+      padding-top: 1em; }
   .card__content {
     padding: .95em 3.125em 3.125em; }
+  .card--bio .card__content {
+    padding: .95em 1.875em 2.5em; }
   .card__contact {
     font-size: 0.750em;
     text-transform: uppercase;
@@ -858,10 +886,16 @@ section {
       color: #3b3b3b; }
     .card__contact a[href^="tel:"] {
       text-decoration: none; }
+  .card--bio .card__contact a:nth-child(1) {
+    padding-right: 1.5em; }
   .card__description {
     font-size: 1.125em;
     line-height: 1.22;
     padding-bottom: 2.3em; }
+  .card--bio .card__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 1.25em; }
   .card__link {
     position: relative; }
     .card__link a {
