@@ -39,9 +39,10 @@
         <div class="search__icon">
           <img src="img/icon-search-white.svg" alt="Search">
         </div>
-        <input class="search__input" type="text" name="search" placeholder="">
+        <input class="search__input" type="text" name="search">
         <span class="search__trigger">Search</span>
-      </div>     
+      </div>   
+
     </header>
 
     <main>

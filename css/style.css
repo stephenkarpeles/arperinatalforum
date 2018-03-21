@@ -279,7 +279,7 @@ section {
       .header__nav li a {
         position: relative;
         font-family: "Miriam Libre", Georgia, sans-serif;
-        font-size: 1.063em;
+        font-size: 1.063rem;
         color: white;
         text-decoration: none;
         transition: ease all .2s; }
@@ -600,6 +600,39 @@ section {
   padding: 1.5em 1.75em;
   font-size: 1.125em;
   font-family: "Miriam Libre", Georgia, sans-serif; }
+
+.search {
+  margin-top: 2.125em;
+  margin-right: 2.125em;
+  color: white;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  font-size: 1.063rem; }
+  .search__icon {
+    display: inline-block;
+    position: relative;
+    top: 6px; }
+  .search__input {
+    width: 0;
+    height: 2.5em;
+    margin-top: -3px;
+    border: none;
+    background: transparent;
+    font-size: .9rem;
+    color: white;
+    caret-color: white; }
+    .search__input:focus {
+      outline: none; }
+    .search__input.is-visible-search-input {
+      width: 10em;
+      padding: 0 .5em; }
+  .search__trigger {
+    cursor: pointer; }
+    .has-open-search-bar .search__trigger {
+      color: #f7ce40;
+      border-bottom: 1px solid #f7ce40; }
+    .search__trigger:hover {
+      color: #f7ce40;
+      border-bottom: 1px solid #f7ce40; }
 
 .hero {
   padding: 16em 0;
