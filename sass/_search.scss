@@ -19,8 +19,8 @@
     background: transparent;
     font-size: .9rem;
     color: white;
-
     caret-color: white;
+    transition: width ease .15s;
 
     &:focus {
       outline: none;

@@ -114,6 +114,28 @@
   </div><!-- .container -->
 </section>
 
+<section class="no-padding-bottom"> 
+  <div class="container--max">
+
+    <div class="feat-heading__wrap">
+      <div class="feat-heading__img">
+        <img src="img/baby_sleep.jpg" alt="">
+      </div>
+      <div class="feat-heading feat-heading--alt">
+        <div class="feat-heading__content">
+          <span>Meet the</span>
+          <span>Workgroups</span>
+        </div>
+      </div>
+      <div class="feat-heading__caption">
+        <span>We support the tireless work of perinatal groups all across Arkansas.</span>
+        <a href="">See all workgroups</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="cards">
   <div class="container">
 
@@ -147,8 +169,5 @@
 
   </div>
 </section>
-
-
-
 
 <?php include('inc/footer.php') ?>

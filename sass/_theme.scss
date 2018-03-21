@@ -74,7 +74,39 @@
 // Featured Headings
 .feat-heading {
   background: $default-text-color;
-  padding: 1.875em 4em;
+  padding: 1.875em .5em 1.875em 4em;
+  width: 14.375em;
+
+  &__wrap {
+    max-height: 6.25em;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 9.375em;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &__caption {
+    font-size: 1.35em;
+    font-family: $alt-font-stack;
+    padding-left: 1em;
+    line-height: 1.33;
+    max-width: 23em;
+
+    a {
+      padding-top: 1em;
+      display: block;
+      font-size: 1.1rem;
+    }
+  }
 
   &__content {
     position: relative;
@@ -105,6 +137,33 @@
       font-family: $alt-font-stack;
       font-weight: 700;
       color: $default-background-color;
+    }
+  }
+
+  &--alt {
+    width: 15.625em;
+    display: inline-block;
+
+    .feat-heading__content {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -1em;
+        top: -.125em;
+        background: $primary-color;
+        height: 2.5em;
+        width: .25em;
+      }
+    }
+
+    span {
+      display: block;
+
+      &:nth-child(1) {
+        padding-bottom: .25em;
+      }
     }
   }
 }

@@ -16,7 +16,19 @@
 }
 
 section {
-  padding: 3em 0;
+  padding: $section-padding 0;
+
+  &.no-padding {
+    padding: 0;
+  }
+
+   &.no-padding-top {
+    padding: 0 0 $section-padding;
+  }
+
+   &.no-padding-bottom {
+    padding: $section-padding 0 0;
+  }
 }
 
 .grid {
