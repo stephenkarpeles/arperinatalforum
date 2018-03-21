@@ -10,6 +10,10 @@
     }
   }
 
+  .content &__body {
+    padding-left: 0;
+  }
+
   &__content {
     flex: 1;
   }

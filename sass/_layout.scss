@@ -1,6 +1,6 @@
 .container {
   width: 90%;
-  max-width: 68.75em;
+  max-width: 69.5em;
   margin: 0 auto;
 
   &--max {
@@ -8,10 +8,15 @@
     max-width: 87.5em;
     margin: 0 auto;
   }
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 section {
-  padding: 2.5em 0;
+  padding: 3em 0;
 }
 
 .grid {
@@ -27,6 +32,11 @@ section {
     padding: 0 1.25em 2.5em;
 
     p {
+
+      .content & {
+        padding-left: 0;
+      }
+
       &:last-of-type {
         padding-bottom: 0;
       }
@@ -36,10 +46,24 @@ section {
 
 .content {
   overflow: hidden;
+  width: 54.5%;
   max-width: 37.5em;
+
+  @include mq(ipad, 'max-width') {
+    width: 100%;
+  }
 
   &--wide {
     max-width: 46.875em;
+  }
+}
+
+.aside {
+  width: 31.5%;
+  max-width: 20em;
+
+  &--padding-top {
+    padding-top: 8em;
   }
 }
 

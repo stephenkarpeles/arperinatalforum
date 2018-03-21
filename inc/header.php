@@ -35,14 +35,13 @@
         </ul>
       </nav>
 
-      <div class="header__search">
-        <form role="search" method="get" class="search-form" action="">
-          <label>
-            <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
-          </label>
-          <input type="submit" class="search-submit" value="Search" />
-        </form>      
-      </div>
+      <div class="search header__search">
+        <div class="search__icon">
+          <img src="img/icon-search-white.svg" alt="Search">
+        </div>
+        <input class="search__input" type="text" name="search" placeholder="">
+        <span class="search__trigger">Search</span>
+      </div>     
     </header>
 
     <main>

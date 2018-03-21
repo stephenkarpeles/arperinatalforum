@@ -1,8 +1,6 @@
 // Featured Posts
 .feat-post {
-  width: 23%  ;
-  min-width: 17em;
-  max-width: 20em;
+  width: 20em;
 
   &__content {
     padding: 2.813em 3.125em;
@@ -42,5 +40,107 @@
         top: -1.15em;
       }
     }
+  }
+
+  .hero-base & {
+    position: absolute;
+    z-index: 200;
+    right: 9em;
+    margin-top: -13.75em;
+
+    img {
+      height: 13.75em;
+    }
+
+    &__date {
+      &--secondary {
+        margin-top: 3.25em;
+        padding-top: 2em;
+        border-top: 1px solid $divider-color;
+      }
+    }
+
+    &__excerpt {
+      &--secondary {
+        &:after {
+          content: url(../img/icon-arrow-yellow.svg);
+          margin-left: .25em;
+        }
+      }
+    }
+  }
+}
+
+// Featured Headings
+.feat-heading {
+  background: $default-text-color;
+  padding: 1.875em 4em;
+
+  &__content {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -1em;
+      top: .125em;
+      background: $primary-color;
+      height: 1.125em;
+      width: .25em;
+    }
+  }
+
+  span {
+    &:nth-child(1) {
+      font-size: .75em;
+      font-weight: 700;
+      line-height: 1;
+      padding-right: .25em;
+      color: $alt-text-color;
+      text-transform: uppercase;
+    }
+
+    &:nth-child(2) {
+      font-size: 1em;
+      font-family: $alt-font-stack;
+      font-weight: 700;
+      color: $default-background-color;
+    }
+  }
+}
+
+// Event Listing
+.event-listing {
+  &__event {
+    padding: 1.75em;
+    border-bottom: 1px solid $default-background-color;
+  }
+
+  &__date {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $alt-text-color;
+    padding: 0 0 1.25em;
+    line-height: 1;
+    font-size: .75em;
+  } 
+
+  &__title {
+
+    a {
+      color: $default-text-color;
+      text-decoration: none;
+    }
+
+    &:after {
+      content: url(../img/icon-arrow-red.svg);
+      margin-left: .125em;
+    }
+  }
+
+  &__more-link {
+    padding: 1.5em 1.75em;
+    font-size: 1.125em;
+    font-family: $alt-font-stack;
   }
 }
