@@ -2,6 +2,10 @@
   padding: 11em 0 9.5em;
   margin-top: -5em; // Height of header
 
+  &--interior {
+    padding: 10.5em 0 7em;
+  }
+
   &__foreground {
     max-width: 62em;
     margin: 0 auto;
@@ -18,7 +22,7 @@
   &__title {
     h1 {
       max-width: 14em;
-      color: white;
+      color: rgba(255, 255, 255, 1);
       line-height: 1.33;
       font-family: $alt-font-stack;
       font-size: 1.875em;

@@ -208,6 +208,8 @@ section {
 .aside {
   width: 31.5%;
   max-width: 20em; }
+  .aside--pulled-up {
+    margin-top: -16.375em; }
   .aside--padding-top {
     padding-top: 8em; }
 
@@ -526,11 +528,18 @@ section {
     text-transform: uppercase;
     line-height: 1;
     color: #efefef; }
+    .feat-post__date--secondary {
+      margin-top: 3.25em;
+      padding-top: 2em;
+      border-top: 1px solid #ff6a6a; }
   .feat-post__excerpt {
     color: white;
     font-size: 1.125em;
     line-height: 1.22;
     padding-top: 1.25em; }
+    .feat-post__excerpt--secondary:after {
+      content: url(../img/icon-arrow-yellow.svg);
+      margin-left: .25em; }
   .feat-post__cta {
     padding-top: 2.5em; }
     .feat-post__cta a {
@@ -552,18 +561,13 @@ section {
     margin-top: -13.75em; }
     .hero-base .feat-post img {
       height: 13.75em; }
-    .hero-base .feat-post__date--secondary {
-      margin-top: 3.25em;
-      padding-top: 2em;
-      border-top: 1px solid #ff6a6a; }
-    .hero-base .feat-post__excerpt--secondary:after {
-      content: url(../img/icon-arrow-yellow.svg);
-      margin-left: .25em; }
 
 .feat-heading {
   background: #3b3b3b;
   padding: 1.875em .5em 1.875em 4em;
   width: 14.375em; }
+  .aside .feat-heading {
+    margin-top: 2.5em; }
   .feat-heading__wrap {
     max-height: 6.25em;
     overflow: hidden;
@@ -683,6 +687,8 @@ section {
 .hero {
   padding: 11em 0 9.5em;
   margin-top: -5em; }
+  .hero--interior {
+    padding: 10.5em 0 7em; }
   .hero__foreground {
     max-width: 62em;
     margin: 0 auto; }

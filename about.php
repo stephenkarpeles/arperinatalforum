@@ -1,10 +1,19 @@
 <?php include('inc/header.php') ?>
 
-<section class="hero" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+<section class="hero hero--interior" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+
+	 <div class="hero__foreground">
+    <div class="hero__subtext">
+      Learn More About Us
+    </div>
+    <div class="hero__title">
+      <h1>This is a very brief headline that tells what’s on this page.</h1>
+    </div>
+  </div>
 </section>
 
 <section>
-	<div class="container">
+	<div class="container container--flex">
 		<div class="content">
 
 			<p class="intro">The Arkansas Perinatal Forum is an initiative within the Arkansas Department of Health’s Family Health Branch that exists to support ongoing activities and workgroups around the state that focus on perinatal health.</p>
@@ -50,6 +59,31 @@
 			</ul>
 
 		</div><!-- .content -->
+
+		<aside class="aside aside--pulled-up">
+			<div class="feat-post hero-base__feat-post">
+		    <img src="img/family_baby.jpg" alt="">
+		    <div class="feat-post__content">
+		      <div class="feat-post__date">
+		        March 16, 2018
+		      </div>
+		      <div class="feat-post__excerpt">
+		        This is a news post title that cuts off after something like 75 characters or so…
+		      </div> 
+		      <div class="feat-post__cta">
+		        <a href="">Read more</a>
+		      </div> 
+		      <div class="feat-post__date feat-post__date--secondary">
+		        March 16, 2018
+		      </div>
+		      <div class="feat-post__excerpt feat-post__excerpt--secondary"> 
+		        This news post title cuts off after 50ish characters…
+		      </div>
+		    </div>
+		  </div> 
+
+		  <?php include('inc/event-listing.php') ?> 
+		</aside>
 	</div><!-- .container -->
 </section>
 

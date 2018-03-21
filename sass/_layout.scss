@@ -74,6 +74,10 @@ section {
   width: 31.5%;
   max-width: 20em;
 
+  &--pulled-up {
+    margin-top: -16.375em;
+  }
+
   &--padding-top {
     padding-top: 8em;
   }

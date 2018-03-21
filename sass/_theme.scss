@@ -13,6 +13,12 @@
     text-transform: uppercase;
     line-height: 1;
     color: $default-background-color;
+
+    &--secondary {
+      margin-top: 3.25em;
+      padding-top: 2em;
+      border-top: 1px solid $divider-color;
+    }
   }
 
   &__excerpt {
@@ -20,6 +26,13 @@
     font-size: 1.125em;
     line-height: 1.22;
     padding-top: 1.25em;
+
+    &--secondary {
+      &:after {
+        content: url(../img/icon-arrow-yellow.svg);
+        margin-left: .25em;
+      }
+    }
   }
 
   &__cta {
@@ -51,23 +64,6 @@
     img {
       height: 13.75em;
     }
-
-    &__date {
-      &--secondary {
-        margin-top: 3.25em;
-        padding-top: 2em;
-        border-top: 1px solid $divider-color;
-      }
-    }
-
-    &__excerpt {
-      &--secondary {
-        &:after {
-          content: url(../img/icon-arrow-yellow.svg);
-          margin-left: .25em;
-        }
-      }
-    }
   }
 }
 
@@ -76,6 +72,10 @@
   background: $default-text-color;
   padding: 1.875em .5em 1.875em 4em;
   width: 14.375em;
+
+  .aside & {
+    margin-top: 2.5em;
+  }
 
   &__wrap {
     max-height: 6.25em;
@@ -170,6 +170,7 @@
 
 // Event Listing
 .event-listing {
+
   &__event {
     padding: 1.75em;
     border-bottom: 1px solid $default-background-color;
