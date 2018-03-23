@@ -15,25 +15,25 @@
 
   &--bio {
     &:before {
-      content: '';
-      position: absolute;
       background: $primary-color;
       height: 1.25em;
       width: 6.25em;
-      top: 0;
-      left: 0;
     }
   }
 
   &--page {
     &:before {
-      content: '';
-      position: absolute;
       background: $primary-color;
       height: 1.15em;
       width: 6.25em;
-      top: 0;
-      left: 0;
+    }
+  }
+
+  &--post {
+    &:before {
+      background: $primary-color;
+      height: 0;
+      width: 0;
     }
   }
 
@@ -82,6 +82,7 @@
 
   &__title {
     position: relative;
+    line-height: 1.33;
     padding: 1.875em 3.125em 0.625em;
     border-bottom: 1px solid $default-background-color;
 
@@ -106,10 +107,17 @@
     }
   }
 
-  &--page {
+  &--page{
     .card__title {
       border-bottom: none;
       padding: 3em 1.875em .25em;
+    }
+  }
+
+  &--post {
+    .card__title {
+      border-bottom: none;
+      padding: 1.75em 1.875em .25em;
     }
   }
 
@@ -118,9 +126,23 @@
   }
 
   &--bio,
-  &--page {
+  &--page,
+  &--post {
     .card__content {
       padding: .95em 1.875em 2.5em;
+    }
+  }
+
+  &--post {
+    .card__date {
+      border-bottom: 1px solid $default-background-color;
+      border-left: 3.125rem solid $primary-color;
+      height: 3.125rem;
+      padding: 1.5em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: .75rem;
     }
   }
 
@@ -168,6 +190,14 @@
       font-size: 1.125em;
       line-height: 1.22;
       padding-bottom: 3.25em;
+    }
+  }
+
+  &--post {
+    .card__description {
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 2.5em;
     }
   }
 
