@@ -50,6 +50,11 @@ h3,
 h4 {
   margin-top: 0;
   font-weight: 700; }
+  h1.padding-top,
+  h2.padding-top,
+  h3.padding-top,
+  h4.padding-top {
+    padding-top: 1rem; }
 
 h1 {
   font-size: 3.125em;
@@ -181,19 +186,37 @@ section {
     padding: 0 0 3em; }
   section.no-padding-bottom {
     padding: 3em 0 0; }
+  section.extra-padding {
+    padding: 4.5em 0; }
+  section.extra-padding-top {
+    padding: 4.5em 0 3em; }
+  section.extra-padding-bottom {
+    padding: 3em 0 4.5em; }
 
 .grid {
   display: flex;
-  margin: 0 -1.25em; }
+  margin: 0 -1.25em;
+  flex-wrap: wrap; }
   .grid--flex-end {
     justify-content: flex-end; }
   .grid__col {
-    flex: 1;
-    padding: 0 1.25em 2.5em; }
+    padding: 0 1.25em 2.5em;
+    flex: 1; }
+    .search-results-block .grid__col {
+      flex: 0 0 25%; }
     .content .grid__col p {
       padding-left: 0; }
     .grid__col p:last-of-type {
       padding-bottom: 0; }
+    @media screen and (max-width: 1023px) {
+      .grid__col {
+        flex: 0 0 33.333333333%; } }
+    @media screen and (max-width: 767px) {
+      .grid__col {
+        flex: 0 0 50%; } }
+    @media screen and (max-width: 479px) {
+      .grid__col {
+        flex: 0 0 100%; } }
 
 .content {
   overflow: hidden;
@@ -213,9 +236,6 @@ section {
   .aside--padding-top {
     padding-top: 8em; }
 
-@media screen and (max-width: 599px) {
-  .grid {
-    display: block; } }
 .site__branding {
   background: #efefef;
   width: 20em;
@@ -836,6 +856,14 @@ section {
     width: 6.25em;
     top: 0;
     left: 0; }
+  .card--page:before {
+    content: '';
+    position: absolute;
+    background: #fd3d3d;
+    height: 1.15em;
+    width: 6.25em;
+    top: 0;
+    left: 0; }
   .card:after {
     content: '';
     position: absolute;
@@ -845,6 +873,14 @@ section {
     bottom: 0;
     left: 0; }
   .card--bio:after {
+    content: '';
+    position: absolute;
+    background: #cceaf4;
+    height: .313em;
+    width: 6.25em;
+    bottom: 0;
+    left: 0; }
+  .card--page:after {
     content: '';
     position: absolute;
     background: #cceaf4;
@@ -873,9 +909,12 @@ section {
       line-height: 1.35;
       display: block;
       padding-top: 1em; }
+  .card--page .card__title {
+    border-bottom: none;
+    padding: 3em 1.875em .25em; }
   .card__content {
     padding: .95em 3.125em 3.125em; }
-  .card--bio .card__content {
+  .card--bio .card__content, .card--page .card__content {
     padding: .95em 1.875em 2.5em; }
   .card__contact {
     font-size: 0.750em;
@@ -896,6 +935,10 @@ section {
     font-size: 1.125em;
     line-height: 1.22;
     padding-bottom: 1.25em; }
+  .card--page .card__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 3.25em; }
   .card__link {
     position: relative; }
     .card__link a {
@@ -915,5 +958,19 @@ section {
 @media screen and (max-width: 599px) {
   .cards .grid .grid__col {
     flex: 0 0 100%; } }
+.table-of-contents {
+  text-align: center;
+  padding-top: 5em; }
+  .table-of-contents a {
+    display: inline-block;
+    padding: .5em 1.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background: #fd3d3d;
+    text-decoration: none;
+    margin: 0 .25em; }
+    .table-of-contents a:hover {
+      background: #d20202; }
 
 /*# sourceMappingURL=style.css.map */

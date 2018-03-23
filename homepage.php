@@ -90,14 +90,8 @@
 
     <aside class="aside aside--padding-top">
 
-      <div class="feat-heading">
-        <div class="feat-heading__content">
-          <span>Upcoming</span>
-          <span>Events</span>
-        </div>
-      </div>  
-
       <?php include('inc/event-listing.php') ?>   
+      
     </aside>
 
   </div><!-- .container -->
