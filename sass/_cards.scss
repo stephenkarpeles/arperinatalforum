@@ -3,6 +3,14 @@
   border: 1px solid $default-background-color;
   transition: all .35s ease;
 
+  &--event,
+  &--resource {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid $default-background-color;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -29,9 +37,10 @@
     }
   }
 
-  &--post {
+  &--post,
+  &--event,
+  &--resource {
     &:before {
-      background: $primary-color;
       height: 0;
       width: 0;
     }
@@ -47,32 +56,30 @@
     left: 0;
   }
 
+  &--page,
   &--bio {
     &:after {
-      content: '';
-      position: absolute;
-      background: $tertiary-color;
-      height: .313em;
       width: 6.25em;
-      bottom: 0;
-      left: 0;
     }
   }
 
-  &--page {
+  &--post,
+  &--event,
+  &--resource {
     &:after {
-      content: '';
-      position: absolute;
-      background: $tertiary-color;
-      height: .313em;
-      width: 6.25em;
-      bottom: 0;
-      left: 0;
+      width: 3.125rem;
     }
   }
 
   &:hover {
     box-shadow: 10px 10px 0 rgba($default-background-color, 1);
+  }
+
+  &--event,
+  &--resource {
+    &:hover {
+      box-shadow: 7px 7px 0 rgba($default-background-color, .3);
+    }
   }
 
   &__logo {
@@ -121,8 +128,28 @@
     }
   }
 
+  &--event,
+  &--resource {
+    .card__title {
+      border-bottom: none;
+      padding: 1.45em 0 .25em;
+    }
+  }
+
   &__content {
     padding: .95em 3.125em 3.125em;
+  }
+
+  &--event {
+    .card__content {
+      padding: .95em 0 1.5em;
+    }
+  }
+
+  &--resource {
+    .card__content {
+      padding: .5em 0 2.5em;
+    }
   }
 
   &--bio,
@@ -143,6 +170,48 @@
       font-weight: 700;
       line-height: 1;
       font-size: .75rem;
+    }
+  }
+
+  &--event {
+    .card__date {
+      border-bottom: 1px solid $default-background-color;
+      border-left: 3.125rem solid $tertiary-color;
+      height: 1.875rem;
+      padding-left: 1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: .75rem;
+
+      span {
+        display: inline-block;
+        margin-top: .7em;
+      }
+    }
+  }
+
+  &--resource {
+    .card__resource-type {
+      border-bottom: 1px solid $default-background-color;
+      height: 1.875rem;
+      padding-left: 1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: .75rem;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 3.125rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+        display: inline-block;
+        background: $tertiary-color;
+      }
     }
   }
 
@@ -198,6 +267,39 @@
       font-size: 1.125em;
       line-height: 1.22;
       padding-bottom: 2.5em;
+    }
+  }
+
+  &--resource {
+    .card__description {
+      color: $alt-text-color;
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 3.25em;
+    }
+  }
+
+  &--event {
+    .card__time,
+    .card__location {
+      text-transform: uppercase;
+      font-size: .75rem;
+      color: $alt-text-color;
+      line-height: 1.2;
+      font-weight: 700;
+      display: block;
+    }
+  }
+
+  &--event {
+    .card__time {
+      padding-bottom: 1em;
+    }
+  }
+
+  &--event {
+    .card__location {
+      padding-bottom: 4em;
     }
   }
 
