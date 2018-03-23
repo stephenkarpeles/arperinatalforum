@@ -118,7 +118,8 @@ blockquote {
   }
 }
 
-.context-heading {
+.context-heading,
+.category-label {
   font-weight: 700;
   font-size: .75em;
   text-transform: uppercase;
@@ -133,5 +134,9 @@ blockquote {
 
   &--c {
     color: $secondary-color;
+  }
+
+  + h1 {
+    padding-top: 1rem;
   }
 }
