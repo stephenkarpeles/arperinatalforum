@@ -22,10 +22,15 @@
 	<div class="table-of-contents">
 
 		<h1>Pages</h1>
-		<a href="homepage.php">Homepage</a>
-		<a href="about.php">About</a>
-        <a href="workgroups.php">Workgroups</a>
-		<a href="search-results.php">Search Results</a>
+		<div><a href="homepage.php">Homepage</a></div>
+		<div><a href="about.php">About</a></div>        
+        <div><a href="search-results.php">Search Results</a></div>
+        <div><a href="workgroups.php">Workgroups</a></div>
+        <div><a href="workgroups-profile.php">Workgroups Profile</a></div>
+		<div><a href="workgroups-profile-slim.php">Workgroups Profile Slim</a></div>
+        <div><a href="resources.php">Resources</a></div>
+        <div><a href="contact.php">Contact</a></div>
+        <div><a href="news-events.php">News &amp; Events</a></div>
 
 	</div>
 	

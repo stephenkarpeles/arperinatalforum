@@ -136,6 +136,10 @@ blockquote {
     color: $secondary-color;
   }
 
+  &--d {
+    color: $tertiary-color;
+  }
+
   + h1 {
     padding-top: 1rem;
   }

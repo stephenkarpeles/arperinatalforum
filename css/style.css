@@ -157,6 +157,9 @@ blockquote {
   .context-heading--c,
   .category-label--c {
     color: #f7ce40; }
+  .context-heading--d,
+  .category-label--d {
+    color: #cceaf4; }
   .context-heading + h1,
   .category-label + h1 {
     padding-top: 1rem; }
@@ -175,6 +178,85 @@ blockquote {
       background: #a9a9a9;
       position: absolute;
       top: -1.25em; }
+
+.form {
+  margin-top: .5em;
+  margin-bottom: 2em; }
+  .form .btn--submit {
+    margin-top: 1em;
+    display: block;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    font-size: 1.125em; }
+  .form__field-wrap {
+    border: 1px solid #efefef;
+    padding: 1.25em 1.875em;
+    margin-bottom: 1.25em; }
+    .form__field-wrap label {
+      font-size: 1.125rem;
+      color: #a9a9a9; }
+    .form__field-wrap input,
+    .form__field-wrap textarea {
+      width: 100%;
+      padding: .5em 0 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      font-size: 1.25rem;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+      .form__field-wrap input:focus,
+      .form__field-wrap textarea:focus {
+        outline: none; }
+    .form__field-wrap ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #3b3b3b; }
+    .form__field-wrap ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #3b3b3b; }
+    .form__field-wrap :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #3b3b3b; }
+    .form__field-wrap :-moz-placeholder {
+      /* Firefox 18- */
+      color: #3b3b3b; }
+
+.select-block {
+  height: 6.25em;
+  position: relative; }
+  .select-block__wrap {
+    display: inline-block;
+    border: 1px solid #efefef;
+    padding: 1.25em 1.875em;
+    height: 100%; }
+  .select-block__label {
+    font-size: 1.125em;
+    line-height: 1.44;
+    color: #a9a9a9; }
+  .select-block__cta {
+    font-size: 1.5em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    line-height: 1.33; }
+    .select-block__cta:after {
+      content: url(../img/icon-arrow-gray.svg);
+      margin-left: .25em; }
+  .select-block__btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: -4px;
+    height: 6.25em;
+    width: 6.25em;
+    background: #f7ce40;
+    color: white;
+    text-align: center;
+    line-height: 6.25em;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -6.25em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    transition: opacity .2s ease; }
+    .select-block__btn:hover {
+      opacity: .8; }
 
 .container {
   width: 90%;
@@ -248,7 +330,9 @@ section {
 
 .aside {
   width: 31.5%;
-  max-width: 20em; }
+  max-width: 20em;
+  position: relative;
+  z-index: 100; }
   .aside--pulled-up {
     margin-top: -16.375em; }
   .aside--pulled-up-default {
@@ -450,6 +534,11 @@ section {
           content: url(../img/icon-arrow-red.svg);
           margin-left: .5em; }
 
+.aside__link-block a {
+  display: block;
+  margin-bottom: 1.25em;
+  font-family: "Miriam Libre", Georgia, sans-serif; }
+
 .mega-menu {
   position: relative;
   z-index: 9999;
@@ -602,10 +691,110 @@ section {
     .hero-base .feat-post img {
       height: 13.75em; }
 
+.feat-news-block {
+  margin-top: -13.75em;
+  margin-bottom: 3em;
+  position: relative; }
+  .feat-news-block .context-heading {
+    position: absolute;
+    top: -2.5em; }
+  .feat-news-block__img {
+    object-fit: cover;
+    height: 13.75em;
+    width: 21.875em; }
+  .feat-news-block__row {
+    display: flex;
+    justify-content: flex-start; }
+  .feat-news-block__post {
+    background: #fd3d3d;
+    width: 21.875em;
+    padding: 3.125em; }
+  .feat-news-block__date {
+    font-size: .75em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #efefef; }
+  .feat-news-block__title {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.33;
+    padding-top: 1.25rem;
+    font-family: "Miriam Libre", Georgia, sans-serif; }
+  .feat-news-block__content {
+    width: 21.875em;
+    padding: 5.25em 3.125em 3.125em;
+    background: #ec3939; }
+  .feat-news-block__excerpt {
+    color: white;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.22; }
+  .feat-news-block__link {
+    padding-top: 2.5em; }
+    .feat-news-block__link a {
+      color: #f7ce40;
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      position: relative; }
+      .feat-news-block__link a:before {
+        content: '';
+        width: 3.125rem;
+        height: .25rem;
+        background: #a9a9a9;
+        position: absolute;
+        top: -1.15em; }
+  .feat-news-block__event {
+    width: 18.75em; }
+  .feat-news-block__event-heading {
+    position: relative;
+    background: #3b3b3b;
+    padding: 1.5em .5em 1.875em 4em;
+    width: 14.375em;
+    margin-right: 1.5em;
+    height: 4.375em; }
+    .feat-news-block__event-heading span:nth-child(1) {
+      font-size: .75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #a9a9a9; }
+    .feat-news-block__event-heading span:nth-child(2) {
+      font-size: 1em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      font-weight: 700;
+      color: #efefef; }
+    .feat-news-block__event-heading:before {
+      content: '';
+      position: absolute;
+      left: 3em;
+      top: 1.75em;
+      background: #fd3d3d;
+      height: 1.125em;
+      width: .25em; }
+  .feat-news-block__event-content {
+    padding: 1.25em; }
+  .feat-news-block__event-info {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #a9a9a9; }
+    .feat-news-block__event-info div {
+      margin-bottom: .25em; }
+  .feat-news-block__event-title {
+    padding-top: 1em; }
+    .feat-news-block__event-title a {
+      color: #3b3b3b;
+      text-decoration: none;
+      line-height: 1.15; }
+    .feat-news-block__event-title:after {
+      content: url(../img/icon-arrow-red.svg);
+      margin-left: .125em; }
+
 .feat-heading {
   background: #3b3b3b;
   padding: 1.875em .5em 1.875em 4em;
-  width: 14.375em; }
+  width: 14.375em;
+  margin-right: 1.5em;
+  height: 6.25em; }
   .aside .feat-heading {
     margin-top: 2.5em; }
   .feat-heading__wrap {
@@ -695,6 +884,9 @@ section {
   text-align: center;
   font-family: "Miriam Libre", Georgia, sans-serif; }
 
+.resource-group {
+  margin-bottom: 4em; }
+
 .search {
   margin-top: 2.125em;
   margin-right: 2.125em;
@@ -735,8 +927,11 @@ section {
   margin-top: -5em; }
   .hero--interior {
     padding: 10.5em 0 7em; }
+  .hero--news-events {
+    height: 25em; }
   .hero__foreground {
-    max-width: 62em;
+    max-width: 90%;
+    width: 62em;
     margin: 0 auto; }
   .hero__subtext {
     color: #cceaf4;
@@ -878,6 +1073,17 @@ section {
     border-top: none;
     border-right: none;
     border-bottom: 1px solid #efefef; }
+  .card--workgroup {
+    border: none; }
+    .card--workgroup .card__brand {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      height: 5em;
+      width: 5em;
+      line-height: 5em;
+      background: #fd3d3d; }
   .card:before {
     content: '';
     position: absolute;
@@ -909,6 +1115,9 @@ section {
     width: 6.25em; }
   .card--post:after, .card--event:after, .card--resource:after {
     width: 3.125rem; }
+  .card--workgroup:after, .card--workgroup:before {
+    width: 0;
+    height: 0; }
   .card:hover {
     box-shadow: 10px 10px 0 #efefef; }
   .card--event:hover, .card--resource:hover {
@@ -939,14 +1148,14 @@ section {
   .card--post .card__title {
     border-bottom: none;
     padding: 1.75em 1.875em .25em; }
-  .card--event .card__title, .card--resource .card__title {
+  .card--event .card__title, .card--resource .card__title, .card--workgroup .card__title {
     border-bottom: none;
     padding: 1.45em 0 .25em; }
   .card__content {
     padding: .95em 3.125em 3.125em; }
   .card--event .card__content {
     padding: .95em 0 1.5em; }
-  .card--resource .card__content {
+  .card--resource .card__content, .card--workgroup .card__content {
     padding: .5em 0 2.5em; }
   .card--bio .card__content, .card--page .card__content, .card--post .card__content {
     padding: .95em 1.875em 2.5em; }
@@ -1045,6 +1254,10 @@ section {
       background: #a9a9a9;
       position: absolute;
       top: -1.1em; }
+  .card--workgroup .card__link {
+    margin-top: 2em; }
+    .card--workgroup .card__link a {
+      color: #a9a9a9; }
 
 @media screen and (max-width: 1023px) {
   .cards .grid .grid__col {
@@ -1055,7 +1268,8 @@ section {
 .info-block {
   position: relative;
   background: #efefef;
-  font-family: "Miriam Libre", Georgia, sans-serif; }
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  margin-bottom: 2.5em; }
   .info-block__title {
     background: #fd3d3d;
     color: white;
@@ -1091,8 +1305,11 @@ section {
 .table-of-contents {
   text-align: center;
   padding-top: 5em; }
+  .table-of-contents div {
+    margin-bottom: 1em; }
   .table-of-contents a {
     display: inline-block;
+    margin-bottom: 1em;
     padding: .5em 1.5em;
     color: white;
     font-weight: 700;

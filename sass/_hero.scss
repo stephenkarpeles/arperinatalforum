@@ -7,8 +7,13 @@
     padding: 10.5em 0 7em;
   }
 
+  &--news-events {
+    height: 25em;
+  }
+
   &__foreground {
-    max-width: 62em;
+    max-width: $container-width;
+    width: 62em;
     margin: 0 auto;
   }
 

@@ -1,5 +1,5 @@
 .container {
-  width: 90%;
+  width: $container-width;
   max-width: 69.5em;
   margin: 0 auto;
 
@@ -115,6 +115,8 @@ section {
 .aside {
   width: 31.5%;
   max-width: 20em;
+  position: relative;
+  z-index: 100;
 
   &--pulled-up {
     margin-top: -16.375em;

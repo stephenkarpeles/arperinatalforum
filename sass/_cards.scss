@@ -11,6 +11,21 @@
     border-bottom: 1px solid $default-background-color;
   }
 
+  &--workgroup {
+    border: none;
+
+    .card__brand {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-family: $alt-font-stack;
+      height: 5em;
+      width: 5em;
+      line-height: 5em;
+      background: $primary-color;
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -68,6 +83,14 @@
   &--resource {
     &:after {
       width: 3.125rem;
+    }
+  }
+
+  &--workgroup {
+    &:after,
+    &:before {
+      width: 0;
+      height: 0;
     }
   }
 
@@ -129,7 +152,8 @@
   }
 
   &--event,
-  &--resource {
+  &--resource,
+  &--workgroup {
     .card__title {
       border-bottom: none;
       padding: 1.45em 0 .25em;
@@ -146,7 +170,8 @@
     }
   }
 
-  &--resource {
+  &--resource,
+  &--workgroup {
     .card__content {
       padding: .5em 0 2.5em;
     }
@@ -318,6 +343,16 @@
       background: $alt-text-color;
       position: absolute;
       top: -1.1em;
+    }
+  }
+
+  &--workgroup {
+    .card__link {
+      margin-top: 2em;
+
+      a {
+        color: $alt-text-color;
+      }
     }
   }
 }
