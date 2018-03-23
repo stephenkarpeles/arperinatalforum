@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding: 11em 0 9.5em;
   margin-top: -5em; // Height of header
 
@@ -48,7 +49,19 @@
       font-family: $alt-font-stack;
       text-decoration: underline;
     }
+
+    &--offset {
+      position: absolute;
+      right: 10%;
+      bottom: 2.5em;
+      font-family: $alt-font-stack;
+
+      a {
+        color: $secondary-color;
+      }
+    }
   }
+
 }
 
 .hero-base {

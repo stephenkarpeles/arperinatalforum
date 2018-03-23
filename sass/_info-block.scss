@@ -1,0 +1,52 @@
+.info-block {
+	position: relative;
+	background: $default-background-color;
+	font-family: $alt-font-stack;
+
+	&__title {
+		background: $primary-color;
+		color: white;
+		width: 7.5em;
+		height: 7.5em;
+		line-height: 7.5em;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: -7.5em;
+	}
+
+	&__content {
+		font-size: .875em;
+		font-weight: 700;
+		width: 70%;
+		padding: 15% 0;
+		margin: 0 auto;
+		overflow: hidden;
+
+		h2 {
+			margin-top: 2em;
+			padding-bottom: 1.25em;
+
+			&:after {
+				top: 2px;
+			}
+		}
+
+		div {
+			padding-bottom: .75em;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+
+		a {
+			color: $default-text-color;
+			text-decoration: underline;
+		}
+
+		.name {
+			padding-left: 1em;
+		}
+	}
+}

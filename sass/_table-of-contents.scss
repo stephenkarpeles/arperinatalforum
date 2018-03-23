@@ -1,0 +1,19 @@
+.table-of-contents {
+	text-align: center;
+	padding-top: 5em;
+
+	a {
+		display: inline-block;
+		padding: .5em 1.5em;
+		color: white;
+		font-weight: 700;
+		font-size: 1.25rem;
+		background: $primary-color;
+		text-decoration: none;
+		margin: 0 .25em;
+
+		&:hover {
+			background: darken($primary-color, 20%);
+		}
+	}
+}
