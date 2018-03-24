@@ -215,10 +215,15 @@
 // Featured Headings
 .feat-heading {
   background: $default-text-color;
-  padding: 1.875em .5em 1.875em 4em;
+  padding: 1.5em .5em 1.875em 4em;
   width: 14.375em;
   margin-right: 1.5em;
-  height: 6.25em;
+  height: 4.375em;
+
+  &--alt {
+    height: 6.25em;
+    padding: 1.875em .5em 1.875em 4em;
+  }
 
   .aside & {
     margin-top: 2.5em;
@@ -361,4 +366,40 @@
 
 .resource-group {
   margin-bottom: 4em;
+}
+
+.post-info {
+  margin-top: -12.5em; // height of '&__img'
+  width: 18.75em;
+
+  &__img img {
+    width: 18.75em;
+    height: 12.5em;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__meta {
+    background: $default-background-color;
+    padding: 1.25em;
+
+    span {
+      &:nth-child(1) {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .75em;
+        line-height: 1;
+        padding-right: .5em;
+      }
+
+      &:nth-child(2) {
+        line-height: 1.29;
+        font-size: .95em;
+        font-weight: 700;
+        font-family: $alt-font-stack;
+      }
+    }
+  }
+
+
 }

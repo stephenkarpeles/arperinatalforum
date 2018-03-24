@@ -85,12 +85,16 @@ h3 {
   font-size: 1.125em;
   line-height: 1.22;
   font-family: "Miriam Libre", Georgia, sans-serif; }
+  .content h3 {
+    padding-left: 3.5rem; }
 
 h4 {
   font-family: "Miriam Libre", Georgia, sans-serif;
   text-transform: uppercase;
   line-height: 1.29;
   font-size: .875em; }
+  .content h4 {
+    padding-left: 3.5rem; }
 
 p {
   font-size: 1.125em;
@@ -127,9 +131,9 @@ ul {
     padding-left: 0; }
 
 blockquote {
-  padding: 0 0 1.25em;
+  margin: 1.25em 0 0 0;
+  padding: 0 0 2.5em 1.25em;
   position: relative;
-  padding-left: 1.25em;
   font-size: 1.25em;
   font-family: "Miriam Libre", Georgia, sans-serif;
   color: #556367;
@@ -141,10 +145,12 @@ blockquote {
     left: 0;
     background: #fd3d3d;
     height: 2.125em;
-    width: .125em; }
+    width: .25em; }
 
 .context-heading,
 .category-label {
+  display: inline-block;
+  padding-right: 1.5em;
   font-weight: 700;
   font-size: .75em;
   text-transform: uppercase; }
@@ -807,10 +813,13 @@ section {
 
 .feat-heading {
   background: #3b3b3b;
-  padding: 1.875em .5em 1.875em 4em;
+  padding: 1.5em .5em 1.875em 4em;
   width: 14.375em;
   margin-right: 1.5em;
-  height: 6.25em; }
+  height: 4.375em; }
+  .feat-heading--alt {
+    height: 6.25em;
+    padding: 1.875em .5em 1.875em 4em; }
   .aside .feat-heading {
     margin-top: 2.5em; }
   .feat-heading__wrap {
@@ -902,6 +911,29 @@ section {
 
 .resource-group {
   margin-bottom: 4em; }
+
+.post-info {
+  margin-top: -12.5em;
+  width: 18.75em; }
+  .post-info__img img {
+    width: 18.75em;
+    height: 12.5em;
+    max-width: 100%;
+    object-fit: cover; }
+  .post-info__meta {
+    background: #efefef;
+    padding: 1.25em; }
+    .post-info__meta span:nth-child(1) {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .75em;
+      line-height: 1;
+      padding-right: .5em; }
+    .post-info__meta span:nth-child(2) {
+      line-height: 1.29;
+      font-size: .95em;
+      font-weight: 700;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
 
 .search {
   margin-top: 2.125em;
