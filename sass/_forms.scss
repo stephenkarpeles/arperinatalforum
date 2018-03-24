@@ -100,3 +100,28 @@
 		}
 	}
 }
+
+.filter {
+	&__title {
+    font-size: 1.5em;
+    font-family: $alt-font-stack;
+    line-height: 1.33;
+    padding-top: .75em;
+    padding-bottom: .5em;
+	}
+
+	&__choice {
+		font-size: 1.125em;
+		display: inline-block;
+		padding-right: 1em;
+
+		input[type="checkbox"] {
+			margin-right: .15em;
+		}
+
+		label {
+			position: relative;
+			top: 2px;
+		}
+	}
+}

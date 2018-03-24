@@ -258,6 +258,22 @@ blockquote {
     .select-block__btn:hover {
       opacity: .8; }
 
+.filter__title {
+  font-size: 1.5em;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  line-height: 1.33;
+  padding-top: .75em;
+  padding-bottom: .5em; }
+.filter__choice {
+  font-size: 1.125em;
+  display: inline-block;
+  padding-right: 1em; }
+  .filter__choice input[type="checkbox"] {
+    margin-right: .15em; }
+  .filter__choice label {
+    position: relative;
+    top: 2px; }
+
 .container {
   width: 90%;
   max-width: 69.5em;
