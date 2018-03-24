@@ -915,11 +915,17 @@ section {
 .post-info {
   margin-top: -12.5em;
   width: 18.75em; }
+  .post-info--no-image {
+    margin-top: -6.25em; }
   .post-info__img img {
     width: 18.75em;
     height: 12.5em;
     max-width: 100%;
     object-fit: cover; }
+  .post-info__img--no-image {
+    width: 6.25em;
+    height: 6.25em;
+    background: #fd3d3d; }
   .post-info__meta {
     background: #efefef;
     padding: 1.25em; }

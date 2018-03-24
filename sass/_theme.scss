@@ -372,11 +372,23 @@
   margin-top: -12.5em; // height of '&__img'
   width: 18.75em;
 
-  &__img img {
-    width: 18.75em;
-    height: 12.5em;
-    max-width: 100%;
-    object-fit: cover;
+  &--no-image {
+    margin-top: -6.25em; // height of '&__img--no-image'
+  }
+
+  &__img {
+    img {
+      width: 18.75em;
+      height: 12.5em;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    &--no-image {
+      width: 6.25em;
+      height: 6.25em;
+      background: $primary-color;
+    }
   }
 
   &__meta {
