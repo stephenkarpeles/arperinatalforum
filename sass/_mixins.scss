@@ -1,11 +1,13 @@
 // Breakpoints
 $breakpoints: (
   mobile-portrait: 320px,
+  mobile-tween: 401px,
   mobile-landscape: 480px,
   tablet: 600px,
   ipad: 768px,
   desktop: 1024px,
   desktop-wide: 1100px,
+  desktop-old-school: 1280px,
   wide-container: 1440px,
   vw-switch: 1800px
 );

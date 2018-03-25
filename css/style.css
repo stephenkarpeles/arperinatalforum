@@ -409,7 +409,6 @@ section {
 .header {
   position: relative;
   z-index: 900;
-  overflow: auto;
   display: flex; }
   .header__nav {
     margin-left: 1.25em; }
@@ -453,6 +452,87 @@ section {
           color: #cccccc; }
   .header__search {
     margin-left: auto; }
+  .header .mobile-nav {
+    display: none; }
+    .header .mobile-nav__trigger {
+      cursor: pointer;
+      width: 5em;
+      height: 5em;
+      padding: 29px 25px;
+      background: #efefef;
+      text-align: center;
+      transition: background .2s ease;
+      position: absolute;
+      right: 0; }
+      .header .mobile-nav__trigger:hover {
+        background: #3b3b3b;
+        opacity: .95; }
+        .header .mobile-nav__trigger:hover span {
+          opacity: 1;
+          background: white; }
+      .header .mobile-nav__trigger.has-open-nav {
+        background: #3b3b3b;
+        opacity: .95; }
+        .header .mobile-nav__trigger.has-open-nav span {
+          position: relative;
+          background: white;
+          transition: all .2s ease; }
+          .header .mobile-nav__trigger.has-open-nav span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 10px; }
+          .header .mobile-nav__trigger.has-open-nav span:nth-child(2) {
+            opacity: 0; }
+          .header .mobile-nav__trigger.has-open-nav span:nth-child(3) {
+            transform: rotate(135deg);
+            bottom: 10px; }
+      .header .mobile-nav__trigger span {
+        transition: all .2s ease;
+        position: relative;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 8px;
+        background: #a9a9a9;
+        display: block; }
+    .header .mobile-nav__nav {
+      position: absolute;
+      z-index: 9999;
+      top: 5rem;
+      right: 0;
+      display: none;
+      background: #3b3b3b;
+      opacity: .95;
+      padding: 4.5em 3em 2em; }
+      .header .mobile-nav__nav.is-visible-mobile-nav {
+        display: block; }
+      .header .mobile-nav__nav li {
+        list-style-type: none;
+        margin-bottom: .5em; }
+        .header .mobile-nav__nav li:first-child:before {
+          background: #fd3d3d;
+          top: 2.5em;
+          height: 4px;
+          width: 50px;
+          content: '';
+          position: absolute; }
+      .header .mobile-nav__nav a {
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        color: white;
+        font-size: 2rem;
+        text-decoration: none; }
+    .header .mobile-nav__social {
+      padding-top: 3em; }
+  @media screen and (max-width: 1279px) {
+    .header__nav, .header__search {
+      display: none; }
+    .header .mobile-nav {
+      display: block; } }
+  @media screen and (max-width: 767px) {
+    .header .mobile-nav__nav {
+      width: 100%; } }
+  @media screen and (max-width: 400px) {
+    .header .mobile-nav__trigger.has-open-nav {
+      width: 11.25em;
+      padding: 29px 25px 29px 128px; } }
 
 .footer {
   position: relative;

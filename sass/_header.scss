@@ -1,7 +1,6 @@
 .header {
   position: relative;
   z-index: 900;
-  overflow: auto;
   display: flex;
 
   &__nav {
@@ -68,5 +67,136 @@
 
   &__search {
     margin-left: auto;
+  }
+
+  .mobile-nav {
+    display: none;
+
+    &__trigger {
+      cursor: pointer;
+      width: 5em;
+      height: 5em;
+      padding: 29px 25px;
+      background: $default-background-color;
+      text-align: center;
+      transition: background .2s ease;
+      position: absolute;
+      right: 0;
+
+      &:hover {
+        background: $default-text-color;
+        opacity: .95;
+
+        span {
+          opacity: 1;
+          background: white;
+        }
+      }
+
+      &.has-open-nav {
+        background: $default-text-color;
+        opacity: .95;
+
+        span {
+          position: relative;
+          background: white;
+          transition: all .2s ease;
+
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            top: 10px;
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: rotate(135deg);
+            bottom: 10px;
+          }
+        }
+      }
+
+      span {
+        transition: all .2s ease;
+        position: relative;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 8px;
+        background: $alt-text-color;
+        display: block;
+      }
+    }
+
+    &__nav {
+      position: absolute;
+      z-index: 9999;
+      top: 5rem;
+      right: 0;
+      display: none;
+      background: $default-text-color;
+      opacity: .95;
+      padding: 4.5em 3em 2em;
+
+      &.is-visible-mobile-nav {
+        display: block;
+      }
+
+      li {
+        list-style-type: none;
+        margin-bottom: .5em;
+
+        &:first-child:before {
+          background: $primary-color;
+          top: 2.5em;
+          height: 4px;
+          width: 50px;
+          content: '';
+          position: absolute;
+        }
+      }
+
+      a {
+        font-family: $alt-font-stack;
+        color: rgba(255, 255, 255, 1);
+        font-size: 2rem;
+        text-decoration: none;
+      }
+    }
+
+    &__social {
+      padding-top: 3em;
+    }
+  }
+
+  @include mq(desktop-old-school, 'max-width') {
+    &__nav,
+    &__search {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: block;
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    .mobile-nav {
+      &__nav {
+        width: 100%;
+      }
+    }
+  }
+
+  @include mq(mobile-tween, 'max-width') {
+    .mobile-nav {
+      &__trigger {
+        &.has-open-nav {
+          width: 11.25em;
+          padding: 29px 25px 29px 128px;
+        }
+      }
+    }
   }
 }

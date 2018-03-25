@@ -28,6 +28,7 @@
         <div><a href="workgroups.php">Workgroups</a></div>
         <div><a href="workgroups-profile.php">Workgroups Profile</a></div>
 		<div><a href="workgroups-profile-slim.php">Workgroups Profile Slim</a></div>
+        <div><a href="workgroups-news-listing.php">Workgroups News Listing</a></div>
         <div><a href="resources.php">Resources</a></div>
         <div><a href="contact.php">Contact</a></div>
         <div><a href="news-events.php">News &amp; Events</a></div>

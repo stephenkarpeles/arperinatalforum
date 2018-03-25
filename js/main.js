@@ -1,4 +1,29 @@
 // Mobile menu toggle
+const mobileNavTrigger = document.querySelector('.mobile-nav__trigger');
+const mobileNav = document.querySelector('.mobile-nav__nav');
+const header = document.querySelector('.header');
+
+if (mobileNavTrigger) {
+  mobileNavTrigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    mobileNav.classList.toggle('is-visible-mobile-nav');
+    mobileNavTrigger.classList.toggle('has-open-nav');
+  });
+}
+
+if (header) {
+  document.addEventListener('click', (e) => {
+    const isClickInside = header.contains(e.target);
+
+    if (!isClickInside) {
+      mobileNav.classList.remove('is-visible-mobile-nav');
+      mobileNavTrigger.classList.remove('has-open-nav');
+    }
+  });
+}
+
+
+// Mega menu toggle
 const megaMenuTrigger = document.querySelector('.header__nav li:first-child a');
 const megaMenu = document.querySelector('.mega-menu');
 const megaMenuClose = document.querySelector('.mega-menu__close');
@@ -64,4 +89,3 @@ if (searchTrigger) {
     searchInput.focus();
   });
 } 
-

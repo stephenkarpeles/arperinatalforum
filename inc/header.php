@@ -41,7 +41,30 @@
         </div>
         <input class="search__input" type="text" name="search">
         <span class="search__trigger">Search</span>
-      </div>   
+      </div>  
+
+      <div class="mobile-nav">
+        <div class="mobile-nav__trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="mobile-nav__nav">
+          <ul>
+            <li><a href="">Workgroups</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">News &amp; Events</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          
+          <div class="mobile-nav__social">
+            <a href=""><img src="img/icon-facebook-large.svg" alt=""></a>
+            <a href=""><img src="img/icon-twitter-large.svg" alt=""></a>
+          </div>
+        </div>        
+      </div> 
 
     </header>
 
