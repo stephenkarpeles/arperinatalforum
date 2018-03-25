@@ -56,9 +56,7 @@
 
       <?php include('inc/select-block.php') ?>
     </div>
-
     
-
   </div>
 </section>
 

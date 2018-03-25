@@ -3,7 +3,7 @@
 <section class="hero" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 </section>
 
-<section class="search-results-block">
+<section class="quarter-col-block">
 	<div class="container">
 		<div class="context-heading context-heading--b">
 			Search Results For:
@@ -35,7 +35,7 @@
 	</div>
 </section>
 
-<section class="no-padding-top search-results-block">
+<section class="no-padding-top quarter-col-block">
 	<div class="container">
 		<h2>News</h2>
 
@@ -55,7 +55,7 @@
 </section>
 
 
-<section class="no-padding-top search-results-block">
+<section class="no-padding-top quarter-col-block">
 	<div class="container">
 		<h2>Events</h2>
 
@@ -68,7 +68,7 @@
 	</div>
 </section>
 
-<section class="no-padding-top search-results-block">
+<section class="no-padding-top quarter-col-block">
 	<div class="container">
 		<h2>Resources</h2>
 

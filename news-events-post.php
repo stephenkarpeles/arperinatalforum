@@ -21,7 +21,6 @@
 				</div>
 			</div>
 
-
 			<?php include('inc/event-listing.php') ?>			
 		</aside>
 

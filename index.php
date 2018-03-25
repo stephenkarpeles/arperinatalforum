@@ -31,6 +31,9 @@
         <div><a href="resources.php">Resources</a></div>
         <div><a href="contact.php">Contact</a></div>
         <div><a href="news-events.php">News &amp; Events</a></div>
+        <div><a href="news-events-post.php">News &amp; Events Post</a></div>
+        <div><a href="news-events-post-no-photo.php">News &amp; Events Post (No Photo)</a></div>
+        <div><a href="event-post.php">Event Post</a></div>
 
 	</div>
 	

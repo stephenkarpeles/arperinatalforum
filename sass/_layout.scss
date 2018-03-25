@@ -2,6 +2,7 @@
   width: $container-width;
   max-width: 69.5em;
   margin: 0 auto;
+  position: relative;
 
   &--max {
     width: 100%;
@@ -65,8 +66,20 @@ section {
     padding: 0 1.25em 2.5em;
     flex: 1;
 
-    .search-results-block & {
+    .quarter-col-block & {
       flex: 0 0 25%;
+
+      @include mq(desktop, 'max-width') {
+        flex: 0 0 33.333333333%;
+      }
+
+      @include mq(ipad, 'max-width') {
+        flex: 0 0 50%;
+      }
+
+      @include mq(mobile-landscape, 'max-width') {
+        flex: 0 0 100%;
+      }
     }    
 
     p {

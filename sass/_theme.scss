@@ -364,6 +364,42 @@
   font-family: $alt-font-stack;
 }
 
+.floating-branding {
+  position: absolute;
+  top: -9.5em;
+  left: 0;
+  background: white;
+  width: 6.5em;
+  height: 6.5em;
+  padding: .9em;
+  text-align: center;
+
+  img {
+    display: inline-block;
+  }
+}
+
+.link-styled {
+  position: relative;
+  margin-top: 2.75em;
+  margin-bottom: 2.5em;
+
+  a {
+    font-size: 1.125em;
+    font-family: $alt-font-stack;
+    color: $alt-text-color;
+  }
+
+  &:before {
+    content: '';
+    width: 3.125em;
+    height: .25em;
+    background: $alt-text-color;
+    position: absolute;
+    top: -1.1em;
+  }
+}
+
 .resource-group {
   margin-bottom: 4em;
 }
@@ -388,12 +424,52 @@
       width: 6.25em;
       height: 6.25em;
       background: $primary-color;
+      color: white;
+      text-align: center;
+      padding-top: 1.75em;
+      font-family: $alt-font-stack;
+
+      span {
+        display: block;
+
+        &:nth-child(1) {
+          text-transform: uppercase;
+          font-size: 1em;
+          line-height: 1;
+        }
+
+        &:nth-child(2) {
+          font-size: 1.875em;
+          line-height: 1.15;
+        }
+      }
     }
   }
 
   &__meta {
     background: $default-background-color;
     padding: 1.25em;
+
+    table {
+      tr td {
+        padding: .25em 0;
+        vertical-align: top;
+
+        &:nth-child(1) {
+          text-transform: uppercase;
+          font-size: .75em;
+          font-weight: 700;
+          padding-top: .5em;
+        }
+
+        &:nth-child(2) {
+          padding-left: 1em;
+          font-family: $alt-font-stack;
+          font-weight: 700;
+          font-size: .9em;
+        }
+      }
+    }
 
     span {
       &:nth-child(1) {
@@ -412,6 +488,4 @@
       }
     }
   }
-
-
 }

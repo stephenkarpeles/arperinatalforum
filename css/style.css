@@ -283,7 +283,8 @@ blockquote {
 .container {
   width: 90%;
   max-width: 69.5em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .container--max {
     width: 100%;
     max-width: 87.5em;
@@ -321,8 +322,17 @@ section {
   .grid__col {
     padding: 0 1.25em 2.5em;
     flex: 1; }
-    .search-results-block .grid__col {
+    .quarter-col-block .grid__col {
       flex: 0 0 25%; }
+      @media screen and (max-width: 1023px) {
+        .quarter-col-block .grid__col {
+          flex: 0 0 33.333333333%; } }
+      @media screen and (max-width: 767px) {
+        .quarter-col-block .grid__col {
+          flex: 0 0 50%; } }
+      @media screen and (max-width: 479px) {
+        .quarter-col-block .grid__col {
+          flex: 0 0 100%; } }
     .content .grid__col p {
       padding-left: 0; }
     .grid__col p:last-of-type {
@@ -909,6 +919,34 @@ section {
   text-align: center;
   font-family: "Miriam Libre", Georgia, sans-serif; }
 
+.floating-branding {
+  position: absolute;
+  top: -9.5em;
+  left: 0;
+  background: white;
+  width: 6.5em;
+  height: 6.5em;
+  padding: .9em;
+  text-align: center; }
+  .floating-branding img {
+    display: inline-block; }
+
+.link-styled {
+  position: relative;
+  margin-top: 2.75em;
+  margin-bottom: 2.5em; }
+  .link-styled a {
+    font-size: 1.125em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    color: #a9a9a9; }
+  .link-styled:before {
+    content: '';
+    width: 3.125em;
+    height: .25em;
+    background: #a9a9a9;
+    position: absolute;
+    top: -1.1em; }
+
 .resource-group {
   margin-bottom: 4em; }
 
@@ -925,10 +963,36 @@ section {
   .post-info__img--no-image {
     width: 6.25em;
     height: 6.25em;
-    background: #fd3d3d; }
+    background: #fd3d3d;
+    color: white;
+    text-align: center;
+    padding-top: 1.75em;
+    font-family: "Miriam Libre", Georgia, sans-serif; }
+    .post-info__img--no-image span {
+      display: block; }
+      .post-info__img--no-image span:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1; }
+      .post-info__img--no-image span:nth-child(2) {
+        font-size: 1.875em;
+        line-height: 1.15; }
   .post-info__meta {
     background: #efefef;
     padding: 1.25em; }
+    .post-info__meta table tr td {
+      padding: .25em 0;
+      vertical-align: top; }
+      .post-info__meta table tr td:nth-child(1) {
+        text-transform: uppercase;
+        font-size: .75em;
+        font-weight: 700;
+        padding-top: .5em; }
+      .post-info__meta table tr td:nth-child(2) {
+        padding-left: 1em;
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-weight: 700;
+        font-size: .9em; }
     .post-info__meta span:nth-child(1) {
       text-transform: uppercase;
       font-weight: 700;
@@ -1358,7 +1422,8 @@ section {
 
 .table-of-contents {
   text-align: center;
-  padding-top: 5em; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
   .table-of-contents div {
     margin-bottom: 1em; }
   .table-of-contents a {
