@@ -1,3 +1,10 @@
+.ankle {
+  @include mq(ipad, 'max-width') {
+    background: $default-text-color;
+  }
+}
+
+
 .footer {
   position: relative;
   background: $default-text-color;
@@ -107,7 +114,7 @@
 
   &__update-block {
     margin: 7em 0 7em;
-    padding: .5em 0 .5em 3.5%;
+    padding: .5em 2em .5em 3.5%;
     border-left: 4px solid $alt-border-color;
 
     .col {      
@@ -158,6 +165,80 @@
           }
         }
       }
+    }
+  }
+
+  @include mq(desktop-old-school, 'max-width') {
+    &__clock {
+      right: 5em;
+    }
+  }
+
+  @include mq(desktop, 'max-width') {
+    &__menu {
+      display: none;
+    }
+
+    &__clock {
+      right: 4em;
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    .container--max {
+      display: block;
+    }
+
+    .feat-post {
+      display: none;
+    }
+
+    &__title-block {
+      width: 100%;
+      padding: 2em 15% 2em;
+      margin: 0;
+      border-bottom: 1px solid $alt-border-color;   
+
+      span {
+        &:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $alt-text-color;
+        line-height: 1.8;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: .35em;
+            left: -2em;
+            height: 4.5em;
+            width: .3333em;
+            background: $primary-color;
+            transition: ease all .2s;
+          }
+        }   
+      }
+    }
+
+    &__update-block {
+      margin: 0;
+      padding: 2em 15% 4em;
+      border-left: none;
+      width: 100%;
+    }
+
+    &__clock {
+      display: none;
+    }
+
+    &__copyright {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      bottom: auto;
+      right: auto;
+      padding-bottom: 2em;
     }
   }
 }
