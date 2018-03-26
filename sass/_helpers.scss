@@ -1,5 +1,9 @@
 .padded-left {
   padding-left: 3.125em;
+
+  @include mq(ipad, 'max-width') {
+  	padding-left: 0;
+  }
 }
 
 .no-padding {
@@ -8,4 +12,12 @@
 
 .text-center {
 	text-align: center;
+}
+
+.is-hidden-desktop-old-school {
+	display: none;
+
+	@include mq(desktop-old-school, 'max-width') {
+    display: block;
+	}
 }

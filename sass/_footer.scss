@@ -4,7 +4,6 @@
   }
 }
 
-
 .footer {
   position: relative;
   background: $default-text-color;
@@ -51,8 +50,12 @@
 
   &__copyright {
     position: absolute;
+    text-align: center;
+    padding-left: 25em;
+    left: 0;
+    right: 0;
+    width: 100%;
     bottom: 1.25em;
-    right: 18.75em;
     font-size: .75em;
     color: $alt-text-color;
     line-height: 1;
@@ -182,6 +185,14 @@
     &__clock {
       right: 4em;
     }
+
+    &__title-block {
+      padding: 9em 10% 4.5em 10%;
+    }
+
+    &__update-block {
+      margin: 5em 0;
+    }
   }
 
   @include mq(ipad, 'max-width') {
@@ -239,6 +250,7 @@
       bottom: auto;
       right: auto;
       padding-bottom: 2em;
+      padding-left: 0;
     }
   }
 }

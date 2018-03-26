@@ -3,9 +3,11 @@
     <img src="img/logo.png" alt="Arkansas Perinatal Forum">
   </a>
   <div class="site__branding--name">
-    Arkansas<br>
-    Perinatal<br>
-    Forum
+    <a href="">
+      Arkansas<br>
+      Perinatal<br>
+      Forum
+    </a>
   </div>
   <div class="site__branding--social">
     <a href="">

@@ -5,8 +5,16 @@
   &__img {    
     margin-right: 2.5em;
 
+    @include mq(ipad, 'max-width') {
+      margin-right: 1.5em;
+    }
+
     &--small {
       max-width: 6.25em;  
+
+      @include mq(ipad, 'max-width') {
+        max-width: 4em;
+      }
     }
   }
 

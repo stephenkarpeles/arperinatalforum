@@ -6,4 +6,10 @@
 			font-family: $alt-font-stack;
 		}
 	}
+
+	@include mq(ipad, 'max-width') {
+		&--home {
+			display: none;
+		}
+	}
 }

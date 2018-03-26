@@ -1,6 +1,7 @@
 <?php include('inc/header.php') ?>
 
 <section class="hero hero--interior" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+  <div class="hero__overlay"></div>
 
 	 <div class="hero__foreground">
     <div class="hero__subtext">

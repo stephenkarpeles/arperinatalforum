@@ -4,6 +4,14 @@
   margin: 0 auto;
   position: relative;
 
+  @include mq(desktop, 'max-width') {
+    width: 94%;
+  }
+
+  @include mq(ipad, 'max-width') {
+    width: $container-width;
+  }
+
   &--max {
     width: 100%;
     max-width: 87.5em;
@@ -13,11 +21,19 @@
   &--flex {
     display: flex;
     justify-content: space-between;
+
+    @include mq(ipad, 'max-width') {
+      display: block;
+    }
   }
 
   &--flex-start {
     display: flex;
     justify-content: flex-start;
+
+    @include mq(ipad, 'max-width') {
+      display: block;
+    }
   }
 }
 
@@ -47,6 +63,10 @@ section {
   &.extra-padding-bottom {
     padding: $section-padding 0 ($section-padding * 1.5);
   }
+
+  &.huge-padding-top {
+    padding: ($section-padding * 2) 0 $section-padding;
+  }
 }
 
 .grid {
@@ -60,6 +80,10 @@ section {
 
   &--padding-left {
     padding-left: 3.75em;
+
+    @include mq(ipad, 'max-width') {
+      padding-left: 0;
+    }
   }
 
   &__col {
@@ -82,6 +106,44 @@ section {
       }
     }    
 
+    .third-col-block & {
+      flex: 0 0 33.3333333%;
+
+      @include mq(desktop, 'max-width') {
+        flex: 0 0 33.333333333%;
+      }
+
+      @include mq(ipad, 'max-width') {
+        flex: 0 0 50%;
+      }
+
+      @include mq(mobile-landscape, 'max-width') {
+        flex: 0 0 100%;
+      }
+    }
+
+    .half-col-block & {
+      flex: 1 1 50%;
+
+      @include mq(desktop, 'max-width') {
+        flex: 1 1 50%;
+      }
+
+      @include mq(ipad, 'max-width') {
+        flex: 1 1 50%;
+      }
+
+      @include mq(mobile-landscape, 'max-width') {
+        flex: 1 1 100%;
+      }
+    }  
+
+    .col-desktop-switch & {
+      @include mq(desktop, 'max-width') {
+        flex: 0 0 100%;
+      }
+    }
+
     p {
       .content & {
         padding-left: 0;
@@ -93,15 +155,15 @@ section {
     }
 
     @include mq(desktop, 'max-width') {
-      flex: 0 0 33.333333333%;
+      flex: 1 1 33.333333333%;
     }
 
     @include mq(ipad, 'max-width') {
-      flex: 0 0 50%;
+      flex: 1 1 50%;
     }
 
     @include mq(mobile-landscape, 'max-width') {
-      flex: 0 0 100%;
+      flex: 1 1 100%;
     }
   }
 }
@@ -110,6 +172,10 @@ section {
   overflow: hidden;
   width: 54.5%;
   max-width: 37.5em;
+
+  @include mq(desktop, 'max-width') {
+    width: 60%;
+  }
 
   @include mq(ipad, 'max-width') {
     width: 100%;
@@ -130,6 +196,10 @@ section {
   max-width: 20em;
   position: relative;
   z-index: 100;
+
+  @include mq(ipad, 'max-width') {
+    display: none;
+  }
 
   &--pulled-up {
     margin-top: -16.375em;

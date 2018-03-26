@@ -3,6 +3,15 @@
   padding: 11em 0 9.5em;
   margin-top: -5em; // Height of header
 
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(59, 59, 59, 0.8);
+  }
+
   &--interior {
     padding: 10.5em 0 7em;
   }
@@ -15,6 +24,8 @@
     max-width: $container-width;
     width: 62em;
     margin: 0 auto;
+    position: relative;
+    z-index: 1000;
   }
 
   &__subtext {
@@ -167,6 +178,7 @@
         font-family: $alt-font-stack;
 
         a {
+          font-size: .875em;
           color: white;
           text-decoration: none;
         }
@@ -203,4 +215,66 @@
     height: 100%;
     width: 30vw;
   }
+
+  @include mq(desktop-old-school, 'max-width') {
+    .feat-post {
+      right: 0;
+    }
+
+    &__style-block {
+      display: none;
+    }
+
+    &__update-block .col:nth-child(1) {
+      padding-left: 5%;
+    }
+  }
+
+  @include mq(desktop, 'max-width') {
+    &__title-block,
+    &__clock {
+      display: none;
+    }
+
+    .feat-post {
+      width: 17em;
+
+      &__content {
+        padding: 2.5em;
+      }
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    height: auto;
+    background: white;
+
+    .container--max {
+      display: block;
+      max-width: 90%;
+      width: 62em;
+    }
+
+    .feat-post {
+      position: relative;
+      top: -5em;
+      margin: 0 0 -4em;
+      max-width: 100%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 10%;
+      }
+
+      &__content {
+        padding: 2.813em 3.125em;
+      }
+    }
+
+    &__update-block {
+      display: none;
+    }   
+  }  
 }

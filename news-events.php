@@ -1,6 +1,7 @@
 <?php include('inc/header.php') ?>
 
 <section class="hero hero--interior hero--news-events" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+  <div class="hero__overlay"></div>
 </section>
 
 <section class="no-padding">
@@ -20,6 +21,9 @@
           </div>
           <div class="feat-news-block__title">
             Brain Imaging Protocol Identifies Delays in Premature Infants
+          </div>
+          <div class="feat-news-block__link is-hidden-desktop-old-school">
+            <a href="">Read More</a>
           </div>
         </div> 
         <div class="feat-news-block__content">
