@@ -104,7 +104,8 @@ section {
       @include mq(mobile-landscape, 'max-width') {
         flex: 0 0 100%;
       }
-    }    
+    }
+
 
     .third-col-block & {
       flex: 0 0 33.3333333%;
@@ -119,6 +120,22 @@ section {
 
       @include mq(mobile-landscape, 'max-width') {
         flex: 0 0 100%;
+      }
+
+      .resource-grid & {
+        @include mq(ipad, 'max-width') {
+          flex: 0 0 33.3333333% !important;
+          padding: 0 .625em 2.5em !important;
+        }
+
+        @include mq(tablet, 'max-width') {
+          flex: 0 0 50% !important;
+          padding: 0 1.25em 2.5em !important;
+        }
+
+        @include mq(mobile-landscape, 'max-width') {
+        flex: 0 0 100% !important;
+      }
       }
     }
 
@@ -136,7 +153,7 @@ section {
       @include mq(mobile-landscape, 'max-width') {
         flex: 1 1 100%;
       }
-    }  
+    } 
 
     .col-desktop-switch & {
       @include mq(desktop, 'max-width') {
@@ -164,6 +181,30 @@ section {
 
     @include mq(mobile-landscape, 'max-width') {
       flex: 1 1 100%;
+    }
+  }
+}
+
+.resource-grid {
+  display: flex;
+  margin: 0 -1.25em;
+  flex-wrap: wrap;
+  justify-conent: flex-start;
+
+  &__col-one-quarter {
+    width: 25%;
+    padding: 0 1.25em;
+  }
+
+  &__col-three-quarters {
+    width: 75%;
+    padding: 0 1.25em;
+  }
+
+  @include mq(ipad, 'max-width') {
+    &__col-one-quarter,
+    &__col-three-quarters {
+      width: 100%;
     }
   }
 }
