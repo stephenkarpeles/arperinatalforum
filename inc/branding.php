@@ -9,6 +9,7 @@
       Forum
     </a>
   </div>
+  <!-- Uncomment this section to show social media block
   <div class="site__branding--social">
     <a href="">
       <img src="img/icon-facebook.svg" alt="Like Us On Faceboo">
@@ -17,4 +18,5 @@
       <img src="img/icon-twitter.svg" alt="Follow Us On Twitter">
     </a>
   </div>
+  -->
 </div>

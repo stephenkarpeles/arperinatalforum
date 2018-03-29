@@ -1,10 +1,20 @@
 .hero {
   position: relative;
-  padding: 11em 0 9.5em;
+  padding: 20vh 0 0;
   margin-top: -5em; // Height of header
+  height: 69vh;
 
   @include mq(ipad, 'max-width') {
-    padding: 7em 0 6em;
+    padding: 9em 0 8.5em;
+    height: auto;
+  }
+
+  &__home-wrap {
+    height: 100vh;
+
+     @include mq(ipad, 'max-width') {
+      height: auto;
+    }
   }
 
   &__overlay {
@@ -90,7 +100,7 @@
 .hero-base {
   position: relative;
   background: $default-text-color;
-  height: 15.625em;
+  height: 31vh;
 
   .container--max {
     height: 100%;

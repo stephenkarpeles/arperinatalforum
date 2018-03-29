@@ -1,66 +1,68 @@
 <?php include('inc/header.php') ?>
 
-<section class="hero hero--homepage" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+<div class="hero__home-wrap">
+  <section class="hero hero--homepage" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 
-  <div class="hero__foreground">
-    <div class="hero__subtext">
-      Get Connected Arkansas
-    </div>
-    <div class="hero__title">
-      <h1>A network committed to improving perinatal outcomes for women and infants in Arkansas.</h1>
-    </div>
-    <div class="hero__link">
-      <a href="">Get Connected</a>
-    </div>
-  </div>
-</section>
-
-<section class="hero-base no-padding">
-  <div class="container--max">
-    <div class="hero-base__clock">
-      <img src="img/icon-clock.svg" alt="">
-    </div>
-
-    <div class="hero-base__title-block">
-      <span>Latest</span>
-      <span>Workgroup<br>Updates</span>
-    </div>
-
-    <div class="hero-base__update-block">
-      <div class="col">
-        <div class="date">March 16, 2018</div>
-        <div class="title"><a href="">Arkansas Newborn Screening Group</a></div>
+    <div class="hero__foreground">
+      <div class="hero__subtext">
+        Get Connected Arkansas
       </div>
-      <div class="col">
-        <div class="category context-heading context-heading--c">News</div>
-        <div class="excerpt"><a href="">New screening methods go into effect on May 1, 2018</a></div>
+      <div class="hero__title">
+        <h1>A network committed to improving perinatal outcomes for women and infants in Arkansas.</h1>
+      </div>
+      <div class="hero__link">
+        <a href="">Get Connected</a>
       </div>
     </div>
+  </section>
 
-    <div class="feat-post hero-base__feat-post">
-      <img src="img/family_baby.jpg" alt="">
-      <div class="feat-post__content">
-        <div class="feat-post__date">
-          March 16, 2018
+  <section class="hero-base no-padding">
+    <div class="container--max">
+      <div class="hero-base__clock">
+        <img src="img/icon-clock.svg" alt="">
+      </div>
+
+      <div class="hero-base__title-block">
+        <span>Latest</span>
+        <span>Workgroup<br>Updates</span>
+      </div>
+
+      <div class="hero-base__update-block">
+        <div class="col">
+          <div class="date">March 16, 2018</div>
+          <div class="title"><a href="">Arkansas Newborn Screening Group</a></div>
         </div>
-        <div class="feat-post__excerpt">
-          This is a news post title that cuts off after something like 75 characters or so…
-        </div> 
-        <div class="feat-post__cta">
-          <a href="">Read more</a>
-        </div> 
-        <div class="feat-post__date feat-post__date--secondary">
-          March 16, 2018
+        <div class="col">
+          <div class="category context-heading context-heading--c">News</div>
+          <div class="excerpt"><a href="">New screening methods go into effect on May 1, 2018</a></div>
         </div>
-        <div class="feat-post__excerpt feat-post__excerpt--secondary"> 
-          <a href="">This news post title cuts off after 50ish characters…</a>
+      </div>
+
+      <div class="feat-post hero-base__feat-post">
+        <img src="img/family_baby.jpg" alt="">
+        <div class="feat-post__content">
+          <div class="feat-post__date">
+            March 16, 2018
+          </div>
+          <div class="feat-post__excerpt">
+            This is a news post title that cuts off after something like 75 characters or so…
+          </div> 
+          <div class="feat-post__cta">
+            <a href="">Read more</a>
+          </div> 
+          <div class="feat-post__date feat-post__date--secondary">
+            March 16, 2018
+          </div>
+          <div class="feat-post__excerpt feat-post__excerpt--secondary"> 
+            <a href="">This news post title cuts off after 50ish characters…</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="hero-base__style-block">
-  </div>
-</section>
+    <div class="hero-base__style-block">
+    </div>
+  </section>
+</div>
 
 <section class="huge-padding-top">
   <div class="container container--flex">

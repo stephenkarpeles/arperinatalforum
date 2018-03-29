@@ -485,7 +485,8 @@ section {
 
 .site__branding {
   background: #efefef;
-  width: 20em;
+  width: 13.75em;
+  /* Set this to 20em if social block is showing */
   height: 5em;
   display: flex;
   justify-content: space-between; }
@@ -511,7 +512,7 @@ section {
       text-decoration: none;
       color: #3b3b3b; }
   .site__branding--social {
-    width: 6.250em;
+    width: 6.25em;
     background: #cceaf4;
     text-align: center;
     padding-top: 1.75em; }
@@ -644,6 +645,9 @@ section {
         display: inline-block;
         margin-right: 1em; }
   @media screen and (max-width: 1279px) {
+    .header li {
+      margin: 2em .75em 0; } }
+  @media screen and (max-width: 959px) {
     .header__nav, .header__search {
       display: none; }
     .header .mobile-nav {
@@ -1350,11 +1354,18 @@ section {
 
 .hero {
   position: relative;
-  padding: 11em 0 9.5em;
-  margin-top: -5em; }
+  padding: 20vh 0 0;
+  margin-top: -5em;
+  height: 69vh; }
   @media screen and (max-width: 767px) {
     .hero {
-      padding: 7em 0 6em; } }
+      padding: 9em 0 8.5em;
+      height: auto; } }
+  .hero__home-wrap {
+    height: 100vh; }
+    @media screen and (max-width: 767px) {
+      .hero__home-wrap {
+        height: auto; } }
   .hero__overlay {
     position: absolute;
     top: 0;
@@ -1413,7 +1424,7 @@ section {
 .hero-base {
   position: relative;
   background: #3b3b3b;
-  height: 15.625em; }
+  height: 31vh; }
   .hero-base .container--max {
     height: 100%;
     position: relative;

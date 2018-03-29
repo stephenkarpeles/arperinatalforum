@@ -175,6 +175,12 @@
   }
 
   @include mq(desktop-old-school, 'max-width') {
+    li {
+      margin: 2em .75em 0;
+    }
+  }  
+
+  @include mq(desktop-small, 'max-width') {
     &__nav,
     &__search {
       display: none;
