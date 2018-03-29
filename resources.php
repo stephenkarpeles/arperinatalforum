@@ -130,9 +130,9 @@
 
     </div>
 
-     
-
   </div>
 </section>
+
+<?php include('inc/return-to-top.php') ?>
 
 <?php include('inc/footer.php') ?>

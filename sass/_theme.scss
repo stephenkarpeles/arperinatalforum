@@ -413,6 +413,35 @@
 }
 
 // Miscellaneous
+#backToTop {
+  text-decoration: none;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  right: 2em;
+  bottom: 10vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: solid 1px #efefef;
+  padding: 1.5em 2em;
+  color: $default-text-color;
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include mq(ipad, 'max-width') {
+    width: 150px;
+    text-align: center;
+    bottom: 1.5em;
+    right: calc(50% - 75px);
+  }
+
+  img {
+    display: inline-block;
+    margin-left: .5em;
+  }
+}
+
 .view-all-block {
   padding: .5em 0 3em;
   text-align: center;
