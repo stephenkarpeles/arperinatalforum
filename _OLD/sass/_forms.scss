@@ -1,0 +1,131 @@
+.form {
+	margin-top: .5em;
+	margin-bottom: 2em;
+
+	.btn--submit {
+		margin-top: 1em;
+		display: block;
+		font-family: $alt-font-stack;
+		font-size: 1.125em;
+	}
+
+	&__field-wrap {
+		border: 1px solid $default-background-color;
+		padding: 1.25em 1.875em;
+		margin-bottom: 1.25em;
+
+		label {
+			font-size: 1.125rem;
+			color: $alt-text-color;
+		}
+
+		input,
+		textarea {
+			width: 100%;
+			padding: .5em 0 0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			border: none;
+			font-size: 1.25rem;
+			font-family: $alt-font-stack;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $default-text-color;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+		  color: $default-text-color;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+		  color: $default-text-color;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		  color: $default-text-color;
+		}
+	}
+}
+
+.select-block {
+	height: 6.25em;
+	position: relative;
+
+	&__wrap {
+		display: inline-block;
+		border: 1px solid $default-background-color;
+		padding: 1.25em 1.875em;
+		height: 100%;
+	}
+
+	&__label {
+		font-size: 1.125em;
+		line-height: 1.44;
+		color: $alt-text-color;
+	}
+
+	&__cta {
+		font-size: 1.5em;
+		font-family: $alt-font-stack;
+		line-height: 1.33;
+
+		&:after {
+      content: url(../img/icon-arrow-gray.svg);
+      margin-left: .25em;
+    }
+	}
+
+	&__btn {
+		cursor: pointer;
+		text-transform: uppercase;
+		margin-left: -4px;
+		height: 6.25em;
+		width: 6.25em;
+		background: $secondary-color;
+		color: white;
+		text-align: center;
+		line-height: 6.25em;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: -6.25em;
+		font-family: $alt-font-stack;
+		transition: opacity .2s ease;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.filter {
+	@include mq(desktop, 'max-width') {
+    display: none;
+	}
+
+	&__title {
+    font-size: 1.5em;
+    font-family: $alt-font-stack;
+    line-height: 1.33;
+    padding-top: .75em;
+    padding-bottom: .5em;
+	}
+
+	&__choice {
+		font-size: 1.125em;
+		display: inline-block;
+		padding-right: 1em;
+
+		input[type="checkbox"] {
+			margin-right: .15em;
+		}
+
+		label {
+			position: relative;
+			top: 2px;
+		}
+	}
+}

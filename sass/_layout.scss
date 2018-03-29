@@ -169,7 +169,6 @@ section {
 }
 
 .content {
-  overflow: hidden;
   width: 54.5%;
   max-width: 37.5em;
 
@@ -188,6 +187,10 @@ section {
 
   .container--flex-start & {
     padding-left: 5%;
+
+    @include mq(ipad, 'max-width') {
+      padding-left: 0;
+    }
   }
 }
 

@@ -126,6 +126,11 @@
     line-height: 1.33;
     padding-top: 1.25rem;
     font-family: $alt-font-stack;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   &__content {
@@ -250,6 +255,7 @@
   @include mq(ipad, 'max-width') {
     position: relative;
     margin-left: -4px;
+    left: -5%;
   }
 
   &--alt {
@@ -278,7 +284,7 @@
     display: inline-block;
     width: 9.375em;
 
-    @include mq(ipad, 'max-width') {
+    @include mq(desktop, 'max-width') {
       display: none;
     }
 
@@ -450,12 +456,13 @@
 }
 
 .resource-group {
-  margin-bottom: 4em;
+  margin-bottom: 6.25em;
 }
 
 .post-info {
   margin-top: -12.5em; // height of '&__img'
   width: 18.75em;
+  max-width: 100%;
 
   &--no-image {
     margin-top: -6.25em; // height of '&__img--no-image'
@@ -477,6 +484,13 @@
       text-align: center;
       padding-top: 1.75em;
       font-family: $alt-font-stack;
+
+      img {
+        padding-top: .5em;
+        width: auto;
+        height: auto;
+        display: inline-block;
+      }
 
       span {
         display: block;

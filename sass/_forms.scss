@@ -54,11 +54,21 @@
 	height: 6.25em;
 	position: relative;
 
+	@include mq(ipad, 'max-width') {
+    margin-top: 2em;
+    left: 5%;
+    font-size: .75em;
+	}
+
 	&__wrap {
 		display: inline-block;
 		border: 1px solid $default-background-color;
-		padding: 1.25em 1.875em;
+		padding: 1em 1.875em;
 		height: 100%;
+
+		@include mq(ipad, 'max-width') {
+			padding: 1.25em 1em;
+		}
 	}
 
 	&__label {
@@ -94,6 +104,11 @@
 		right: -6.25em;
 		font-family: $alt-font-stack;
 		transition: opacity .2s ease;
+
+		@include mq(ipad, 'max-width') {
+	    right: auto;
+	    width: 5em;
+		}
 
 		&:hover {
 			opacity: .8;

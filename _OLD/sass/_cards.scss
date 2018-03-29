@@ -1,0 +1,375 @@
+.card {
+  position: relative;
+  border: 1px solid $default-background-color;
+  transition: all .35s ease;
+
+  &--event,
+  &--resource {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid $default-background-color;
+  }
+
+  &--workgroup {
+    border: none;
+
+    .card__brand {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-family: $alt-font-stack;
+      height: 5em;
+      width: 5em;
+      line-height: 5em;
+      background: $primary-color;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: $default-background-color;
+    height: .625em;
+    width: 4.375em;
+    top: 0;
+    left: 0;
+  }
+
+  &--bio {
+    &:before {
+      background: $primary-color;
+      height: 1.25em;
+      width: 6.25em;
+    }
+  }
+
+  &--page {
+    &:before {
+      background: $primary-color;
+      height: 1.15em;
+      width: 6.25em;
+    }
+  }
+
+  &--post,
+  &--event,
+  &--resource {
+    &:before {
+      height: 0;
+      width: 0;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background: $tertiary-color;
+    height: .313em;
+    width: 4.375em;
+    bottom: 0;
+    left: 0;
+  }
+
+  &--page,
+  &--bio {
+    &:after {
+      width: 6.25em;
+    }
+  }
+
+  &--post,
+  &--event,
+  &--resource {
+    &:after {
+      width: 3.125rem;
+    }
+  }
+
+  &--workgroup {
+    &:after,
+    &:before {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 0 rgba($default-background-color, 1);
+  }
+
+  &--event,
+  &--resource {
+    &:hover {
+      box-shadow: 7px 7px 0 rgba($default-background-color, .3);
+    }
+  }
+
+  &__logo {
+    width: 4.375em;
+    height: 4.375em;
+  }
+
+  &__title {
+    position: relative;
+    line-height: 1.33;
+    padding: 1.875em 3.125em 0.625em;
+    border-bottom: 1px solid $default-background-color;
+
+    h3 {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+  }
+
+  &--bio {
+    .card__title {
+      padding: 2.75em 1.875em 1.25em;
+
+      span {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: .75rem;
+        color: $alt-text-color;
+        line-height: 1.35;
+        display: block;
+        padding-top: 1em;
+      }
+    }
+  }
+
+  &--page{
+    .card__title {
+      border-bottom: none;
+      padding: 3em 1.875em .25em;
+    }
+  }
+
+  &--post {
+    .card__title {
+      border-bottom: none;
+      padding: 1.75em 1.875em .25em;
+    }
+  }
+
+  &--event,
+  &--resource,
+  &--workgroup {
+    .card__title {
+      border-bottom: none;
+      padding: 1.45em 0 .25em;
+    }
+  }
+
+  &__content {
+    padding: .95em 3.125em 3.125em;
+  }
+
+  &--event {
+    .card__content {
+      padding: .95em 0 1.5em;
+    }
+  }
+
+  &--resource,
+  &--workgroup {
+    .card__content {
+      padding: .5em 0 2.5em;
+    }
+  }
+
+  &--bio,
+  &--page,
+  &--post {
+    .card__content {
+      padding: .95em 1.875em 2.5em;
+    }
+  }
+
+  &--post {
+    .card__date {
+      border-bottom: 1px solid $default-background-color;
+      border-left: 3.125rem solid $primary-color;
+      height: 3.125rem;
+      padding: 1.5em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: .75rem;
+    }
+  }
+
+  &--event {
+    .card__date {
+      border-bottom: 1px solid $default-background-color;
+      border-left: 3.125rem solid $tertiary-color;
+      height: 1.875rem;
+      padding-left: 1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: .75rem;
+
+      span {
+        display: inline-block;
+        margin-top: .7em;
+      }
+    }
+  }
+
+  &--resource {
+    .card__resource-type {
+      border-bottom: 1px solid $default-background-color;
+      height: 1.875rem;
+      padding-left: 1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: .75rem;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 3.125rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+        display: inline-block;
+        background: $tertiary-color;
+      }
+    }
+  }
+
+  &__contact {
+    font-size: 0.750em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1.250em;
+
+    a {
+      color: $default-text-color;
+    }
+
+    a[href^="tel:"] {
+      text-decoration: none;
+    }
+  }
+
+  &--bio {
+    .card__contact {
+      a {
+        &:nth-child(1) {
+          padding-right: 1.5em;
+        }
+      }
+    }
+  }
+
+  &__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 2.3em;
+  }
+
+  &--bio {
+    .card__description {
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 1.25em;
+    }
+  }
+
+  &--page {
+    .card__description {
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 3.25em;
+    }
+  }
+
+  &--post {
+    .card__description {
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 2.5em;
+    }
+  }
+
+  &--resource {
+    .card__description {
+      color: $alt-text-color;
+      font-size: 1.125em;
+      line-height: 1.22;
+      padding-bottom: 3.25em;
+    }
+  }
+
+  &--event {
+    .card__time,
+    .card__location {
+      text-transform: uppercase;
+      font-size: .75rem;
+      color: $alt-text-color;
+      line-height: 1.2;
+      font-weight: 700;
+      display: block;
+    }
+  }
+
+  &--event {
+    .card__time {
+      padding-bottom: 1em;
+    }
+  }
+
+  &--event {
+    .card__location {
+      padding-bottom: 4em;
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    a {
+      font-size: 1.125em;
+      font-family: $alt-font-stack;
+    }
+
+    &:before {
+      content: '';
+      width: 3.125em;
+      height: .25em;
+      background: $alt-text-color;
+      position: absolute;
+      top: -1.1em;
+    }
+  }
+
+  &--workgroup {
+    .card__link {
+      margin-top: 2em;
+
+      a {
+        color: $alt-text-color;
+      }
+    }
+  }
+}
+
+@include mq(desktop, 'max-width') {
+  .cards {
+    .grid .grid__col {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+@include mq(tablet, 'max-width') {
+  .cards {
+    .grid .grid__col {
+      flex: 0 0 100%;
+    }
+  }
+}

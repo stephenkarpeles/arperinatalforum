@@ -1,9 +1,9 @@
 <div class="site__branding">
-  <a href="" class="site__branding--logo">
+  <a href="index.php" class="site__branding--logo">
     <img src="img/logo.png" alt="Arkansas Perinatal Forum">
   </a>
   <div class="site__branding--name">
-    <a href="">
+    <a href="index.php">
       Arkansas<br>
       Perinatal<br>
       Forum

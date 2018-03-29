@@ -1,0 +1,15 @@
+.aside {
+	&__link-block {
+		a {
+			display: block;
+			margin-bottom: 1.25em;
+			font-family: $alt-font-stack;
+		}
+	}
+
+	@include mq(ipad, 'max-width') {
+		&--home {
+			display: none;
+		}
+	}
+}

@@ -5,6 +5,12 @@
 	<div class="hero__link--offset">
 		<a href="">Find more workgroups</a>
 	</div>
+
+	<div class="info-block info-block--slim info-block--tablet">
+		<div class="info-block__title">
+			<img src="img/logo-uams@2x.png" alt="">
+		</div>
+	</div>
 </section>
 
 <section>

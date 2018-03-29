@@ -13,7 +13,7 @@
   </div>
 </section>
 
-<section>
+<section class="huge-padding-top">
 	<div class="container container--flex">
 		<div class="content">
 
@@ -125,7 +125,7 @@
 			  </div>
 			</div>
 
-			<div class="grid">
+			<div class="grid col-desktop-switch">
 				<div class="grid__col">
 			    <?php include('inc/card-bio.php') ?>
 			  </div>

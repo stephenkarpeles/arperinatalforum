@@ -1,0 +1,1724 @@
+.padded-left {
+  padding-left: 3.125em; }
+  @media screen and (max-width: 767px) {
+    .padded-left {
+      padding-left: 0; } }
+
+.no-padding {
+  padding: 0; }
+
+.text-center {
+  text-align: center; }
+
+.is-hidden-desktop-old-school {
+  display: none; }
+  @media screen and (max-width: 1279px) {
+    .is-hidden-desktop-old-school {
+      display: block; } }
+
+.media {
+  display: flex;
+  align-items: flex-start; }
+  .media__img {
+    margin-right: 2.5em; }
+    @media screen and (max-width: 767px) {
+      .media__img {
+        margin-right: 1.5em; } }
+    .media__img--small {
+      max-width: 6.25em; }
+      @media screen and (max-width: 767px) {
+        .media__img--small {
+          max-width: 4em; } }
+  .content .media__body {
+    padding-left: 0; }
+  .media__content {
+    flex: 1; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.44;
+  color: #3b3b3b; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a,
+a:active,
+a:visited {
+  color: #fd3d3d;
+  outline: none;
+  transition: all .2s ease; }
+  a:hover,
+  a:active:hover,
+  a:visited:hover {
+    opacity: .7; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  font-weight: 700; }
+  h1.padding-top,
+  h2.padding-top,
+  h3.padding-top,
+  h4.padding-top {
+    padding-top: 1rem; }
+
+h1 {
+  font-size: 3.125em;
+  line-height: 1.08;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  font-weight: 400; }
+
+h2 {
+  overflow: hidden;
+  position: relative;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: .75em;
+  line-height: 1;
+  padding-bottom: 2em; }
+  h2:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    margin-left: 10px;
+    height: 4px;
+    background: #fd3d3d;
+    width: 100%; }
+
+h3 {
+  font-size: 1.125em;
+  line-height: 1.22;
+  font-family: "Miriam Libre", Georgia, sans-serif; }
+  .content h3 {
+    padding-left: 3.5rem; }
+    @media screen and (max-width: 767px) {
+      .content h3 {
+        padding-left: 0; } }
+
+h4 {
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.29;
+  font-size: .875em; }
+  .content h4 {
+    padding-left: 3.5rem; }
+    @media screen and (max-width: 767px) {
+      .content h4 {
+        padding-left: 0; } }
+
+p {
+  font-size: 1.125em;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 0 1.25em;
+  margin: 0; }
+  p + h2 {
+    margin-top: 1.125em; }
+  .content p {
+    padding-left: 3.125em; }
+    @media screen and (max-width: 767px) {
+      .content p {
+        padding-left: 0; } }
+
+ul {
+  font-size: 1.125rem;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 0 1.25em;
+  margin: 0; }
+  ul + h2 {
+    margin-top: 1.125em; }
+  .content ul {
+    padding-left: 4em; }
+    @media screen and (max-width: 767px) {
+      .content ul {
+        padding-left: 1.25em; } }
+    .content ul ul {
+      padding-left: 3em; }
+      @media screen and (max-width: 767px) {
+        .content ul ul {
+          padding-left: 1.5em; } }
+
+.intro {
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  padding-bottom: 1.25em; }
+  .content .intro {
+    padding-left: 0; }
+
+blockquote {
+  margin: 1.25em 0 0 0;
+  padding: 0 0 2.5em 1.25em;
+  position: relative;
+  font-size: 1.25em;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  color: #556367;
+  line-height: 1.4; }
+  blockquote:before {
+    content: '';
+    position: absolute;
+    top: .125em;
+    left: 0;
+    background: #fd3d3d;
+    height: 2.125em;
+    width: .25em; }
+
+.context-heading,
+.category-label {
+  display: inline-block;
+  padding-right: 1.5em;
+  font-weight: 700;
+  font-size: .75em;
+  text-transform: uppercase; }
+  .context-heading--a,
+  .category-label--a {
+    color: #efefef; }
+  .context-heading--b,
+  .category-label--b {
+    color: #a9a9a9; }
+  .context-heading--c,
+  .category-label--c {
+    color: #f7ce40; }
+  .context-heading--d,
+  .category-label--d {
+    color: #cceaf4; }
+  .context-heading + h1,
+  .category-label + h1 {
+    padding-top: 1rem; }
+
+.cta {
+  position: relative;
+  color: #fd3d3d;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  font-size: 1.125em; }
+  .cta--fancy {
+    margin-top: 2.65em; }
+    .cta--fancy:before {
+      content: '';
+      width: 3.125rem;
+      height: .25rem;
+      background: #a9a9a9;
+      position: absolute;
+      top: -1.25em; }
+
+.form {
+  margin-top: .5em;
+  margin-bottom: 2em; }
+  .form .btn--submit {
+    margin-top: 1em;
+    display: block;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    font-size: 1.125em; }
+  .form__field-wrap {
+    border: 1px solid #efefef;
+    padding: 1.25em 1.875em;
+    margin-bottom: 1.25em; }
+    .form__field-wrap label {
+      font-size: 1.125rem;
+      color: #a9a9a9; }
+    .form__field-wrap input,
+    .form__field-wrap textarea {
+      width: 100%;
+      padding: .5em 0 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      font-size: 1.25rem;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+      .form__field-wrap input:focus,
+      .form__field-wrap textarea:focus {
+        outline: none; }
+    .form__field-wrap ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #3b3b3b; }
+    .form__field-wrap ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #3b3b3b; }
+    .form__field-wrap :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #3b3b3b; }
+    .form__field-wrap :-moz-placeholder {
+      /* Firefox 18- */
+      color: #3b3b3b; }
+
+.select-block {
+  height: 6.25em;
+  position: relative; }
+  .select-block__wrap {
+    display: inline-block;
+    border: 1px solid #efefef;
+    padding: 1.25em 1.875em;
+    height: 100%; }
+  .select-block__label {
+    font-size: 1.125em;
+    line-height: 1.44;
+    color: #a9a9a9; }
+  .select-block__cta {
+    font-size: 1.5em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    line-height: 1.33; }
+    .select-block__cta:after {
+      content: url(../img/icon-arrow-gray.svg);
+      margin-left: .25em; }
+  .select-block__btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: -4px;
+    height: 6.25em;
+    width: 6.25em;
+    background: #f7ce40;
+    color: white;
+    text-align: center;
+    line-height: 6.25em;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -6.25em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    transition: opacity .2s ease; }
+    .select-block__btn:hover {
+      opacity: .8; }
+
+@media screen and (max-width: 1023px) {
+  .filter {
+    display: none; } }
+.filter__title {
+  font-size: 1.5em;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  line-height: 1.33;
+  padding-top: .75em;
+  padding-bottom: .5em; }
+.filter__choice {
+  font-size: 1.125em;
+  display: inline-block;
+  padding-right: 1em; }
+  .filter__choice input[type="checkbox"] {
+    margin-right: .15em; }
+  .filter__choice label {
+    position: relative;
+    top: 2px; }
+
+.container {
+  width: 90%;
+  max-width: 69.5em;
+  margin: 0 auto;
+  position: relative; }
+  @media screen and (max-width: 1023px) {
+    .container {
+      width: 94%; } }
+  @media screen and (max-width: 767px) {
+    .container {
+      width: 90%; } }
+  .container--max {
+    width: 100%;
+    max-width: 87.5em;
+    margin: 0 auto; }
+  .container--flex {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .container--flex {
+        display: block; } }
+  .container--flex-start {
+    display: flex;
+    justify-content: flex-start; }
+    @media screen and (max-width: 767px) {
+      .container--flex-start {
+        display: block; } }
+
+section {
+  padding: 3em 0; }
+  section.no-padding {
+    padding: 0; }
+  section.no-padding-top {
+    padding: 0 0 3em; }
+  section.no-padding-bottom {
+    padding: 3em 0 0; }
+  section.extra-padding {
+    padding: 4.5em 0; }
+  section.extra-padding-top {
+    padding: 4.5em 0 3em; }
+  section.extra-padding-bottom {
+    padding: 3em 0 4.5em; }
+
+.grid {
+  display: flex;
+  margin: 0 -1.25em;
+  flex-wrap: wrap; }
+  .grid--flex-end {
+    justify-content: flex-end; }
+  .grid--padding-left {
+    padding-left: 3.75em; }
+    @media screen and (max-width: 767px) {
+      .grid--padding-left {
+        padding-left: 0; } }
+  .grid__col {
+    padding: 0 1.25em 2.5em;
+    flex: 1; }
+    .quarter-col-block .grid__col {
+      flex: 0 0 25%; }
+      @media screen and (max-width: 1023px) {
+        .quarter-col-block .grid__col {
+          flex: 0 0 33.333333333%; } }
+      @media screen and (max-width: 767px) {
+        .quarter-col-block .grid__col {
+          flex: 0 0 50%; } }
+      @media screen and (max-width: 479px) {
+        .quarter-col-block .grid__col {
+          flex: 0 0 100%; } }
+    .third-col-block .grid__col {
+      flex: 0 0 33.3333333%; }
+      @media screen and (max-width: 1023px) {
+        .third-col-block .grid__col {
+          flex: 0 0 33.333333333%; } }
+      @media screen and (max-width: 767px) {
+        .third-col-block .grid__col {
+          flex: 0 0 50%; } }
+      @media screen and (max-width: 479px) {
+        .third-col-block .grid__col {
+          flex: 0 0 100%; } }
+    .half-col-block .grid__col {
+      flex: 1 1 50%; }
+      @media screen and (max-width: 1023px) {
+        .half-col-block .grid__col {
+          flex: 1 1 50%; } }
+      @media screen and (max-width: 767px) {
+        .half-col-block .grid__col {
+          flex: 1 1 50%; } }
+      @media screen and (max-width: 479px) {
+        .half-col-block .grid__col {
+          flex: 1 1 100%; } }
+    .content .grid__col p {
+      padding-left: 0; }
+    .grid__col p:last-of-type {
+      padding-bottom: 0; }
+    @media screen and (max-width: 1023px) {
+      .grid__col {
+        flex: 1 1 33.333333333%; } }
+    @media screen and (max-width: 767px) {
+      .grid__col {
+        flex: 1 1 50%; } }
+    @media screen and (max-width: 479px) {
+      .grid__col {
+        flex: 1 1 100%; } }
+
+.content {
+  overflow: hidden;
+  width: 54.5%;
+  max-width: 37.5em; }
+  @media screen and (max-width: 1023px) {
+    .content {
+      width: 60%; } }
+  @media screen and (max-width: 767px) {
+    .content {
+      width: 100%; } }
+  .content--wide {
+    width: 68.5%;
+    max-width: 46.875em; }
+  .container--flex-start .content {
+    padding-left: 5%; }
+
+.aside {
+  width: 31.5%;
+  max-width: 20em;
+  position: relative;
+  z-index: 100; }
+  @media screen and (max-width: 767px) {
+    .aside {
+      display: none; } }
+  .aside--pulled-up {
+    margin-top: -16.375em; }
+  .aside--pulled-up-default {
+    margin-top: -3em; }
+  .aside--padding-top {
+    padding-top: 8em; }
+
+.site__branding {
+  background: #efefef;
+  width: 20em;
+  height: 5em;
+  display: flex;
+  justify-content: space-between; }
+  .site__branding div {
+    display: inline-block; }
+  .site__branding--logo {
+    width: 5.625em;
+    padding: .95em 1.15em .9em 1.25em;
+    border-right: solid 1px #e0dfdf; }
+    .site__branding--logo img {
+      width: 3.125em; }
+  .site__branding--name {
+    width: 8em;
+    padding: 1em 1.4em;
+    font-size: 1em;
+    line-height: 1.06;
+    font-weight: 700;
+    font-family: "Miriam Libre", Georgia, sans-serif; }
+  .site__branding--social {
+    width: 6.250em;
+    background: #cceaf4;
+    text-align: center;
+    padding-top: 1.75em; }
+    .site__branding--social a {
+      margin: 0 5px;
+      display: inline-block; }
+      .site__branding--social a img {
+        width: 1.125em; }
+      .site__branding--social a:hover {
+        opacity: .7; }
+
+.header {
+  position: relative;
+  z-index: 900;
+  display: flex; }
+  .header__nav {
+    margin-left: 1.25em; }
+    .header__nav ul {
+      margin: 0;
+      padding: 0; }
+    .header__nav li {
+      margin: 2em 1.25em 0;
+      display: inline-block;
+      list-style-type: none; }
+      .header__nav li:first-child a:before {
+        content: '';
+        position: absolute;
+        top: -.625em;
+        width: 1.25em;
+        height: .25em;
+        background: #fd3d3d;
+        opacity: 1;
+        transition: ease all .2s; }
+      .header__nav li:first-child a:after {
+        content: url("../img/triangle.svg");
+        position: absolute;
+        right: -1em;
+        top: .025em; }
+      .header__nav li:first-child a.has-open-nav:after {
+        content: url("../img/triangle.svg");
+        position: absolute;
+        right: -1.25em;
+        top: -.1em;
+        transform: rotate(180deg); }
+      .header__nav li a {
+        position: relative;
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-size: 1.063rem;
+        color: white;
+        text-decoration: none;
+        transition: ease all .2s; }
+        .header__nav li a:hover {
+          transition: ease all .2s;
+          opacity: 1;
+          color: #cccccc; }
+  .header__search {
+    margin-left: auto; }
+  .header .mobile-nav {
+    display: none; }
+    .header .mobile-nav__trigger {
+      cursor: pointer;
+      width: 5em;
+      height: 5em;
+      padding: 29px 25px;
+      background: #efefef;
+      text-align: center;
+      transition: background .2s ease;
+      position: absolute;
+      right: 0; }
+      .header .mobile-nav__trigger:hover {
+        background: #3b3b3b;
+        opacity: .95; }
+        .header .mobile-nav__trigger:hover span {
+          opacity: 1;
+          background: white; }
+      .header .mobile-nav__trigger.has-open-nav {
+        background: #3b3b3b;
+        opacity: .95; }
+        .header .mobile-nav__trigger.has-open-nav span {
+          position: relative;
+          background: white;
+          transition: all .2s ease; }
+          .header .mobile-nav__trigger.has-open-nav span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 10px; }
+          .header .mobile-nav__trigger.has-open-nav span:nth-child(2) {
+            opacity: 0; }
+          .header .mobile-nav__trigger.has-open-nav span:nth-child(3) {
+            transform: rotate(135deg);
+            bottom: 10px; }
+      .header .mobile-nav__trigger span {
+        transition: all .2s ease;
+        position: relative;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 8px;
+        background: #a9a9a9;
+        display: block; }
+    .header .mobile-nav__nav {
+      position: absolute;
+      z-index: 9999;
+      top: 5rem;
+      right: 0;
+      display: none;
+      background: #3b3b3b;
+      opacity: .95;
+      padding: 4.5em 3em 2em; }
+      .header .mobile-nav__nav.is-visible-mobile-nav {
+        display: block; }
+      .header .mobile-nav__nav li {
+        list-style-type: none;
+        margin-bottom: .5em; }
+        .header .mobile-nav__nav li:first-child:before {
+          background: #fd3d3d;
+          top: 2.5em;
+          height: 4px;
+          width: 50px;
+          content: '';
+          position: absolute; }
+      .header .mobile-nav__nav a {
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        color: white;
+        font-size: 2rem;
+        text-decoration: none; }
+    .header .mobile-nav__social {
+      padding-top: 3em; }
+  @media screen and (max-width: 1279px) {
+    .header__nav, .header__search {
+      display: none; }
+    .header .mobile-nav {
+      display: block; } }
+  @media screen and (max-width: 767px) {
+    .header .mobile-nav__nav {
+      width: 100%; } }
+  @media screen and (max-width: 400px) {
+    .header .mobile-nav__trigger.has-open-nav {
+      width: 11.25em;
+      padding: 29px 25px 29px 128px; } }
+
+@media screen and (max-width: 767px) {
+  .ankle {
+    background: #3b3b3b; } }
+
+.footer {
+  position: relative;
+  background: #3b3b3b;
+  width: 100%; }
+  .footer .container--max {
+    position: relative;
+    display: flex;
+    justify-content: flex-start; }
+  .footer__menu {
+    font-size: 1.063em;
+    padding: 7em 8% 2em 8%;
+    border-right: 1px solid #343434; }
+    .footer__menu ul {
+      margin: 0;
+      padding: 0;
+      position: relative; }
+      .footer__menu ul:before {
+        content: '';
+        position: absolute;
+        top: -1.5em;
+        width: 1.25em;
+        height: .25em;
+        background: #fd3d3d;
+        opacity: 1;
+        transition: ease all .2s; }
+    .footer__menu li {
+      margin-bottom: .75em; }
+    .footer__menu a {
+      text-decoration: none;
+      color: #f9f9f2;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+  .footer__copyright {
+    position: absolute;
+    bottom: 1.25em;
+    right: 18.75em;
+    font-size: .75em;
+    color: #a9a9a9;
+    line-height: 1; }
+  .footer__clock {
+    position: absolute;
+    top: -1.25em;
+    right: 6.5em;
+    background: #fd3d3d;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    z-index: 900; }
+    .footer__clock img {
+      position: relative;
+      top: .625em;
+      display: inline-block; }
+  .footer__title-block {
+    position: relative;
+    padding: 11em 10% 5.5em 10%;
+    width: 11.875em; }
+    .footer__title-block span {
+      position: relative;
+      display: block; }
+      .footer__title-block span:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #a9a9a9;
+        line-height: 1.8; }
+        .footer__title-block span:nth-child(1):before {
+          content: '';
+          position: absolute;
+          top: -1.85em;
+          width: 4.167em;
+          height: .3333em;
+          background: #fd3d3d;
+          transition: ease all .2s; }
+      .footer__title-block span:nth-child(2) {
+        color: #efefef;
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-size: 1em;
+        line-height: 1.25; }
+  .footer__update-block {
+    margin: 7em 0 7em;
+    padding: .5em 2em .5em 3.5%;
+    border-left: 4px solid #343434; }
+    .footer__update-block .col:nth-child(1) {
+      margin: 0 0 1.25em; }
+    .footer__update-block .col .date {
+      font-size: .75em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #a9a9a9;
+      padding-bottom: .5em; }
+    .footer__update-block .col .title {
+      max-width: 10em;
+      color: white;
+      font-size: .875em;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+      .footer__update-block .col .title a {
+        color: white;
+        text-decoration: none; }
+    .footer__update-block .col .category {
+      padding-bottom: .45em; }
+    .footer__update-block .col .excerpt {
+      color: white;
+      font-size: 1.125em;
+      line-height: 1.25;
+      max-width: 15.5em; }
+      .footer__update-block .col .excerpt a {
+        color: white;
+        text-decoration: none; }
+        .footer__update-block .col .excerpt a:after {
+          content: url(../img/icon-arrow-red.svg);
+          margin-left: .5em; }
+  @media screen and (max-width: 1279px) {
+    .footer__clock {
+      right: 5em; } }
+  @media screen and (max-width: 1023px) {
+    .footer__menu {
+      display: none; }
+    .footer__clock {
+      right: 4em; } }
+  @media screen and (max-width: 767px) {
+    .footer .container--max {
+      display: block; }
+    .footer .feat-post {
+      display: none; }
+    .footer__title-block {
+      width: 100%;
+      padding: 2em 15% 2em;
+      margin: 0;
+      border-bottom: 1px solid #343434; }
+      .footer__title-block span:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #a9a9a9;
+        line-height: 1.8; }
+        .footer__title-block span:nth-child(1):before {
+          content: '';
+          position: absolute;
+          top: .35em;
+          left: -2em;
+          height: 4.5em;
+          width: .3333em;
+          background: #fd3d3d;
+          transition: ease all .2s; }
+    .footer__update-block {
+      margin: 0;
+      padding: 2em 15% 4em;
+      border-left: none;
+      width: 100%; }
+    .footer__clock {
+      display: none; }
+    .footer__copyright {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      bottom: auto;
+      right: auto;
+      padding-bottom: 2em; } }
+
+.aside__link-block a {
+  display: block;
+  margin-bottom: 1.25em;
+  font-family: "Miriam Libre", Georgia, sans-serif; }
+@media screen and (max-width: 767px) {
+  .aside--home {
+    display: none; } }
+
+.mega-menu {
+  position: relative;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  height: auto;
+  max-height: 0;
+  background: white;
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: .65s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+  .mega-menu.is-visible-mega-menu {
+    max-height: 30em; }
+  .mega-menu__highlight-box {
+    padding-top: 1.875em;
+    padding-left: 4.625em;
+    width: 15.625em;
+    height: 6.25em;
+    background: #3b3b3b; }
+    .mega-menu__highlight-box span {
+      display: block;
+      position: relative; }
+      .mega-menu__highlight-box span:nth-child(1) {
+        font-size: .75em;
+        line-height: 1;
+        color: #a9a9a9;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: .35em; }
+        .mega-menu__highlight-box span:nth-child(1):before {
+          content: '';
+          position: absolute;
+          background: #fd3d3d;
+          left: -1em;
+          top: -.25em;
+          height: 3.25em;
+          width: .25em; }
+      .mega-menu__highlight-box span:nth-child(2) {
+        line-height: 1.25;
+        font-size: 1em;
+        color: #efefef;
+        font-family: "Miriam Libre", Georgia, sans-serif; }
+  .mega-menu__close {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    position: absolute;
+    top: 3.125em;
+    right: 3.125em;
+    font-size: .75em;
+    line-height: 1;
+    transition: opacity .2s ease; }
+    .mega-menu__close svg {
+      margin-right: .5em;
+      position: relative;
+      top: .0825em; }
+    .mega-menu__close:hover {
+      opacity: .6; }
+  .mega-menu__container {
+    max-width: 79em;
+    width: 92%;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 9em;
+    display: flex;
+    justify-content: space-between; }
+  .mega-menu__col {
+    width: 25%; }
+    .mega-menu__col:nth-child(1) {
+      width: 22%;
+      padding-right: 3%; }
+    .mega-menu__col ul {
+      margin: 0;
+      padding: 0; }
+    .mega-menu__col li {
+      list-style-type: none;
+      margin-bottom: .4em; }
+      .mega-menu__col li a {
+        font-size: 1.1em;
+        color: #3b3b3b;
+        transition: padding .35s ease;
+        text-decoration: none; }
+        .mega-menu__col li a:hover {
+          padding-left: .6em;
+          border-left: solid #f7ce40 0.2em;
+          color: #a9a9a9; }
+    .mega-menu__col .view-all-link {
+      display: inline-block;
+      padding-top: 1.5em;
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+  .mega-menu__desc {
+    padding: .75em 0 1.5em;
+    font-size: 1.35em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    line-height: 1.33;
+    position: relative; }
+    .mega-menu__desc:after {
+      content: '';
+      position: absolute;
+      background: #fd3d3d;
+      width: 2.083em;
+      height: .167em;
+      left: 0;
+      bottom: 0; }
+
+.feat-post {
+  width: 20em;
+  max-width: 100%; }
+  .feat-post__content {
+    padding: 2.813em 3.125em;
+    background: #fd3d3d; }
+    @media screen and (max-width: 1023px) {
+      .feat-post__content {
+        padding: 2.5em 2em; } }
+  .feat-post__date {
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #efefef; }
+    .feat-post__date--secondary {
+      margin-top: 3.25em;
+      padding-top: 2em;
+      border-top: 1px solid #ff6a6a; }
+  .feat-post__excerpt {
+    color: white;
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-top: 1.25em; }
+    .feat-post__excerpt--secondary:after {
+      content: url(../img/icon-arrow-yellow.svg);
+      margin-left: .25em; }
+  .feat-post__cta {
+    padding-top: 2.5em; }
+    .feat-post__cta a {
+      color: #f7ce40;
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      position: relative; }
+      .feat-post__cta a:before {
+        content: '';
+        width: 3.125rem;
+        height: .25rem;
+        background: #a9a9a9;
+        position: absolute;
+        top: -1.15em; }
+  .hero-base .feat-post {
+    position: absolute;
+    z-index: 200;
+    right: 9em;
+    margin-top: -13.75em; }
+    .hero-base .feat-post img {
+      height: 13.75em;
+      object-fit: cover; }
+
+.feat-news-block {
+  margin-top: -13.75em;
+  margin-bottom: 3em;
+  position: relative; }
+  .feat-news-block .context-heading {
+    position: absolute;
+    top: -2.5em; }
+  .feat-news-block__img {
+    object-fit: cover;
+    height: 13.75em;
+    width: 21.875em; }
+    @media screen and (max-width: 767px) {
+      .feat-news-block__img {
+        width: 100%; } }
+  .feat-news-block__row {
+    display: flex;
+    justify-content: flex-start; }
+  .feat-news-block__post {
+    background: #fd3d3d;
+    width: 21.875em;
+    padding: 3.125em; }
+    @media screen and (max-width: 767px) {
+      .feat-news-block__post {
+        width: 100%; } }
+  .feat-news-block__date {
+    font-size: .75em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #efefef; }
+  .feat-news-block__title {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.33;
+    padding-top: 1.25rem;
+    font-family: "Miriam Libre", Georgia, sans-serif; }
+  .feat-news-block__content {
+    width: 21.875em;
+    padding: 5.25em 3.125em 3.125em;
+    background: #ec3939; }
+    @media screen and (max-width: 1279px) {
+      .feat-news-block__content {
+        display: none; } }
+  .feat-news-block__excerpt {
+    color: white;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.22; }
+  .feat-news-block__link {
+    padding-top: 2.5em; }
+    .feat-news-block__link a {
+      color: #f7ce40;
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      position: relative; }
+      .feat-news-block__link a:before {
+        content: '';
+        width: 3.125rem;
+        height: .25rem;
+        background: #a9a9a9;
+        position: absolute;
+        top: -1.15em; }
+  .feat-news-block__event {
+    width: 18.75em; }
+    @media screen and (max-width: 767px) {
+      .feat-news-block__event {
+        display: none; } }
+  .feat-news-block__event-heading {
+    position: relative;
+    background: #3b3b3b;
+    padding: 1.5em .5em 1.875em 4em;
+    width: 14.375em;
+    margin-right: 1.5em;
+    height: 4.375em; }
+    .feat-news-block__event-heading span:nth-child(1) {
+      font-size: .75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #a9a9a9; }
+    .feat-news-block__event-heading span:nth-child(2) {
+      font-size: 1em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      font-weight: 700;
+      color: #efefef; }
+    .feat-news-block__event-heading:before {
+      content: '';
+      position: absolute;
+      left: 3em;
+      top: 1.75em;
+      background: #fd3d3d;
+      height: 1.125em;
+      width: .25em; }
+  .feat-news-block__event-content {
+    padding: 1.25em; }
+  .feat-news-block__event-info {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #a9a9a9; }
+    .feat-news-block__event-info div {
+      margin-bottom: .25em; }
+  .feat-news-block__event-title {
+    padding-top: 1em; }
+    .feat-news-block__event-title a {
+      color: #3b3b3b;
+      text-decoration: none;
+      line-height: 1.15; }
+    .feat-news-block__event-title:after {
+      content: url(../img/icon-arrow-red.svg);
+      margin-left: .125em; }
+
+.feat-heading {
+  background: #3b3b3b;
+  padding: 1.5em .5em 1.875em 4em;
+  width: 14.375em;
+  margin-right: 1.5em;
+  height: 4.375em; }
+  @media screen and (max-width: 767px) {
+    .feat-heading {
+      position: absolute;
+      margin-left: -4px; } }
+  .feat-heading--alt {
+    height: 6.25em;
+    padding: 1.875em .5em 1.875em 4em; }
+  .aside .feat-heading {
+    margin-top: 2.5em; }
+  .feat-heading__wrap {
+    max-height: 6.25em;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; }
+    @media screen and (max-width: 767px) {
+      .feat-heading__wrap {
+        display: block;
+        margin-bottom: 3em; } }
+  .feat-heading__img {
+    display: inline-block;
+    width: 9.375em; }
+    @media screen and (max-width: 767px) {
+      .feat-heading__img {
+        height: 6.25em; } }
+    .feat-heading__img img {
+      object-fit: cover;
+      height: 100%; }
+  .feat-heading__caption {
+    font-size: 1.35em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    padding-left: 1em;
+    padding-right: 5%;
+    line-height: 1.33;
+    max-width: 23em; }
+    @media screen and (max-width: 767px) {
+      .feat-heading__caption {
+        margin-top: 1em;
+        padding-left: 5%;
+        margin-bottom: 7em; } }
+    .feat-heading__caption a {
+      padding-top: 1em;
+      display: block;
+      font-size: 1.1rem; }
+  .feat-heading__content {
+    position: relative; }
+    .feat-heading__content:before {
+      content: '';
+      position: absolute;
+      left: -1em;
+      top: .125em;
+      background: #fd3d3d;
+      height: 1.125em;
+      width: .25em; }
+  .feat-heading span:nth-child(1) {
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    padding-right: .25em;
+    color: #a9a9a9;
+    text-transform: uppercase; }
+  .feat-heading span:nth-child(2) {
+    font-size: 1em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    font-weight: 700;
+    color: #efefef; }
+  .feat-heading--alt {
+    width: 15.625em;
+    display: inline-block; }
+    .feat-heading--alt .feat-heading__content {
+      position: relative; }
+      .feat-heading--alt .feat-heading__content:before {
+        content: '';
+        position: absolute;
+        left: -1em;
+        top: -.125em;
+        background: #fd3d3d;
+        height: 2.5em;
+        width: .25em; }
+    .feat-heading--alt span {
+      display: block; }
+      .feat-heading--alt span:nth-child(1) {
+        padding-bottom: .25em; }
+
+.event-listing__event {
+  padding: 1.75em;
+  border-bottom: 1px solid #efefef; }
+.event-listing__date {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #a9a9a9;
+  padding: 0 0 1.25em;
+  line-height: 1;
+  font-size: .75em; }
+.event-listing__title a {
+  color: #3b3b3b;
+  text-decoration: none; }
+.event-listing__title:after {
+  content: url(../img/icon-arrow-red.svg);
+  margin-left: .125em; }
+.event-listing__more-link {
+  padding: 1.5em 1.75em;
+  font-size: 1.125em;
+  font-family: "Miriam Libre", Georgia, sans-serif; }
+
+.view-all-block {
+  padding: .5em 0 3em;
+  text-align: center;
+  font-family: "Miriam Libre", Georgia, sans-serif; }
+
+.floating-branding {
+  position: absolute;
+  top: -9.5em;
+  left: 0;
+  background: white;
+  width: 6.5em;
+  height: 6.5em;
+  padding: .9em;
+  text-align: center; }
+  .floating-branding img {
+    display: inline-block; }
+
+.link-styled {
+  position: relative;
+  margin-top: 2.75em;
+  margin-bottom: 2.5em; }
+  .link-styled a {
+    font-size: 1.125em;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    color: #a9a9a9; }
+  .link-styled:before {
+    content: '';
+    width: 3.125em;
+    height: .25em;
+    background: #a9a9a9;
+    position: absolute;
+    top: -1.1em; }
+
+.resource-group {
+  margin-bottom: 4em; }
+
+.post-info {
+  margin-top: -12.5em;
+  width: 18.75em; }
+  .post-info--no-image {
+    margin-top: -6.25em; }
+  .post-info__img img {
+    width: 18.75em;
+    height: 12.5em;
+    max-width: 100%;
+    object-fit: cover; }
+  .post-info__img--no-image {
+    width: 6.25em;
+    height: 6.25em;
+    background: #fd3d3d;
+    color: white;
+    text-align: center;
+    padding-top: 1.75em;
+    font-family: "Miriam Libre", Georgia, sans-serif; }
+    .post-info__img--no-image span {
+      display: block; }
+      .post-info__img--no-image span:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1; }
+      .post-info__img--no-image span:nth-child(2) {
+        font-size: 1.875em;
+        line-height: 1.15; }
+  .post-info__meta {
+    background: #efefef;
+    padding: 1.25em; }
+    .post-info__meta table tr td {
+      padding: .25em 0;
+      vertical-align: top; }
+      .post-info__meta table tr td:nth-child(1) {
+        text-transform: uppercase;
+        font-size: .75em;
+        font-weight: 700;
+        padding-top: .5em; }
+      .post-info__meta table tr td:nth-child(2) {
+        padding-left: 1em;
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-weight: 700;
+        font-size: .9em; }
+    .post-info__meta span:nth-child(1) {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .75em;
+      line-height: 1;
+      padding-right: .5em; }
+    .post-info__meta span:nth-child(2) {
+      line-height: 1.29;
+      font-size: .95em;
+      font-weight: 700;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+
+.search {
+  margin-top: 2.125em;
+  margin-right: 2.125em;
+  color: white;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  font-size: 1.063rem; }
+  .search__icon {
+    display: inline-block;
+    position: relative;
+    top: 6px; }
+  .search__input {
+    width: 0;
+    height: 2.5em;
+    margin-top: -3px;
+    border: none;
+    background: transparent;
+    font-size: .9rem;
+    color: white;
+    caret-color: white;
+    transition: width ease .15s; }
+    .search__input:focus {
+      outline: none; }
+    .search__input.is-visible-search-input {
+      width: 10em;
+      padding: 0 .5em; }
+  .search__trigger {
+    cursor: pointer; }
+    .has-open-search-bar .search__trigger {
+      color: #f7ce40;
+      border-bottom: 1px solid #f7ce40; }
+    .search__trigger:hover {
+      color: #f7ce40;
+      border-bottom: 1px solid #f7ce40; }
+
+.hero {
+  position: relative;
+  padding: 11em 0 9.5em;
+  margin-top: -5em; }
+  .hero--interior {
+    padding: 10.5em 0 7em; }
+  .hero--news-events {
+    height: 25em; }
+  .hero__foreground {
+    max-width: 90%;
+    width: 62em;
+    margin: 0 auto; }
+  .hero__subtext {
+    color: #cceaf4;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75em;
+    padding-bottom: 1.5em; }
+  .hero__title h1 {
+    max-width: 14em;
+    color: white;
+    line-height: 1.33;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    font-size: 1.875em; }
+  .hero__link {
+    margin-top: 3.5em;
+    position: relative; }
+    .hero__link:before {
+      content: '';
+      width: 3.125rem;
+      height: .25rem;
+      background: #a9a9a9;
+      position: absolute;
+      top: -1.5em; }
+    .hero__link a {
+      color: #f7ce40;
+      font-size: 1.125rem;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      text-decoration: underline; }
+    .hero__link--offset {
+      position: absolute;
+      right: 10%;
+      bottom: 2.5em;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+      .hero__link--offset a {
+        color: #f7ce40; }
+
+.hero-base {
+  position: relative;
+  background: #3b3b3b;
+  height: 15.625em; }
+  .hero-base .container--max {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start; }
+  .hero-base__clock {
+    position: absolute;
+    top: -1.25em;
+    left: 3.125em;
+    background: #fd3d3d;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center; }
+    .hero-base__clock img {
+      position: relative;
+      top: .625em;
+      display: inline-block; }
+  .hero-base__title-block {
+    align-self: stretch;
+    position: relative;
+    padding: 6.25em 3.125em 0;
+    border-right: 1px solid #343434;
+    width: 11.875em; }
+    .hero-base__title-block span {
+      position: relative;
+      display: block; }
+      .hero-base__title-block span:nth-child(1) {
+        font-size: .75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #a9a9a9;
+        line-height: 1.8; }
+        .hero-base__title-block span:nth-child(1):before {
+          content: '';
+          position: absolute;
+          top: -1.85em;
+          width: 4.167em;
+          height: .3333em;
+          background: #fd3d3d;
+          transition: ease all .2s; }
+      .hero-base__title-block span:nth-child(2) {
+        color: #efefef;
+        font-family: "Miriam Libre", Georgia, sans-serif;
+        font-size: 1em;
+        line-height: 1.25; }
+  .hero-base__update-block {
+    display: flex;
+    justify-content: space-around; }
+    .hero-base__update-block .col {
+      border-right: 4px solid #343434; }
+      .hero-base__update-block .col:nth-child(1) {
+        margin: 4.5em 0 4.5em 0;
+        padding: 1em 2em 1.5em 20%; }
+      .hero-base__update-block .col:nth-child(2) {
+        margin: 4.5em 0 5em 1.75em;
+        padding: 1em 2em 1em 0;
+        border-right: none; }
+      .hero-base__update-block .col .date {
+        font-size: .75em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #a9a9a9;
+        padding-bottom: .5em; }
+      .hero-base__update-block .col .title {
+        max-width: 10em;
+        color: white;
+        font-family: "Miriam Libre", Georgia, sans-serif; }
+        .hero-base__update-block .col .title a {
+          color: white;
+          text-decoration: none; }
+      .hero-base__update-block .col .category {
+        padding-bottom: .4em; }
+      .hero-base__update-block .col .excerpt {
+        color: white;
+        font-size: 1.125em;
+        line-height: 1.25;
+        max-width: 14.5em; }
+        .hero-base__update-block .col .excerpt a {
+          color: white;
+          text-decoration: none; }
+          .hero-base__update-block .col .excerpt a:after {
+            content: url(../img/icon-arrow-red.svg);
+            margin-left: .5em; }
+  .hero-base__style-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ec3939;
+    height: 100%;
+    width: 30vw; }
+  @media screen and (max-width: 1279px) {
+    .hero-base .feat-post {
+      right: 0; }
+    .hero-base__style-block {
+      display: none; }
+    .hero-base__update-block .col:nth-child(1) {
+      padding-left: 5%; } }
+  @media screen and (max-width: 1023px) {
+    .hero-base__title-block, .hero-base__clock {
+      display: none; }
+    .hero-base .feat-post {
+      width: 17em; }
+      .hero-base .feat-post__content {
+        padding: 2.5em; } }
+  @media screen and (max-width: 767px) {
+    .hero-base {
+      height: auto;
+      background: white; }
+      .hero-base .container--max {
+        display: block;
+        max-width: 90%;
+        width: 62em; }
+      .hero-base .feat-post {
+        position: relative;
+        top: -5em;
+        margin: 0 0 -4em;
+        max-width: 100%;
+        width: 100%; }
+        .hero-base .feat-post img {
+          width: 100%;
+          object-fit: cover;
+          object-position: 0 10%; }
+        .hero-base .feat-post__content {
+          padding: 2.813em 3.125em; }
+      .hero-base__update-block {
+        display: none; } }
+
+.card {
+  position: relative;
+  border: 1px solid #efefef;
+  transition: all .35s ease; }
+  .card--event, .card--resource {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #efefef; }
+  .card--workgroup {
+    border: none; }
+    .card--workgroup .card__brand {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      height: 5em;
+      width: 5em;
+      line-height: 5em;
+      background: #fd3d3d; }
+  .card:before {
+    content: '';
+    position: absolute;
+    background: #efefef;
+    height: .625em;
+    width: 4.375em;
+    top: 0;
+    left: 0; }
+  .card--bio:before {
+    background: #fd3d3d;
+    height: 1.25em;
+    width: 6.25em; }
+  .card--page:before {
+    background: #fd3d3d;
+    height: 1.15em;
+    width: 6.25em; }
+  .card--post:before, .card--event:before, .card--resource:before {
+    height: 0;
+    width: 0; }
+  .card:after {
+    content: '';
+    position: absolute;
+    background: #cceaf4;
+    height: .313em;
+    width: 4.375em;
+    bottom: 0;
+    left: 0; }
+  .card--page:after, .card--bio:after {
+    width: 6.25em; }
+  .card--post:after, .card--event:after, .card--resource:after {
+    width: 3.125rem; }
+  .card--workgroup:after, .card--workgroup:before {
+    width: 0;
+    height: 0; }
+  .card:hover {
+    box-shadow: 10px 10px 0 #efefef; }
+  .card--event:hover, .card--resource:hover {
+    box-shadow: 7px 7px 0 rgba(239, 239, 239, 0.3); }
+  .card__logo {
+    width: 4.375em;
+    height: 4.375em; }
+  .card__title {
+    position: relative;
+    line-height: 1.33;
+    padding: 1.875em 3.125em 0.625em;
+    border-bottom: 1px solid #efefef; }
+    .card__title h3 {
+      margin-bottom: 0;
+      padding-left: 0; }
+  .card--bio .card__title {
+    padding: 2.75em 1.875em 1.25em; }
+    .card--bio .card__title span {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: .75rem;
+      color: #a9a9a9;
+      line-height: 1.35;
+      display: block;
+      padding-top: 1em; }
+  .card--page .card__title {
+    border-bottom: none;
+    padding: 3em 1.875em .25em; }
+  .card--post .card__title {
+    border-bottom: none;
+    padding: 1.75em 1.875em .25em; }
+  .card--event .card__title, .card--resource .card__title, .card--workgroup .card__title {
+    border-bottom: none;
+    padding: 1.45em 0 .25em; }
+  .card__content {
+    padding: .95em 3.125em 3.125em; }
+  .card--event .card__content {
+    padding: .95em 0 1.5em; }
+  .card--resource .card__content, .card--workgroup .card__content {
+    padding: .5em 0 2.5em; }
+  .card--bio .card__content, .card--page .card__content, .card--post .card__content {
+    padding: .95em 1.875em 2.5em; }
+  .card--post .card__date {
+    border-bottom: 1px solid #efefef;
+    border-left: 3.125rem solid #fd3d3d;
+    height: 3.125rem;
+    padding: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    font-size: .75rem; }
+  .card--event .card__date {
+    border-bottom: 1px solid #efefef;
+    border-left: 3.125rem solid #cceaf4;
+    height: 1.875rem;
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    font-size: .75rem; }
+    .card--event .card__date span {
+      display: inline-block;
+      margin-top: .7em; }
+  .card--resource .card__resource-type {
+    border-bottom: 1px solid #efefef;
+    height: 1.875rem;
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    font-size: .75rem; }
+    .card--resource .card__resource-type span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      width: 3.125rem;
+      height: 1.875rem;
+      line-height: 1.875rem;
+      display: inline-block;
+      background: #cceaf4; }
+  .card__contact {
+    font-size: 0.750em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1.250em; }
+    .card__contact a {
+      color: #3b3b3b; }
+    .card__contact a[href^="tel:"] {
+      text-decoration: none; }
+  .card--bio .card__contact a:nth-child(1) {
+    padding-right: 1.5em; }
+  .card__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 2.3em; }
+  .card--bio .card__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 1.25em; }
+  .card--page .card__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 3.25em; }
+  .card--post .card__description {
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 2.5em; }
+  .card--resource .card__description {
+    color: #a9a9a9;
+    font-size: 1.125em;
+    line-height: 1.22;
+    padding-bottom: 3.25em; }
+  .card--event .card__time,
+  .card--event .card__location {
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #a9a9a9;
+    line-height: 1.2;
+    font-weight: 700;
+    display: block; }
+  .card--event .card__time {
+    padding-bottom: 1em; }
+  .card--event .card__location {
+    padding-bottom: 4em; }
+  .card__link {
+    position: relative; }
+    .card__link a {
+      font-size: 1.125em;
+      font-family: "Miriam Libre", Georgia, sans-serif; }
+    .card__link:before {
+      content: '';
+      width: 3.125em;
+      height: .25em;
+      background: #a9a9a9;
+      position: absolute;
+      top: -1.1em; }
+  .card--workgroup .card__link {
+    margin-top: 2em; }
+    .card--workgroup .card__link a {
+      color: #a9a9a9; }
+
+@media screen and (max-width: 1023px) {
+  .cards .grid .grid__col {
+    flex: 0 0 50%; } }
+@media screen and (max-width: 599px) {
+  .cards .grid .grid__col {
+    flex: 0 0 100%; } }
+.info-block {
+  position: relative;
+  background: #efefef;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  margin-bottom: 2.5em; }
+  .info-block__title {
+    background: #fd3d3d;
+    color: white;
+    width: 7.5em;
+    height: 7.5em;
+    line-height: 7.5em;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: -7.5em; }
+  .info-block__content {
+    font-size: .875em;
+    font-weight: 700;
+    width: 70%;
+    padding: 15% 0;
+    margin: 0 auto;
+    overflow: hidden; }
+    .info-block__content h2 {
+      margin-top: 2em;
+      padding-bottom: 1.25em; }
+      .info-block__content h2:after {
+        top: 2px; }
+    .info-block__content div {
+      padding-bottom: .75em; }
+      .info-block__content div:last-child {
+        padding-bottom: 0; }
+    .info-block__content a {
+      color: #3b3b3b;
+      text-decoration: underline; }
+    .info-block__content .name {
+      padding-left: 1em; }
+
+.table-of-contents {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em; }
+  .table-of-contents div {
+    margin-bottom: 1em; }
+  .table-of-contents a {
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: .5em 1.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background: #fd3d3d;
+    text-decoration: none;
+    margin: 0 .25em; }
+    .table-of-contents a:hover {
+      background: #d20202; }
+
+/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,12 @@
 	<div class="hero__link--offset">
 		<a href="">Find more workgroups</a>
 	</div>
+
+	<div class="info-block info-block--tablet">
+		<div class="info-block__title">
+			ANSG
+		</div>
+	</div>
 </section>
 
 <section>
@@ -24,7 +30,7 @@
 
 			<h2>Latest Updates</h2>
 
-			<div class="grid grid--padding-left half-col-block">
+			<div class="grid grid--padding-left half-col-block col-desktop-switch">
 				<div class="grid__col">
 					<?php include('inc/card-post.php') ?>
 				</div>
@@ -66,6 +72,10 @@
 
 			<h2>Partners</h2>
 			<p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscip.</p>
+
+			<div class="hide-above-ipad">
+			  <?php include('inc/event-listing.php') ?>			
+			</div>
 
 		</div>
 		

@@ -14,6 +14,7 @@
 
 			<div class="post-info post-info--no-image">
 				<div class="post-info__img post-info__img--no-image">
+					<img src="img/icon-news.svg" alt="">
 				</div>
 				<div class="post-info__meta">
 					<span>Published:</span>

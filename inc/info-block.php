@@ -11,16 +11,16 @@
 			501.891.4390
 		</div>
 		<div>
-			<a href="">Email Us</a>
+			<a href="">Email Us</a> 
 		</div>
 		<div>
-			<a href="">Website</a>
+			<a href="">Website<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 		<div>
-			<a href="">Facebook</a>
+			<a href="">Facebook<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 		<div>
-			<a href="">Twitter</a>
+			<a href="">Twitter<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 
 		<h2>Primary Contact</h2>

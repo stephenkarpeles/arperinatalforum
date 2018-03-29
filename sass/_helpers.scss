@@ -1,3 +1,4 @@
+
 .padded-left {
   padding-left: 3.125em;
 
@@ -20,4 +21,20 @@
 	@include mq(desktop-old-school, 'max-width') {
     display: block;
 	}
+}
+
+.hide-above-ipad {
+  display: none;
+
+  @include mq(ipad, 'max-width') {
+    display: block !important;
+  }
+}
+
+.hide-below-ipad {
+  display: block;
+
+  @include mq(ipad, 'max-width') {
+    display: none !important;
+  }
 }
