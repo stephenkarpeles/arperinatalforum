@@ -38,3 +38,11 @@
     display: none !important;
   }
 }
+
+.hide-below-mobile-landscape {
+  display: block;
+
+  @include mq(mobile-landscape, 'max-width') {
+    display: none !important;
+  }
+}

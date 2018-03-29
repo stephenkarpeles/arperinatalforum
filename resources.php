@@ -64,6 +64,11 @@
               <?php include('inc/card-resource.php') ?>
             </div>
           </div>
+
+          <div class="view-all-block">
+            <a href="">Show more resources</a>
+          </div>
+          
         </div>
       </div><!-- .grid -->
 
@@ -114,6 +119,10 @@
             <div class="grid__col">
               <?php include('inc/card-resource.php') ?>
             </div>
+          </div>
+
+          <div class="view-all-block">
+            <a href="">Show more resources</a>
           </div>
         </div>
 

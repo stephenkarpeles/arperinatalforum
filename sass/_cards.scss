@@ -28,6 +28,34 @@
     &:hover {
       box-shadow: 0 0 0 rgba($default-background-color, 0) !important;
     }
+
+    @include mq(mobile-landscape, 'max-width') {
+      margin-bottom: 6em;
+      margin-top: -2em;
+
+      .card__brand {
+        display: none;
+      }
+
+      .card__title {
+        h3 {
+          float: left;
+          margin-left: 1em;
+          display: inline-block;
+          width: calc(100% - 4em);
+        }
+
+        &:before {
+          content: '';
+          display: inline-block;
+          background: $primary-color;
+          width: 3.125em;
+          height: 3.125em;
+          top: 2em;
+          float: left;
+        }
+      }
+    }
   }
 
   &:before {

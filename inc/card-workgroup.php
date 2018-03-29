@@ -5,7 +5,7 @@
   <div class="card__title">
     <h3>Arkansas Perinatal Forum</h3>
   </div>
-  <div class="card__content">
+  <div class="card__content hide-below-mobile-landscape">
     <div class="card__link">
       <a href="#">Visit Page</a>
     </div>
