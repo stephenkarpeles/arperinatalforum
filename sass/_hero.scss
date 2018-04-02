@@ -4,7 +4,7 @@
   margin-top: -5em; // Height of header
 
   &--homepage {
-    height: 69vh;
+    height: calc(100vh - 15.5em); /* height of hero base */
     padding: 20vh 0 0;
   }
 
@@ -14,7 +14,7 @@
   }
 
   &__home-wrap {
-    height: 100vh;
+    height: auto;
 
      @include mq(ipad, 'max-width') {
       height: auto;
@@ -109,7 +109,7 @@
 .hero-base {
   position: relative;
   background: $default-text-color;
-  height: 31vh;
+  height: 15.5em;
 
   .container--max {
     height: 100%;

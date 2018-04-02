@@ -1490,14 +1490,15 @@ section {
   padding: 10em 0;
   margin-top: -5em; }
   .hero--homepage {
-    height: 69vh;
+    height: calc(100vh - 15.5em);
+    /* height of hero base */
     padding: 20vh 0 0; }
   @media screen and (max-width: 767px) {
     .hero {
       padding: 9em 0 8.5em;
       height: auto; } }
   .hero__home-wrap {
-    height: 100vh; }
+    height: auto; }
     @media screen and (max-width: 767px) {
       .hero__home-wrap {
         height: auto; } }
@@ -1563,7 +1564,7 @@ section {
 .hero-base {
   position: relative;
   background: #3b3b3b;
-  height: 31vh; }
+  height: 15.5em; }
   .hero-base .container--max {
     height: 100%;
     position: relative;
