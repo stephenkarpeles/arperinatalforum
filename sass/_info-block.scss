@@ -29,12 +29,19 @@ $ib-self: ".info-block";
   	#{$ib-self}__content {
   		padding: 3em 0;
   		display: none;
-
-  		&.is-visible-contact-info {
-  			display: block;
-  		}
   	}
+
+  	&.has-visible-contact-info {
+			#{$ib-self}__content {
+				display: block;
+			}
+		}
   }
+
+  &__open,
+  &__close {
+  	display: none;
+  }  
 
 	&--mobile & {
 		background: white;

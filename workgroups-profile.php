@@ -27,8 +27,8 @@
 
 			<div class="hide-above-ipad info-block--mobile">
 				<div class="info-block__toggle">
-				  <div>Show Contact Information <img src="img/icon-arrow-dark-down.svg" alt=""></div>
-				  <div>Hide Contact Information <img src="img/icon-arrow-dark-up.svg" alt=""></div>
+				  <div class="info-block__open is-visible">Show Contact Information <img src="img/icon-arrow-dark-down.svg" alt=""></div>
+				  <div class="info-block__close">Hide Contact Information <img src="img/icon-arrow-dark-up.svg" alt=""></div>
 				</div>
 				<?php include('inc/info-block.php') ?>
 			</div>

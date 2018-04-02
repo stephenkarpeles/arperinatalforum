@@ -1,3 +1,27 @@
+// Post info switcher
+const contactInfoOpen = document.querySelector('.info-block__open');
+const contactInfoClose = document.querySelector('.info-block__close');
+const infoBlockMobile = document.querySelector('.info-block--mobile');
+
+if (contactInfoOpen) {
+  contactInfoOpen.addEventListener('click', (e) => {
+    e.preventDefault();
+    infoBlockMobile.classList.toggle('has-visible-contact-info');
+    contactInfoOpen.classList.toggle('is-visible');
+    contactInfoClose.classList.toggle('is-visible');
+  });
+}
+
+if (contactInfoClose) {
+  contactInfoClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    infoBlockMobile.classList.toggle('has-visible-contact-info');
+    contactInfoOpen.classList.toggle('is-visible');
+    contactInfoClose.classList.toggle('is-visible');
+  });
+}
+
+
 // Mobile menu toggle
 const mobileNavTrigger = document.querySelector('.mobile-nav__trigger');
 const mobileNav = document.querySelector('.mobile-nav__nav');
@@ -76,20 +100,6 @@ if (searchWrap) {
       searchBar.classList.remove('is-visible-search-input');
       searchWrap.classList.remove('has-open-search-bar');
     }
-  });
-}
-
-
-// Post info switcher
-// Mobile menu toggle
-const contactInfoToggle = document.querySelector('.info-block__toggle');
-const infoBlock = document.querySelector('.info-block');
-
-if (contactInfoToggle) {
-  contactInfoToggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    infoBlockContent.classList.toggle('is-visible-contact-info');
-    contactInfoToggle.classList.toggle('has-open-nav');
   });
 }
 

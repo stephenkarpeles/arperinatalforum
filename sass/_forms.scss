@@ -56,7 +56,8 @@
 
 	@include mq(ipad, 'max-width') {
     margin-top: 2em;
-    left: 5%;
+    left: 0;
+    width: 100%;
     font-size: .75em;
 	}
 
@@ -68,6 +69,7 @@
 
 		@include mq(ipad, 'max-width') {
 			padding: 1.25em 1em;
+			display: block;
 		}
 	}
 
@@ -106,7 +108,7 @@
 		transition: opacity .2s ease;
 
 		@include mq(ipad, 'max-width') {
-	    right: auto;
+	    right: 0;
 	    width: 5em;
 		}
 
@@ -117,7 +119,7 @@
 }
 
 .filter {
-	@include mq(desktop, 'max-width') {
+	@include mq(ipad, 'max-width') {
     display: none;
 	}
 
@@ -142,5 +144,46 @@
 			position: relative;
 			top: 2px;
 		}
+	}
+}
+
+.filter-alt {
+	margin-top: 3em;
+	margin-bottom: .5em;
+	padding-left: 5%;
+
+	&__choice {
+		font-size: 1.4em;
+		display: inline-block;
+		line-height: 1.33;
+		position: relative;
+		color: $alt-text-color;
+		font-family: $alt-font-stack;
+
+		&:first-child {
+			margin-right: .85em;
+		}
+
+		input[type=checkbox] {
+			display: none;
+		}
+
+		&--is-selected-choice {
+			color: $default-text-color;
+
+      &:before {
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 4px;
+				top: -10px;
+				left: 0;
+				background: $primary-color;
+			}
+		}
+	}
+
+	@include mq(ipad) {
+    display: none;
 	}
 }
