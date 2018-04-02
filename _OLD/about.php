@@ -1,6 +1,7 @@
 <?php include('inc/header.php') ?>
 
 <section class="hero hero--interior" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+	<div class="hero__overlay"></div>
 
 	 <div class="hero__foreground">
     <div class="hero__subtext">
@@ -12,7 +13,7 @@
   </div>
 </section>
 
-<section>
+<section class="huge-padding-top">
 	<div class="container container--flex">
 		<div class="content">
 
@@ -115,7 +116,7 @@
 	<div class="container">
 		<div class="content">
 
-			<div class="grid">
+			<div class="grid col-desktop-switch">
 				<div class="grid__col">
 			    <?php include('inc/card-bio.php') ?>
 			  </div>
@@ -124,7 +125,7 @@
 			  </div>
 			</div>
 
-			<div class="grid">
+			<div class="grid col-desktop-switch">
 				<div class="grid__col">
 			    <?php include('inc/card-bio.php') ?>
 			  </div>

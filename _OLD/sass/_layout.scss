@@ -63,6 +63,10 @@ section {
   &.extra-padding-bottom {
     padding: $section-padding 0 ($section-padding * 1.5);
   }
+
+  &.huge-padding-top {
+    padding: ($section-padding * 2) 0 $section-padding;
+  }
 }
 
 .grid {
@@ -134,6 +138,12 @@ section {
       }
     }  
 
+    .col-desktop-switch & {
+      @include mq(desktop, 'max-width') {
+        flex: 0 0 100%;
+      }
+    }
+
     p {
       .content & {
         padding-left: 0;
@@ -159,7 +169,6 @@ section {
 }
 
 .content {
-  overflow: hidden;
   width: 54.5%;
   max-width: 37.5em;
 
@@ -178,6 +187,10 @@ section {
 
   .container--flex-start & {
     padding-left: 5%;
+
+    @include mq(ipad, 'max-width') {
+      padding-left: 0;
+    }
   }
 }
 

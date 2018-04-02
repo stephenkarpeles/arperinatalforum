@@ -1,6 +1,7 @@
 <?php include('inc/header.php') ?>
 
 <section class="hero hero--interior" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+	<div class="hero__overlay"></div>
 
 	 <div class="hero__foreground">
     <div class="hero__subtext">
@@ -35,15 +36,18 @@
 			<div class="form">
 				<div class="form__field-wrap">
 					<label for="">First and Last name</label><br>
-					<input type="text" placeholder="Sheila Awesomesauce">
+					<input type="text" placeholder="Sheila Awesomesauce"
+					onfocus="this.placeholder=''" onblur="this.placeholder='Sheila Awesomesauce'">
 				</div>
 				<div class="form__field-wrap">
 					<label for="">Email Address</label><br>
-					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Email"
+					onfocus="this.placeholder=''" onblur="this.placeholder='Email'">
 				</div>
 				<div class="form__field-wrap">
 					<label for="">Message</label><br>
-					<textarea placeholder="Message" rows="10"></textarea>
+					<textarea placeholder="Message" rows="10"
+					onfocus="this.placeholder=''" onblur="this.placeholder='Message'"></textarea>
 				</div>			
 				<a href="" class="btn--submit">Send message</a>	
 			</div>

@@ -80,6 +80,20 @@ if (searchWrap) {
 }
 
 
+// Post info switcher
+// Mobile menu toggle
+const contactInfoToggle = document.querySelector('.info-block__toggle');
+const infoBlock = document.querySelector('.info-block');
+
+if (contactInfoToggle) {
+  contactInfoToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    infoBlockContent.classList.toggle('is-visible-contact-info');
+    contactInfoToggle.classList.toggle('has-open-nav');
+  });
+}
+
+
 // Set focus on search input field on pageload
 const searchInput = document.querySelector('.search__input');
 

@@ -25,6 +25,14 @@
 			<div class="category-label category-label--b">Breastfeeding</div>
 			<h1>Arkansas Newborn Screening Group</h1>
 
+			<div class="hide-above-ipad info-block--mobile">
+				<div class="info-block__toggle">
+				  <div>Show Contact Information <img src="img/icon-arrow-dark-down.svg" alt=""></div>
+				  <div>Hide Contact Information <img src="img/icon-arrow-dark-up.svg" alt=""></div>
+				</div>
+				<?php include('inc/info-block.php') ?>
+			</div>
+
 			<p class="intro">This is a very brief description of who this org is/what they do. This block should be no more than 200 characters. This isn’t an exhaustive description — just a quick way to get a sense of their purpose.</p>
 			<p>For chatty organizations, this block is where they can go into greater detail about their org. I still wouldn’t go crazy with copy, but it does offer some additional space to talk about who they are. Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestib.</p>
 

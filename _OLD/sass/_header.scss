@@ -85,7 +85,6 @@
 
       &:hover {
         background: $default-text-color;
-        opacity: .95;
 
         span {
           opacity: 1;
@@ -95,7 +94,6 @@
 
       &.has-open-nav {
         background: $default-text-color;
-        opacity: .95;
 
         span {
           position: relative;
@@ -141,6 +139,7 @@
 
       &.is-visible-mobile-nav {
         display: block;
+        height: 100vh;
       }
 
       li {
@@ -167,6 +166,11 @@
 
     &__social {
       padding-top: 3em;
+
+      a {
+        display: inline-block;
+        margin-right: 1em;
+      }
     }
   }
 
@@ -190,13 +194,6 @@
   }
 
   @include mq(mobile-tween, 'max-width') {
-    .mobile-nav {
-      &__trigger {
-        &.has-open-nav {
-          width: 11.25em;
-          padding: 29px 25px 29px 128px;
-        }
-      }
-    }
+    
   }
 }

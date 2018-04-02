@@ -1,6 +1,7 @@
 <?php include('inc/header.php') ?>
 
 <section class="hero hero--news-events" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+	<div class="hero__overlay"></div>
 	<div class="hero__link--offset">
 		<a href="">Find more posts</a>
 	</div>
@@ -13,6 +14,7 @@
 
 			<div class="post-info post-info--no-image">
 				<div class="post-info__img post-info__img--no-image">
+					<img src="img/icon-news.svg" alt="">
 				</div>
 				<div class="post-info__meta">
 					<span>Published:</span>

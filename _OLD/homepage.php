@@ -1,6 +1,6 @@
 <?php include('inc/header.php') ?>
 
-<section class="hero" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+<section class="hero hero--homepage" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 
   <div class="hero__foreground">
     <div class="hero__subtext">
@@ -53,7 +53,7 @@
           March 16, 2018
         </div>
         <div class="feat-post__excerpt feat-post__excerpt--secondary"> 
-          This news post title cuts off after 50ish characters…
+          <a href="">This news post title cuts off after 50ish characters…</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
   </div>
 </section>
 
-<section>
+<section class="huge-padding-top">
   <div class="container container--flex">
     <div class="content content--home">
       <p class="intro">The Arkansas Perinatal Forum is an initiative within the Arkansas Department of Health's Family Health Branch that exists to support ongoing activities and workgroups around the state that focus on perinatal health.</p>

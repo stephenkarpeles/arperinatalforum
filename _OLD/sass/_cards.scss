@@ -24,6 +24,10 @@
       line-height: 5em;
       background: $primary-color;
     }
+
+    &:hover {
+      box-shadow: 0 0 0 rgba($default-background-color, 0) !important;
+    }
   }
 
   &:before {

@@ -3,18 +3,37 @@
   padding: 11em 0 9.5em;
   margin-top: -5em; // Height of header
 
+  @include mq(ipad, 'max-width') {
+    padding: 7em 0 6em;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(59, 59, 59, 0.8);
+  }
+
   &--interior {
     padding: 10.5em 0 7em;
   }
 
   &--news-events {
     height: 25em;
+
+    @include mq(ipad, 'max-width') {
+      height: 18.5em;
+    }
   }
 
   &__foreground {
     max-width: $container-width;
     width: 62em;
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
   }
 
   &__subtext {
@@ -167,6 +186,7 @@
         font-family: $alt-font-stack;
 
         a {
+          font-size: .875em;
           color: white;
           text-decoration: none;
         }

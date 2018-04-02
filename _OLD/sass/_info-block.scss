@@ -4,6 +4,25 @@
 	font-family: $alt-font-stack;
 	margin-bottom: 2.5em;
 
+	&--tablet {
+		position: absolute;
+		display: none;
+		bottom: 0;
+		left: 5%;
+		margin-bottom: 0;
+
+		@include mq(ipad, 'max-width') {
+			display: block;
+
+			.info-block__title {				
+				width: 5em;
+			  height: 5em;
+			  line-height: 5em;
+			  top: -5em;
+			}
+		}
+	}
+
 	&__title {
 		background: $primary-color;
 		color: white;
@@ -23,6 +42,13 @@
 		padding: 15% 0;
 		margin: 0 auto;
 		overflow: hidden;
+
+		img.has-link-image {
+			display: inline-block;
+			margin-left: .25em;
+			position: relative;
+			top: 1px;
+		}
 
 		h2 {
 			margin-top: 2em;

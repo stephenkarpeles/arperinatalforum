@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include mq(mobile-tween, 'max-width') {
+      justify-content: flex-start;
+    }
+
     div {
       display: inline-block;
     }
@@ -27,6 +31,11 @@
       line-height: 1.06;
       font-weight: 700;
       font-family: $alt-font-stack;
+
+      a {
+        text-decoration: none;
+        color: $default-text-color;
+      }
     }
 
     &--social {
@@ -34,6 +43,10 @@
       background: $tertiary-color;
       text-align: center;
       padding-top: 1.75em;
+
+      @include mq(mobile-tween, 'max-width') {
+        display: none !important;
+      }
 
       a {
         margin: 0 5px;

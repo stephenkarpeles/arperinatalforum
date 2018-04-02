@@ -83,6 +83,11 @@
   margin-bottom: $section-padding;
   position: relative;
 
+  @include mq(ipad, 'max-width') {
+    margin-top: -9em;
+    margin-bottom: -2em;
+  }
+
   .context-heading {
     position: absolute;
     top: -2.5em;
@@ -95,6 +100,7 @@
 
     @include mq(ipad, 'max-width') {
       width: 100%;
+      height: 9em;
     }
   }
 

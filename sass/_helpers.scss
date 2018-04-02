@@ -38,6 +38,14 @@
   }
 }
 
+.hide-above-tablet {
+  display: none;
+
+  @include mq(tablet, 'max-width') {
+    display: block !important;
+  }
+}
+
 .hide-below-mobile-landscape {
   display: block;
 

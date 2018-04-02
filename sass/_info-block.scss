@@ -1,3 +1,5 @@
+$ib-self: ".info-block";
+
 .info-block {
 	position: relative;
 	background: $default-background-color;
@@ -19,6 +21,46 @@
 			  height: 5em;
 			  line-height: 5em;
 			  top: -5em;
+			}
+		}
+	}
+
+  &--mobile {
+  	#{$ib-self}__content {
+  		padding: 3em 0;
+  		display: none;
+
+  		&.is-visible-contact-info {
+  			display: block;
+  		}
+  	}
+  }
+
+	&--mobile & {
+		background: white;
+
+		#{$ib-self}__title {
+			display: none;
+		}
+
+		&__toggle {
+			padding: 1em;
+			cursor: pointer;
+			border-top: 1px solid $default-background-color;
+			border-bottom: 1px solid $default-background-color;
+			text-align: center;
+
+			div:nth-child(2) {
+				display: none;
+			}
+
+			&:hover {
+				opacity: .8;
+			}
+
+			img {
+				display: inline-block;
+				margin-left: .25em;
 			}
 		}
 	}
