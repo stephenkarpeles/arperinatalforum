@@ -67,6 +67,7 @@
 <section class="huge-padding-top">
   <div class="container container--flex">
     <div class="content content--home">
+
       <p class="intro">The Arkansas Perinatal Forum is an initiative within the Arkansas Department of Health's Family Health Branch that exists to support ongoing activities and workgroups around the state that focus on perinatal health.</p>
       <h2>Our Mission</h2>
 
@@ -82,12 +83,6 @@
         </div>
       </div><!-- .grid -->
 
-      <h2>Funding</h2>
-
-      <div class="media padded-left">
-        <img class="media__img media__img--small" src="img/logo.png" alt="">
-        <p class="media__body">This project is supported by the <a href="#">Arkansas Department of Health</a> (ADH) through funding from the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS), under grant number B04MC30599, Maternal and Child Health Services. This information or content and conclusions are those of the author and should not be construed as the official position or policy of, nor should any endorsements be inferred by the ADH, HRSA, HHS, or the U.S. Government.</p>
-      </div>
     </div><!-- .content -->
 
     <aside class="aside aside--padding-top aside--home">
@@ -150,6 +145,24 @@
       </div>
     </div><!-- .grid -->
 
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="funding-block">
+      <div class="funding-block__image">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="funding-block__col-1">
+        <p>This project is supported by the <a href="">Arkansas Department of Health</a> (ADH) through funding from the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS), under grant number B04MC30599, Maternal and Child Health Services.</p>
+      </div>
+      <div class="funding-block__col-2">
+        <p>This information or content and conclusions are those of the author and should not be construed as the official position or policy of, nor should any endorsements be inferred by the ADH, HRSA, HHS, or the U.S. Government.</p>
+      </div>
+    </div>  
+    
   </div>
 </section>
 

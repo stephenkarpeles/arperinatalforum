@@ -1300,6 +1300,40 @@ section {
   font-size: 1.125em;
   font-family: "Miriam Libre", Georgia, sans-serif; }
 
+.funding-block {
+  border-top: 1px solid #efefef;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 10%;
+  font-size: .9rem; }
+  @media screen and (max-width: 767px) {
+    .funding-block {
+      padding: 3rem 0 1.5rem; } }
+  @media screen and (max-width: 599px) {
+    .funding-block {
+      display: block; } }
+  .funding-block__image {
+    flex: 0 0 11%;
+    width: 6.25rem;
+    height: 6.125rem; }
+    @media screen and (max-width: 599px) {
+      .funding-block__image {
+        float: left;
+        margin-right: 1.75rem; } }
+    @media screen and (max-width: 479px) {
+      .funding-block__image {
+        width: 4.25rem;
+        margin-right: 1.25rem; } }
+  .funding-block__col-1, .funding-block__col-2 {
+    flex: 0 0 40%; }
+    @media screen and (max-width: 599px) {
+      .funding-block__col-1, .funding-block__col-2 {
+        margin-left: 8rem;
+        /* width + margin-right of &__image */ } }
+    @media screen and (max-width: 479px) {
+      .funding-block__col-1, .funding-block__col-2 {
+        margin-left: 5.5rem; } }
+
 #backToTop {
   text-decoration: none;
   display: none;

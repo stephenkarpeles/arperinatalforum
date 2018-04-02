@@ -422,6 +422,52 @@
   }
 }
 
+// Funding Block 
+.funding-block {
+  border-top: 1px solid $default-background-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 10%;
+  font-size: .9rem;
+
+  @include mq(ipad, 'max-width') {
+    padding: 3rem 0 1.5rem;
+  }
+
+  @include mq(tablet, 'max-width') {
+    display: block;
+  }
+
+  &__image {
+    flex: 0 0 11%;
+    width: 6.25rem;
+    height: 6.125rem;
+
+    @include mq(tablet, 'max-width') {
+      float: left;
+      margin-right: 1.75rem;
+    }
+
+    @include mq(mobile-landscape, 'max-width') {
+      width: 4.25rem;
+      margin-right: 1.25rem;
+    }
+  }
+
+  &__col-1,
+  &__col-2 {
+    flex: 0 0 40%;
+
+    @include mq(tablet, 'max-width') {
+      margin-left: 8rem; /* width + margin-right of &__image */
+    }
+
+    @include mq(mobile-landscape, 'max-width') {
+      margin-left: 5.5rem;
+    }
+  }
+}
+
 // Miscellaneous
 #backToTop {
   text-decoration: none;
