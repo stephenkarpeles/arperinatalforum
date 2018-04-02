@@ -32,6 +32,11 @@
 
   &--interior {
     padding: 10.5em 0 7em;
+
+    @include mq(ipad, 'max-width') {
+      padding: 8em 0 3em;
+      height: auto;
+    }
   }
 
   &--news-events {

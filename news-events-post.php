@@ -25,6 +25,18 @@
 			<?php include('inc/event-listing.php') ?>			
 		</aside>
 
+		<div class="hide-above-ipad">
+			<div class="post-info post-info--mobile">
+				<div class="post-info__img">
+					<img src="img/family_baby.jpg" alt="">
+				</div>
+				<div class="post-info__meta">
+					<span>Published:</span>
+					<span>March 9, 2018</span>
+				</div>
+			</div>
+		</div>
+
 		<div class="content">
 			<div class="category-label category-label--b">PERINATAL</div>
 			<div class="category-label category-label--b">DIABETES</div>

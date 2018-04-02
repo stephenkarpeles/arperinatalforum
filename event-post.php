@@ -35,11 +35,60 @@
 								Little Rock, AR
 							</td>
 						</tr>
+						<tr>
+							<td>Cost:</td>
+							<td>$125</td>
+						</tr>
+						<tr>
+							<td>Register:</td>
+							<td>
+								<a href="">Register here<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>	
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
 
 		</aside>
+
+		<div class="hide-above-ipad">
+			<div class="post-info post-info--no-image post-info--date">
+				<div class="post-info__img post-info__img--no-image">
+					<span>Jun</span>
+					<span>01</span>
+				</div>
+				<div class="post-info__meta post-info__meta--event">
+					<table>
+						<tr>
+							<td>Date:</td>
+							<td>June 1, 2018</td>
+						</tr>
+						<tr>
+							<td>Time:</td>
+							<td>8:00AM</td>
+						</tr>
+						<tr>
+							<td>Location:</td>
+							<td>
+								Arkansas Department of Health &ndash;
+								Conference Room 211<br>
+								Little Rock, AR
+							</td>
+						</tr>
+						<tr>
+							<td>Cost:</td>
+							<td>$125</td>
+						</tr>
+						<tr>
+							<td>Register:</td>
+							<td>
+								<a href="">Register here<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>	
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 
 		<div class="content">
 			<div class="category-label category-label--b">Perinatal</div>
