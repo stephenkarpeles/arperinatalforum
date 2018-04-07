@@ -16,14 +16,18 @@
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+
+    <?php wp_head(); ?>
   </head>
   <body id="top">
+
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'arperinatal' ); ?></a>
     
-    <?php include('mega-menu.php') ?>
+    <?php include('inc/mega-menu.php') ?>
 
     <header class="header">
 
-      <?php include('branding.php') ?>
+      <?php include('inc/branding.php') ?>
 
       <nav class="header__nav">
         <ul>
@@ -58,6 +62,13 @@
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
           </ul>
+
+          <?php
+            wp_nav_menu( array(
+              'theme_location' => 'top-navigation',
+              'menu_id'        => 'primary-menu',
+            ) );
+          ?>
           
           <div class="mobile-nav__social">
             <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-facebook-large.svg" alt=""></a>

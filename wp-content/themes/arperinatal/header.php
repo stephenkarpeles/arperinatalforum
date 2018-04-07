@@ -14,45 +14,79 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+	<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto+Condensed:400,400i,700" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'arperinatal' ); ?></a>
+<body id="top">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$arperinatal_description = get_bloginfo( 'description', 'display' );
-			if ( $arperinatal_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $arperinatal_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+  <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'arperinatal' ); ?></a>
+  
+  <?php include('inc/mega-menu.php') ?>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'arperinatal' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+  <header class="header">
 
-	<div id="content" class="site-content">
+    <?php include('inc/branding.php') ?>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="">Workgroups</a></li>
+        <li><a href="">Resources</a></li>
+        <li><a href="">News &amp; Events</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="search header__search">
+      <div class="search__icon">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-search-white.svg" alt="Search">
+      </div>
+      <input class="search__input" type="text" name="search">
+      <span class="search__trigger">Search</span>
+    </div>  
+
+    <div class="mobile-nav">
+      <div class="mobile-nav__trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-nav__nav">
+        <ul>
+          <li><a href="">Workgroups</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">News &amp; Events</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'top-navigation',
+            'menu_id'        => 'primary-menu',
+          ) );
+        ?>
+        
+        <div class="mobile-nav__social">
+          <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-facebook-large.svg" alt=""></a>
+          <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-twitter-large.svg" alt=""></a>
+        </div>
+      </div>        
+    </div> 
+
+  </header>
+
+  <main>

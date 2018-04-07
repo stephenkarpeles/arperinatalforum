@@ -1,0 +1,48 @@
+.search {
+  margin-top: 2.125em;
+  margin-right: 2.125em;  
+  color: white;
+  font-family: $alt-font-stack;
+  font-size: 1.063rem; 
+
+  &__icon {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+  }
+  
+  &__input {
+    width: 0;
+    height: 2.5em;
+    margin-top: -3px;
+    border: none;
+    background: transparent;
+    font-size: .9rem;
+    color: white;
+    caret-color: white;
+    transition: width ease .15s;
+
+    &:focus {
+      outline: none;
+    }
+    
+    &.is-visible-search-input {
+      width: 10em;
+      padding: 0 .5em;
+    }
+  }
+
+  &__trigger {
+    cursor: pointer;
+
+    .has-open-search-bar & {
+      color: $secondary-color;
+      border-bottom: 1px solid $secondary-color;
+    }
+
+    &:hover {
+      color: $secondary-color;
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Breakpoints
+$breakpoints: (
+  mobile-portrait: 320px,
+  mobile-tween: 401px,
+  mobile-landscape: 480px,
+  tablet: 600px,
+  ipad: 768px,
+  desktop-small: 960px,
+  desktop: 1024px,
+  desktop-wide: 1100px,
+  desktop-old-school: 1280px,
+  wide-container: 1440px,
+  vw-switch: 1800px
+);
+
+@mixin mq($breakpoint, $rule:min-width) {
+  $value: map-get($breakpoints, $breakpoint);
+
+  @if $rule == 'max-width' {
+    $value: $value - 1;
+  }
+
+  @if $value != null {
+    @media screen and ($rule: $value) {
+      @content;
+    }
+  }
+}

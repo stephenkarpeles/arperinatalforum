@@ -14,13 +14,13 @@
 			<a href="">Email Us</a> 
 		</div>
 		<div>
-			<a href="">Website<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
+			<a href="">Website<img class="has-link-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 		<div>
-			<a href="">Facebook<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
+			<a href="">Facebook<img class="has-link-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 		<div>
-			<a href="">Twitter<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
+			<a href="">Twitter<img class="has-link-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 
 		<h2>Primary Contact</h2>

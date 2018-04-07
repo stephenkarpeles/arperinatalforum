@@ -120,9 +120,13 @@ add_action( 'widgets_init', 'arperinatal_widgets_init' );
  * Enqueue scripts and styles.
  */
 function arperinatal_scripts() {
+	wp_enqueue_style( 'arperinatal-normalize', get_template_directory_uri() . '/css/normalize.css');
+
 	wp_enqueue_style( 'arperinatal-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'arperinatal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_style( 'arperinatal-style-custom', get_template_directory_uri() . '/css/style.css');
+
+	wp_enqueue_script( 'arperinatal-main-scripts', get_template_directory_uri() . '/js/main.js', array(), '20151215', true);
 
 	wp_enqueue_script( 'arperinatal-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

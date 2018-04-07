@@ -1,0 +1,59 @@
+.is-visible {
+  display: block !important;
+}
+
+.padded-left {
+  padding-left: 3.125em;
+
+  @include mq(ipad, 'max-width') {
+  	padding-left: 0;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.is-hidden-desktop-old-school {
+	display: none;
+
+	@include mq(desktop-old-school, 'max-width') {
+    display: block;
+	}
+}
+
+.hide-above-ipad {
+  display: none;
+
+  @include mq(ipad, 'max-width') {
+    display: block !important;
+  }
+}
+
+.hide-below-ipad {
+  display: block;
+
+  @include mq(ipad, 'max-width') {
+    display: none !important;
+  }
+}
+
+.hide-above-tablet {
+  display: none;
+
+  @include mq(tablet, 'max-width') {
+    display: block !important;
+  }
+}
+
+.hide-below-mobile-landscape {
+  display: block;
+
+  @include mq(mobile-landscape, 'max-width') {
+    display: none !important;
+  }
+}

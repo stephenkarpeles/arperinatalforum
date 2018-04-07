@@ -1,5 +1,5 @@
 <div class="feat-post">
-  <img src="img/mom_baby.jpg" alt="">
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mom_baby.jpg" alt="">
   <div class="feat-post__content">
     <div class="feat-post__date">
       March 16, 2018

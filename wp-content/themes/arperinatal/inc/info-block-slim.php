@@ -1,6 +1,6 @@
 <div class="info-block info-block--slim">
 	<div class="info-block__title">
-		<img src="img/logo-uams@2x.png" alt="">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-uams@2x.png" alt="">
 	</div>
 	<div class="info-block__content">
 		<div>
@@ -11,7 +11,7 @@
 			501.891.4390
 		</div>
 		<div>
-			<a href="">Website<img class="has-link-image" src="img/icon-external-link-dark.svg" alt=""></a>			
+			<a href="">Website<img class="has-link-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-external-link-dark.svg" alt=""></a>			
 		</div>
 	</div>
 </div>

@@ -1,5 +1,5 @@
 <div class="card__logo">
-  <img src="img/rectangle@2x.png" alt="Alt Tag">
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rectangle@2x.png" alt="Alt Tag">
 </div>
 <div class="card">
   <div class="card__title">

@@ -11,26 +11,64 @@
 
 ?>
 
-	</div><!-- #content -->
+    </main>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'arperinatal' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'arperinatal' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'arperinatal' ), 'arperinatal', '<a href="http://stephenkarpeles.com/">Stephen Karpeles</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+    <div class="container--max">
 
-<?php wp_footer(); ?>
+      <div class="ankle">
+        <?php include('inc/branding.php') ?>
+      </div>
 
-</body>
+    </div>
+
+    <footer class="footer">
+    
+      <div class="container--max">
+
+        <?php include('inc/feat-post.php') ?>
+
+        <div class="footer__menu">
+          <ul>
+            <li><a href="">Workgroups</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">News &amp; Events</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__title-block">
+          <span>Latest</span>
+          <span>Workgroup<br>Updates</span>
+        </div>
+
+        <div class="footer__update-block">
+          <div class="col">
+            <div class="date">March 16, 2018</div>
+            <div class="title"><a href="">Arkansas Newborn Screening Group</a></div>
+          </div>
+          <div class="col">
+            <div class="category context-heading context-heading--c">News</div>
+            <div class="excerpt"><a href="">New screening methods go into effect on May 1, 2018</a></div>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          &copy; <?php echo date("Y"); ?> Arkansas Perinatal Forum
+        </div>
+
+      </div>   
+
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <?php wp_footer(); ?>
+
+  </body>
 </html>
