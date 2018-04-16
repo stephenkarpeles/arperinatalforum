@@ -163,3 +163,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/** 
+ * Hide admin bar on front facing pages
+ */
+add_filter('show_admin_bar', '__return_false');
+
