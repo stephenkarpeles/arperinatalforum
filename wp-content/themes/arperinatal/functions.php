@@ -126,7 +126,7 @@ function arperinatal_scripts() {
 
 	wp_enqueue_style( 'arperinatal-style-custom', get_template_directory_uri() . '/css/style.css');
 
-	wp_enqueue_script( 'arperinatal-main-scripts', get_template_directory_uri() . '/js/main.js', array(), '20151215', true);
+	wp_enqueue_script( 'arperinatal-main-scripts', get_template_directory_uri() . '/js/main.js', array('jquery'), '20151215', true);
 
 	wp_enqueue_script( 'arperinatal-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -176,3 +176,118 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+/**
+ * Custom Post Types
+ */
+
+add_action( 'init', 'arp_post_types_init' );
+
+function arp_post_types_init() {
+
+	$news_labels = array(
+		'name'               => _x( 'News', 'post type general name', 'arp' ),
+		'singular_name'      => _x( 'News Item', 'post type singular name', 'arp' ),
+		'menu_name'          => _x( 'News', 'admin menu', 'arp' ),
+		'name_admin_bar'     => _x( 'News', 'add new on admin bar', 'arp' ),
+		'add_new'            => _x( 'Add New', 'News Item', 'arp' ),
+		'add_new_item'       => __( 'Add New News Item', 'arp' ),
+		'new_item'           => __( 'New News Item', 'arp' ),
+		'edit_item'          => __( 'Edit News Item', 'arp' ),
+		'view_item'          => __( 'View News Item', 'arp' ),
+		'all_items'          => __( 'All News', 'arp' ),
+		'search_items'       => __( 'Search News', 'arp' ),
+		'parent_item_colon'  => __( 'Parent News:', 'arp' ),
+		'not_found'          => __( 'No News Items found.', 'arp' ),
+		'not_found_in_trash' => __( 'No News Items found in Trash.', 'arp' )
+	);
+
+	$news_args = array(
+		'labels'             => $news_labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'news' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'taxonomies'         => array( 'category' ),
+		'supports'           => array( 'title', 'editor', 'revisions', 'thumbnail' )
+	);
+
+	register_post_type( 'news', $news_args );
+	
+	$event_labels = array(
+		'name'               => _x( 'Events', 'post type general name', 'arp' ),
+		'singular_name'      => _x( 'Event', 'post type singular name', 'arp' ),
+		'menu_name'          => _x( 'Events', 'admin menu', 'arp' ),
+		'name_admin_bar'     => _x( 'Events', 'add new on admin bar', 'arp' ),
+		'add_new'            => _x( 'Add New', 'Event', 'arp' ),
+		'add_new_item'       => __( 'Add New Event', 'arp' ),
+		'new_item'           => __( 'New Event', 'arp' ),
+		'edit_item'          => __( 'Edit Event', 'arp' ),
+		'view_item'          => __( 'View Event', 'arp' ),
+		'all_items'          => __( 'All Events', 'arp' ),
+		'search_items'       => __( 'Search Events', 'arp' ),
+		'parent_item_colon'  => __( 'Parent Events:', 'arp' ),
+		'not_found'          => __( 'No Events found.', 'arp' ),
+		'not_found_in_trash' => __( 'No Events found in Trash.', 'arp' )
+	);
+
+	$event_args = array(
+		'labels'             => $event_labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'events' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'taxonomies'         => array( 'category' ),
+		'supports'           => array( 'title', 'editor', 'revisions', 'thumbnail' )
+	);
+
+	register_post_type( 'event', $event_args );
+
+	$resource_labels = array(
+		'name'               => _x( 'Resources', 'post type general name', 'arp' ),
+		'singular_name'      => _x( 'Resource', 'post type singular name', 'arp' ),
+		'menu_name'          => _x( 'Resources', 'admin menu', 'arp' ),
+		'name_admin_bar'     => _x( 'Resources', 'add new on admin bar', 'arp' ),
+		'add_new'            => _x( 'Add New', 'Event', 'arp' ),
+		'add_new_item'       => __( 'Add New Resource', 'arp' ),
+		'new_item'           => __( 'New Resource', 'arp' ),
+		'edit_item'          => __( 'Edit Resource', 'arp' ),
+		'view_item'          => __( 'View Resource', 'arp' ),
+		'all_items'          => __( 'All Resources', 'arp' ),
+		'search_items'       => __( 'Search Resources', 'arp' ),
+		'parent_item_colon'  => __( 'Parent Resources:', 'arp' ),
+		'not_found'          => __( 'No Resources found.', 'arp' ),
+		'not_found_in_trash' => __( 'No Resources found in Trash.', 'arp' )
+	);
+
+	$resource_args = array(
+		'labels'             => $resource_labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'resources' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'taxonomies'         => array( 'category' ),
+		'supports'           => array( 'title', 'editor', 'revisions', 'thumbnail' )
+	);
+
+	register_post_type( 'resource', $resource_args );
+
+}

@@ -114,8 +114,32 @@ if (searchTrigger) {
   });
 } 
 
-( function( $ ) {
 
+// Add/remove classes on scroll
+const scrollpos = window.scrollY;
+const mainHeader = document.querySelector(".header");
+
+function add_class_on_scroll() {
+  mainHeader.classList.add("header--fixed");
+}
+
+function remove_class_on_scroll() {
+  mainHeader.classList.remove("header--fixed");
+}
+
+window.addEventListener('scroll', function(){ 
+  scrollpos = window.scrollY;
+
+  if(scrollpos > 10){
+    add_class_on_scroll();
+  }
+  else {
+    remove_class_on_scroll();
+  }
+});
+
+
+( function( $ ) {
 
   // Show Back to Top button on scroll
   $(document).scroll(function() {

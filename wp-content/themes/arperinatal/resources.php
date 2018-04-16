@@ -1,4 +1,11 @@
-<?php include('inc/header.php') ?>
+<?php
+/*
+ * Template Name: Resources
+ * @package WordPress
+ */
+?>
+
+<?php get_header(); ?>
 
 <section class="hero hero--interior" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
   <div class="hero__overlay"></div>
