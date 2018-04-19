@@ -50,11 +50,13 @@
     </nav>
 
     <div class="search header__search">
-      <div class="search__icon">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-search-white.svg" alt="Search">
-      </div>
-      <input class="search__input" type="text" name="search">
-      <span class="search__trigger">Search</span>
+      <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+        <div class="search__icon">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-search-white.svg" alt="Search">
+        </div>
+        <span class="search__trigger">Search</span>
+        <input type="search" class="search__input" placeholder="" value="" name="search"/>
+      </form>
     </div>  
 
     <div class="mobile-nav">
