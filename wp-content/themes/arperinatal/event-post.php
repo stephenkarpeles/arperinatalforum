@@ -1,6 +1,6 @@
 <?php include('inc/header.php') ?>
 
-<section class="hero hero--news-events" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+<section class="hero hero--news-events" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 	<div class="hero__overlay"></div>
 	<div class="hero__link--offset">
 		<a href="">Find more events</a>
