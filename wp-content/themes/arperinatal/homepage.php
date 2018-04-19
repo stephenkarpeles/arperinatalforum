@@ -12,13 +12,13 @@
 
     <div class="hero__foreground">
       <div class="hero__subtext">
-        Get Connected Arkansas
+        <?php the_field('subheading'); ?>
       </div>
       <div class="hero__title">
-        <h1>A network committed to improving perinatal outcomes for women and infants in Arkansas.</h1>
+        <h1><?php the_field('main_heading'); ?></h1>
       </div>
       <div class="hero__link">
-        <a href="">Get Connected</a>
+        <a href="<?php the_field('link_url'); ?>"><?php the_field('link_text'); ?></a>
       </div>
     </div>
   </section>
@@ -75,17 +75,17 @@
   <div class="container container--flex">
     <div class="content content--home">
 
-      <p class="intro">The Arkansas Perinatal Forum is an initiative within the Arkansas Department of Health's Family Health Branch that exists to support ongoing activities and workgroups around the state that focus on perinatal health.</p>
-      <h2>Our Mission</h2>
+      <p class="intro"><?php the_field('intro'); ?></p>
+      <h2><?php the_field('content_heading_1'); ?></h2>
 
       <div class="grid half-col-block padded-left">
         <div class="grid__col">
-          <p>Our mission is to optimize perinatal care and health outcomes for women and infants in Arkansas, by engaging key perinatal stakeholders in a forum that supports the use of data-driven, evidence-based, quality improvement initiatives within the community and health care system.</p>
+          <p><?php the_field('content_column_1'); ?></p>
         </div>
         <div class="grid__col">
-          <p>We work to support what's already going on in the state and provide a forum that encourages groups to collaborate, and share information, data, and resources.</p>
+          <p><?php the_field('content_column_2'); ?></p>
           <div class="cta cta--fancy">
-            <a href="#">Learn more</a>
+            <a href="<?php the_field('content_link_url'); ?>"><?php the_field('content_link_text'); ?></a>
           </div>
         </div>
       </div><!-- .grid -->
@@ -110,13 +110,13 @@
       </div>
       <div class="feat-heading feat-heading--alt">
         <div class="feat-heading__content">
-          <span>Meet the</span>
-          <span>Workgroups</span>
+          <span><?php the_field('callout_upper_text'); ?></span>
+          <span><?php the_field('callout_lower_text'); ?></span>
         </div>
       </div>
       <div class="feat-heading__caption">
-        <span>We support the tireless work of perinatal groups all across Arkansas.</span>
-        <a href="">See all workgroups</a>
+        <span><?php the_field('callout_deck'); ?></span>
+        <a href="<?php the_field('callout_link_url'); ?>"><?php the_field('callout_link_text'); ?></a>
       </div>
     </div>
 

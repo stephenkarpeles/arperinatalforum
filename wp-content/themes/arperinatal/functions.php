@@ -166,7 +166,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /** 
  * Hide admin bar on front facing pages
  */
-add_filter('show_admin_bar', '__return_false');
+//add_filter('show_admin_bar', '__return_false');
 
 /**
  * Allow SVG uploads to WordPress media library

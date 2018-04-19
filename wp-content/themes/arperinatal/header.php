@@ -53,9 +53,9 @@
       <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
         <div class="search__icon">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-search-white.svg" alt="Search">
-        </div>
-        <span class="search__trigger">Search</span>
+        </div>        
         <input type="search" class="search__input" placeholder="" value="" name="search"/>
+        <span class="search__trigger">Search</span>
       </form>
     </div>  
 
