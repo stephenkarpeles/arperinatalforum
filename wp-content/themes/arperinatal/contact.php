@@ -1,6 +1,14 @@
-<?php include('inc/header.php') ?>
+<?php
+/*
+ * Template Name: Contact
+ * @package WordPress
+ */
+?>
 
-<section class="hero hero--interior" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+<?php get_header(); ?>
+
+
+<section class="hero hero--interior" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;;">
 	<div class="hero__overlay"></div>
 
 	 <div class="hero__foreground">
