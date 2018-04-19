@@ -1,6 +1,13 @@
-<?php include('inc/header.php') ?>
+<?php
+/*
+ * Template Name: News & Events
+ * @package WordPress
+ */
+?>
 
-<section class="hero hero--interior hero--news-events" style="background: url('img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+<?php get_header(); ?>
+
+<section class="hero hero--interior hero--news-events" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
   <div class="hero__overlay"></div>
 </section>
 

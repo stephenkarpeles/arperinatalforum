@@ -12,10 +12,10 @@
 
 	 <div class="hero__foreground">
     <div class="hero__subtext">
-      Get Equipped
+      <?php the_field('subheading'); ?>
     </div>
     <div class="hero__title">
-      <h1>This is a very brief headline that tells what’s on this page.</h1>
+      <h1><?php the_field('main_heading'); ?></h1>
     </div>
   </div>
 </section>

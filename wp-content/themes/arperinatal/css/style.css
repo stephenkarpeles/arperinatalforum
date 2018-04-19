@@ -1399,6 +1399,13 @@ section {
   margin-top: -12.5em;
   width: 18.75em;
   max-width: 100%; }
+  .post-info .post-info__meta--event p {
+    font-weight: 700;
+    font-family: "Miriam Libre", Georgia, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; }
   .post-info--mobile {
     margin-bottom: 2em;
     width: auto; }
@@ -1460,7 +1467,7 @@ section {
         text-transform: uppercase;
         font-size: .75em;
         font-weight: 700;
-        padding-top: .5em; }
+        padding-top: .25rem; }
       .post-info__meta table tr td:nth-child(2) {
         padding-left: 1em;
         font-family: "Miriam Libre", Georgia, sans-serif;
