@@ -13,10 +13,10 @@
 
 	 <div class="hero__foreground">
     <div class="hero__subtext">
-      We'd Love to Hear From You
+      <?php the_field('subheading'); ?>
     </div>
     <div class="hero__title">
-      <h1>This is a very brief headline that tells what’s on this page.</h1>
+      <h1><?php the_field('main_heading'); ?></h1>
     </div>
   </div>
 </section>
@@ -25,8 +25,8 @@
 	<div class="container container--flex">
 		<div class="content">
 
-			<p class="intro">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu te.</p>
-			<p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent alique.</p>
+			<p class="intro"><?php the_field('intro'); ?></p>
+			<p><?php the_field('intro_secondary'); ?></p>
 
 			<h2>Contact Information</h2>
 			<p>Call us at <a href="">501-280-4516</a>.</p>

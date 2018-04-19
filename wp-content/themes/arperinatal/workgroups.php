@@ -12,10 +12,10 @@
 
 	 <div class="hero__foreground">
     <div class="hero__subtext">
-      A State-Wide Network
+      <?php the_field('subheading'); ?>
     </div>
     <div class="hero__title">
-      <h1>This is a very brief headline that tells what’s on this page.</h1>
+      <h1><?php the_field('main_heading'); ?></h1>
     </div>
   </div>
 </section>
@@ -24,8 +24,8 @@
 	<div class="container container--flex">
 		<div class="content">
 
-			<p class="intro">Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at.</p>
-			<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestib.</p>			
+			<p class="intro"><?php the_field('intro'); ?></p>
+      <p><?php the_field('intro_secondary'); ?></p>		
 
 		</div><!-- .content -->
 
@@ -57,8 +57,8 @@
       </div>
       <div class="feat-heading feat-heading--alt">
         <div class="feat-heading__content">
-          <span>Meet the</span>
-          <span>Workgroups</span>
+          <span><?php the_field('callout_upper_text'); ?></span>
+          <span><?php the_field('callout_lower_text'); ?></span>
         </div>
       </div>
     </div>
