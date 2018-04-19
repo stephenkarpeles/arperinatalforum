@@ -20,7 +20,7 @@
   </div>
 </section>
 
-<section class="huge-padding-top">
+<section>
 	<div class="container container--flex">
 		<div class="content">
 
@@ -103,47 +103,47 @@
 		<div class="content">
 
 			<div class="grid half-col-block col-desktop-switch">
-			    <?php if( have_rows('bio_card') ): ?>
+		    <?php if( have_rows('bio_card') ): ?>
 
-						<?php while( have_rows('bio_card') ): the_row(); 
+					<?php while( have_rows('bio_card') ): the_row(); 
 
-								$first = get_sub_field('first_name');
-								$last  = get_sub_field('last_name');
-								$title = get_sub_field('title');
-								$phone = get_sub_field('phone_number');
-								$email = get_sub_field('email_address');
-								$blurb = get_sub_field('blurb');
+							$first = get_sub_field('first_name');
+							$last  = get_sub_field('last_name');
+							$title = get_sub_field('title');
+							$phone = get_sub_field('phone_number');
+							$email = get_sub_field('email_address');
+							$blurb = get_sub_field('blurb');
 
-							?>
+						?>
 
-							<div class="grid__col">
+						<div class="grid__col">
 
-								<div class="card card--bio">
-								  <div class="card__title">
-								    <h3><?php echo $first; ?> <?php echo $last; ?></h3>
-								    <span><?php echo $title; ?></span>
-								  </div>
-								  <div class="card__content">
-								    <div class="card__contact">
-								      <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
-								      <a href="#">Email <?php echo $first; ?></a>
-								    </div>
-								    <div class="card__description">
-								      <?php echo $blurb; ?>
-								    </div>    
-								  </div>
-								</div>
-
+							<div class="card card--bio">
+							  <div class="card__title">
+							    <h3><?php echo $first; ?> <?php echo $last; ?></h3>
+							    <span><?php echo $title; ?></span>
+							  </div>
+							  <div class="card__content">
+							    <div class="card__contact">
+							      <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+							      <a href="#">Email <?php echo $first; ?></a>
+							    </div>
+							    <div class="card__description">
+							      <?php echo $blurb; ?>
+							    </div>    
+							  </div>
 							</div>
 
-						<?php endwhile; ?>
+						</div>
+
+					<?php endwhile; ?>
 
 				<?php endif; ?>
 
-			</div>
+			</div><!-- .grid -->
 
-    </div>
-	</div>
+    </div><!-- .content -->
+	</div><!-- .container -->
 </section>		
 
 <?php get_footer(); ?>

@@ -23,32 +23,36 @@
       </div>
     </div><!-- .mega-menu__col -->
 
-    <div class="mega-menu__col">
+    <div class="mega-menu__col">      
       <ul>
-        <li><a href="">Arkansas Breastfeeding Coalition</a></li>
-        <li><a href="">Arkansas Children's Hospital</a></li>
-        <li><a href="">Arkansas Newborn Screening Group</a></li>
-        <li><a href="">Butler Center for Something</a></li>
-        <li><a href="">Carter Pediatric Coalition</a></li>
-        <li><a href="">Dennison Safe Sleep Group</a></li>
+        <?php wp_list_categories( array(
+            'orderby' => 'id',
+            'include' => array( 4, 5, 6, 7, 8, 9 ),
+            'title_li' => '',
+            'hide_empty' => false
+        ) ); ?> 
       </ul>
     </div>
 
     <div class="mega-menu__col">
       <ul>
-        <li><a href="">Erickson Pediatric Group</a></li>
-        <li><a href="">Fredrickson Pediatric Clinic</a></li>
-        <li><a href="">Gregson AAA Breastfeeding Group</a></li>
-        <li><a href="">Harry's Awesome Group</a></li>
-        <li><a href="">Igloo Perinatal Fun Group</a></li>
-        <li><a href="">Jackson Baby Coalition</a></li>
-      </ul>      
+        <?php wp_list_categories( array(
+            'orderby' => 'id',
+            'include' => array( 14, 15, 16, 17, 18, 19 ),
+            'title_li' => '',
+            'hide_empty' => false
+        ) ); ?> 
+      </ul>
     </div>
 
     <div class="mega-menu__col">
       <ul>
-        <li><a href="">Lawson Pediatric Coaltion of Northwest Arkansas</a></li>
-        <li><a href="">UAMS Pediatric Department</a></li>
+        <?php wp_list_categories( array(
+            'orderby' => 'id',
+            'include' => array( 20, 21 ),
+            'title_li' => '',
+            'hide_empty' => false
+        ) ); ?> 
       </ul>
       <a href="" class="view-all-link">See all workgroups</a>
     </div>
