@@ -160,13 +160,13 @@
 
     <div class="funding-block">
       <div class="funding-block__image">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="">
+        <img src="<?php the_field('funding_image'); ?>" alt="">
       </div>
       <div class="funding-block__col-1">
-        <p>This project is supported by the <a href="">Arkansas Department of Health</a> (ADH) through funding from the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS), under grant number B04MC30599, Maternal and Child Health Services.</p>
+        <?php the_field('funding_text_column_1'); ?>
       </div>
       <div class="funding-block__col-2">
-        <p>This information or content and conclusions are those of the author and should not be construed as the official position or policy of, nor should any endorsements be inferred by the ADH, HRSA, HHS, or the U.S. Government.</p>
+        <?php the_field('funding_text_column_2'); ?>
       </div>
     </div>  
     
