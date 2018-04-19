@@ -28,13 +28,7 @@
         <?php include('inc/feat-post.php') ?>
 
         <div class="footer__menu">
-          <ul>
-            <li><a href="">Workgroups</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">News &amp; Events</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+          <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
         </div>
 
         <div class="footer__title-block">

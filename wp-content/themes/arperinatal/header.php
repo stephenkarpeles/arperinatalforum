@@ -40,13 +40,7 @@
     <?php include('inc/branding.php') ?>
 
     <nav class="header__nav">
-      <ul>
-        <li><a href="">Workgroups</a></li>
-        <li><a href="">Resources</a></li>
-        <li><a href="">News &amp; Events</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+      <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
     </nav>
 
     <div class="search header__search">
@@ -67,20 +61,7 @@
       </div>
 
       <div class="mobile-nav__nav">
-        <ul>
-          <li><a href="">Workgroups</a></li>
-          <li><a href="">Resources</a></li>
-          <li><a href="">News &amp; Events</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'top-navigation',
-            'menu_id'        => 'primary-menu',
-          ) );
-        ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
         
         <div class="mobile-nav__social">
           <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-facebook-large.svg" alt=""></a>

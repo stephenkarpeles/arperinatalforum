@@ -44,7 +44,7 @@ if ( ! function_exists( 'arperinatal_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'arperinatal' ),
+			'menu-1' => esc_html__( 'Main Navigation', 'arperinatal' )
 		) );
 
 		/*
@@ -166,7 +166,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /** 
  * Hide admin bar on front facing pages
  */
-//add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');
 
 /**
  * Allow SVG uploads to WordPress media library
@@ -214,7 +214,7 @@ function arp_post_types_init() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 5,
-		'taxonomies'         => array( 'category' ),
+		'taxonomies'         => array( 'category', 'post_tag' ),
 		'supports'           => array( 'title', 'editor', 'revisions', 'thumbnail' )
 	);
 
@@ -244,12 +244,12 @@ function arp_post_types_init() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'events' ),
+		'rewrite'            => array( 'slug' => 'event' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 5,
-		'taxonomies'         => array( 'category' ),
+		'taxonomies'         => array( 'category', 'post_tag' ),
 		'supports'           => array( 'title', 'editor', 'revisions', 'thumbnail' )
 	);
 
@@ -279,12 +279,12 @@ function arp_post_types_init() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'resources' ),
+		'rewrite'            => array( 'slug' => 'resource' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 5,
-		'taxonomies'         => array( 'category' ),
+		'taxonomies'         => array( 'category', 'post_tag' ),
 		'supports'           => array( 'title', 'editor', 'revisions', 'thumbnail' )
 	);
 
