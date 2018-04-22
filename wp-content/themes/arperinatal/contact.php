@@ -28,19 +28,18 @@
 			<p class="intro"><?php the_field('intro'); ?></p>
 			<p><?php the_field('intro_secondary'); ?></p>
 
-			<h2>Contact Information</h2>
-			<p>Call us at <a href="">501-280-4516</a>.</p>
-			<p>
-				Family Health Branch, Center for Health Advancement<br>
-			  Arkansas Department of Health<br>
-			  4815 West Markham Street, Slot 16<br>
-			  Little Rock, AR 72205
-		  </p>
-		  <p><a href="">Get Directions</a></p>
+			<h2><?php the_field('content_heading_1'); ?></h2>
+			<?php the_field('content_text_1'); ?>
 
-			<h2>Send Us a Message</h2>
-			<p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu alique.</p>	
+			<h2><?php the_field('content_heading_2'); ?></h2>
+			<?php the_field('content_text_2'); ?>
 
+			<?php 
+					$contactForm = get_field('contact_form_shortcode', false, false);
+          echo do_shortcode($contactForm);
+			?>
+
+			<!--
 			<div class="form">
 				<div class="form__field-wrap">
 					<label for="">First and Last name</label><br>
@@ -59,6 +58,7 @@
 				</div>			
 				<a href="" class="btn--submit">Send message</a>	
 			</div>
+		-->
 
 		</div><!-- .content -->
 

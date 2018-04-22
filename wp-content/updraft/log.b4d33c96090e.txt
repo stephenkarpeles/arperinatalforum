@@ -1,0 +1,206 @@
+0000.000 (0) Opened log file at time: Fri, 20 Apr 2018 15:05:43 +0000 on http://localhost:8888/arperinatalforum
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.14.5.24 WP: 4.9.5 PHP: 7.2.1 (apache2handler, Darwin BCLAP448-MBP (Stephen Karpeles) 17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64 x86_64) MySQL: 5.6.38 WPLANG: en_US Server: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 30.7M | 6.3M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 (0) Free space on disk containing Updraft's temporary directory: 392013.9 MB
+0000.007 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.008 (0) Semaphore (fd, wp_options) being initialised
+0000.015 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.019 (0) Set semaphore last lock (fd) time to 2018-04-20 15:05:43
+0000.020 (0) Semaphore lock (fd) complete
+0000.025 (0) Backup run: resumption=0, nonce=b4d33c96090e, begun at=1524236743 (0s ago), job type=backup, label=localhost:8888/arperinatalforum
+0000.026 (0) Scheduling a resumption (1) after 300 seconds (1524237043) in case this run gets aborted
+0000.038 (0) Checking if we have a zip executable available
+0000.039 (0) Testing: /usr/bin/zip
+0000.046 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.047 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.048 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.049 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.049 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.061 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.062 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.075 (0) Working binary zip found: /usr/bin/zip
+0000.078 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.079 (0) Creation of backups of directories: beginning
+0000.084 (0) Beginning creation of dump of plugins (split every: 100 MB)
+0000.163 (0) Total entities for the zip file: 322 directories, 2049 files (0 skipped as non-modified), 28.9 MB
+0000.168 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.172 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.178 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.183 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.187 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.188 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10.1 MB, 2049 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.922 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: size is now: 3.20 MB
+0000.928 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 600 files added (on-disk size: 3287.2 KB)
+0000.933 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 700 files added (on-disk size: 3287.2 KB)
+0000.938 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 800 files added (on-disk size: 3287.2 KB)
+0000.943 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 900 files added (on-disk size: 3287.2 KB)
+0000.948 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1000 files added (on-disk size: 3287.2 KB)
+0000.949 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (9.9 MB, 2049 files batched, 501 (1002) added so far); re-opening (prior size: 3287.2 KB)
+0001.450 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: size is now: 5.10 MB
+0001.461 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1100 files added (on-disk size: 5209.8 KB)
+0001.466 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1200 files added (on-disk size: 5209.8 KB)
+0001.471 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1300 files added (on-disk size: 5209.8 KB)
+0001.476 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1400 files added (on-disk size: 5209.8 KB)
+0001.480 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1500 files added (on-disk size: 5209.8 KB)
+0001.481 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.9 MB, 2049 files batched, 501 (1503) added so far); re-opening (prior size: 5209.8 KB)
+0001.821 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1600 files added (on-disk size: 5842.5 KB)
+0001.826 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1700 files added (on-disk size: 5842.5 KB)
+0001.831 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1800 files added (on-disk size: 5842.5 KB)
+0001.835 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 1900 files added (on-disk size: 5842.5 KB)
+0001.840 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: 2000 files added (on-disk size: 5842.5 KB)
+0001.841 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.9 MB, 2049 files batched, 501 (2004) added so far); re-opening (prior size: 5842.5 KB)
+0002.381 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip.tmp: size is now: 7.60 MB
+0002.649 (0) Created plugins zip (0) - 7834 KB in 2.6 s (3056.1 KB/s) (sha1: 10ceb935480e53925d95d2008de7671bf7117216, sha256: 161b8014c62507af4046ca326e1ac7cead584823fa3e502e5811482be1deef7c)
+0002.654 (0) Beginning creation of dump of themes (split every: 100 MB)
+0002.673 (0) Total entities for the zip file: 20 directories, 235 files (0 skipped as non-modified), 3.2 MB
+0002.678 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0002.682 (0) Zip: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0003.186 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip.tmp: size is now: 1.90 MB
+0003.236 (0) Created themes zip (0) - 1931.6 KB in 0.6 s (3327.4 KB/s) (sha1: 457b45ca3f3a12716caab57529f43ca0db0486e3, sha256: 76d4469249930a880617ccc06568d836d5bcf6e41b894cead0c02c00f5822ea9)
+0003.239 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0003.240 (0) Looking for candidates to back up in: /Applications/MAMP/htdocs/arperinatalforum/wp-content/uploads
+0003.241 (0) finding files: 2018: adding to list (1)
+0003.242 (0) Beginning creation of dump of uploads (split every: 100 MB)
+0003.245 (0) Total entities for the zip file: 2 directories, 2 files (0 skipped as non-modified), 0 MB
+0003.257 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip.tmp: size is now: 0.10 MB
+0003.265 (0) Created uploads zip (0) - 51.4 KB in 0 s (2313.9 KB/s) (sha1: 86be4974387fa7cec700603c89da449317627f61, sha256: cf8d39e85859b0e72fc8c29d991b839b1766a91d14d356018c33fdbba93851ba)
+0003.267 (0) No backup of wpcore: excluded by user's options
+0003.270 (0) Beginning backup of other directories found in the content directory (index: 0)
+0003.271 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0003.273 (0) Looking for candidates to back up in: /Applications/MAMP/htdocs/arperinatalforum/wp-content
+0003.274 (0) finding files: upgrade: skipping: excluded by options
+0003.275 (0) finding files: .DS_Store: adding to list (1)
+0003.276 (0) finding files: index.php: adding to list (2)
+0003.277 (0) finding files: plugins: skipping: this is the plugins directory
+0003.278 (0) finding files: uploads: skipping: this is the uploads directory
+0003.279 (0) finding files: updraft: skipping: this is the updraft directory
+0003.280 (0) finding files: themes: skipping: this is the themes directory
+0003.284 (0) Total entities for the zip file: 0 directories, 2 files (0 skipped as non-modified), 0 MB
+0003.300 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip.tmp: size is now: 0.00 MB
+0003.308 (0) Created others zip (0) - 0.7 KB in 0 s (27.4 KB/s) (sha1: 29c36fdf0ed5e13b9c2a5fcef3c4f48b8bca778d, sha256: 409083107fe6ee420b137df2cb74aa7991ed56045612352f67fc6e5ebbba127e)
+0003.310 (0) No backup of more: excluded by user's options
+0003.314 (0) Saving backup status to database (elements: 8)
+0003.317 (0) Beginning creation of database dump (WordPress DB)
+0003.333 (0) Table wp_options: Total expected rows (approximate): 189
+0003.380 (0) Table wp_options: Total rows added: 188 in 0.05 seconds
+0003.384 (0) Table wp_options: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_options.table.gz - 150.8 KB)
+0003.390 (0) Table wp_users: Total expected rows (approximate): 0
+0003.395 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0003.396 (0) Table wp_users: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_users.table.gz - 0.7 KB)
+0003.402 (0) Table wp_usermeta: Total expected rows (approximate): 38
+0003.407 (0) Table wp_usermeta: Total rows added: 41 in 0.00 seconds
+0003.408 (0) Table wp_usermeta: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_usermeta.table.gz - 1.3 KB)
+0003.412 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0003.417 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0003.418 (0) Table wp_commentmeta: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0003.422 (0) Table wp_comments: Total expected rows (approximate): 0
+0003.427 (0) Table wp_comments: Total rows added: 0 in 0.00 seconds
+0003.428 (0) Table wp_comments: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_comments.table.gz - 0.5 KB)
+0003.440 (0) Table wp_links: Total expected rows (approximate): 0
+0003.444 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0003.445 (0) Table wp_links: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_links.table.gz - 0.4 KB)
+0003.450 (0) Table wp_postmeta: Total expected rows (approximate): 1316
+0003.473 (0) Table wp_postmeta: Total rows added: 1316 in 0.02 seconds
+0003.474 (0) Table wp_postmeta: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_postmeta.table.gz - 17 KB)
+0003.480 (0) Table wp_posts: Total expected rows (approximate): 183
+0003.494 (0) Table wp_posts: Total rows added: 183 in 0.01 seconds
+0003.496 (0) Table wp_posts: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_posts.table.gz - 9.6 KB)
+0003.501 (0) Table wp_term_relationships: Total expected rows (approximate): 21
+0003.506 (0) Table wp_term_relationships: Total rows added: 21 in 0.00 seconds
+0003.507 (0) Table wp_term_relationships: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0003.513 (0) Table wp_term_taxonomy: Total expected rows (approximate): 20
+0003.517 (0) Table wp_term_taxonomy: Total rows added: 20 in 0.00 seconds
+0003.518 (0) Table wp_term_taxonomy: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_term_taxonomy.table.gz - 0.6 KB)
+0003.524 (0) Table wp_termmeta: Total expected rows (approximate): 10
+0003.528 (0) Table wp_termmeta: Total rows added: 10 in 0.00 seconds
+0003.529 (0) Table wp_termmeta: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_termmeta.table.gz - 0.7 KB)
+0003.535 (0) Table wp_terms: Total expected rows (approximate): 20
+0003.540 (0) Table wp_terms: Total rows added: 20 in 0.00 seconds
+0003.541 (0) Table wp_terms: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_terms.table.gz - 0.6 KB)
+0003.546 (0) Table wp_swp_cf: Total expected rows (approximate): 0
+0003.550 (0) Table wp_swp_cf: Total rows added: 0 in 0.00 seconds
+0003.551 (0) Table wp_swp_cf: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_cf.table.gz - 0.4 KB)
+0003.556 (0) Table wp_swp_index: Total expected rows (approximate): 319
+0003.565 (0) Table wp_swp_index: Total rows added: 319 in 0.01 seconds
+0003.566 (0) Table wp_swp_index: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_index.table.gz - 2.2 KB)
+0003.571 (0) Table wp_swp_log: Total expected rows (approximate): 0
+0003.576 (0) Table wp_swp_log: Total rows added: 0 in 0.00 seconds
+0003.578 (0) Table wp_swp_log: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_log.table.gz - 0.4 KB)
+0003.583 (0) Table wp_swp_tax: Total expected rows (approximate): 0
+0003.586 (0) Table wp_swp_tax: Total rows added: 0 in 0.00 seconds
+0003.588 (0) Table wp_swp_tax: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_tax.table.gz - 0.4 KB)
+0003.593 (0) Table wp_swp_terms: Total expected rows (approximate): 179
+0003.599 (0) Table wp_swp_terms: Total rows added: 179 in 0.00 seconds
+0003.601 (0) Table wp_swp_terms: finishing file (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_terms.table.gz - 2.8 KB)
+0003.612 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_options.table.gz (1/17): adding to final database dump
+0003.654 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_users.table.gz (2/17): adding to final database dump
+0003.659 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_usermeta.table.gz (3/17): adding to final database dump
+0003.661 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_commentmeta.table.gz (4/17): adding to final database dump
+0003.662 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_comments.table.gz (5/17): adding to final database dump
+0003.664 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_links.table.gz (6/17): adding to final database dump
+0003.665 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_postmeta.table.gz (7/17): adding to final database dump
+0003.674 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_posts.table.gz (8/17): adding to final database dump
+0003.680 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_term_relationships.table.gz (9/17): adding to final database dump
+0003.681 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_term_taxonomy.table.gz (10/17): adding to final database dump
+0003.683 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_termmeta.table.gz (11/17): adding to final database dump
+0003.684 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_terms.table.gz (12/17): adding to final database dump
+0003.686 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_cf.table.gz (13/17): adding to final database dump
+0003.687 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_index.table.gz (14/17): adding to final database dump
+0003.689 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_log.table.gz (15/17): adding to final database dump
+0003.690 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_tax.table.gz (16/17): adding to final database dump
+0003.692 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db-table-wp_swp_terms.table.gz (17/17): adding to final database dump
+0003.694 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz: finished writing out complete database file (168 KB)
+0003.706 (0) Total database tables backed up: 17 (backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz, size: 189941, sha256)
+0003.713 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0003.714 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0003.715 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0003.716 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip: others: This file has not yet been successfully uploaded: will queue
+0003.717 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz: db: This file has not yet been successfully uploaded: will queue
+0003.718 (0) Saving backup history. Total backup size: 9.8 MB
+0003.720 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0003.725 (0) Cloud backup selection (1/1): remotesend with instance (1/1) (last)
+0003.726 (0) Beginning dispatch of backup to remote (remotesend)
+0003.730 (0) remotesend upload : attempt: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip
+0004.983 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip: existing size: 0
+0004.986 (0) Remote send upload: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip (chunks: 4, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip (0)
+0009.478 (0) Remotesend chunked upload: 26.1 % uploaded (1)
+0013.474 (0) Remotesend chunked upload: 52.3 % uploaded (2)
+0019.243 (0) Remotesend chunked upload: 78.4 % uploaded (3)
+0024.344 (0) Remotesend chunked upload: 100 % uploaded (4)
+0024.347 (0) Remote send upload: success
+0024.350 (0) Recording as successfully uploaded: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip (d3cccab3b3badba67c0495357c650747)
+0024.356 (0) Deleting local file: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-plugins.zip: OK
+0024.357 (0) remotesend upload : attempt: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip
+0025.439 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip: existing size: 0
+0025.441 (0) Remote send upload: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip (0)
+0033.160 (0) Remotesend chunked upload: 100 % uploaded (1)
+0033.163 (0) Remote send upload: success
+0033.165 (0) Recording as successfully uploaded: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip (45455f6954c562040643359778b17976)
+0033.170 (0) Deleting local file: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-themes.zip: OK
+0033.171 (0) remotesend upload : attempt: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip
+0034.274 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip: existing size: 0
+0034.275 (0) Remote send upload: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip (0)
+0035.418 (0) Remotesend chunked upload: 100 % uploaded (1)
+0035.421 (0) Remote send upload: success
+0035.424 (0) Recording as successfully uploaded: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip (48f3e3f308a38578138333e65d474a06)
+0035.428 (0) Deleting local file: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-uploads.zip: OK
+0035.429 (0) remotesend upload : attempt: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip
+0036.410 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip: existing size: 0
+0036.411 (0) Remote send upload: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip (0)
+0037.444 (0) Remotesend chunked upload: 100 % uploaded (1)
+0037.447 (0) Remote send upload: success
+0037.450 (0) Recording as successfully uploaded: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip (09872de6ec338dda44f79163aed81226)
+0037.454 (0) Deleting local file: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-others.zip: OK
+0037.456 (0) remotesend upload : attempt: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz
+0038.384 (0) backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz: existing size: 0
+0038.385 (0) Remote send upload: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz (0)
+0039.760 (0) Remotesend chunked upload: 100 % uploaded (1)
+0039.762 (0) Remote send upload: success
+0039.764 (0) Recording as successfully uploaded: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz (b9181c5fb6018621550a12d5e7a6a251)
+0039.769 (0) Deleting local file: backup_2018-04-20-1505_AR_Perinatal_Forum_b4d33c96090e-db.gz: OK
+0039.770 (0) Prune old backups from local store: skipping, as this was a remote send operation
+0039.771 (0) Resume backup (b4d33c96090e, 0): finish run
+0039.774 (0) Decremented the semaphore (fd) by 1
+0039.776 (0) Semaphore (fd) unlocked
+0039.778 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0039.784 (0) No email will/can be sent - the user has not configured an email address.
+0039.786 (0) The backup apparently succeeded and is now complete. To complete your migration/clone, you should now log in to the remote site and restore the backup set.

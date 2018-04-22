@@ -1,0 +1,122 @@
+0000.005 () Opened log file at time: Sun, 22 Apr 2018 04:00:41 +0000 on http://localhost:8888/arperinatalforum
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.14.5.24 WP: 4.9.5 PHP: 7.2.1 (apache2handler, Darwin BCLAP448-MBP (Stephen Karpeles) 17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64 x86_64) MySQL: 5.6.38 WPLANG: en_US Server: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 32.7M | 6.3M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 () Free space on disk containing Updraft's temporary directory: 390551.5 MB
+0000.006 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":"1","updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.132 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.135 () Entity: db
+0000.135 () restore_backup(backup_file=backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-db.gz, type=db, info=a:0:{}, last_one=)
+0000.136 () Unpacking backup... (backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-db.gz, 0.1 Mb)
+0000.137 () Database successfully unpacked
+0000.138 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.138 () Using direct MySQL access; value of use_mysqli is: 1
+0000.172 () Max packet size: 32 MB
+0000.172 () Entering maintenance mode
+0000.172 () Enabling Maintenance mode&#8230;
+0000.173 () Backup of: http://apf.dev.perch.is
+0000.190 () Content URL: http://apf.dev.perch.is/wp-content
+0000.190 () Uploads URL: http://apf.dev.perch.is/wp-content/uploads
+0000.190 () Old table prefix: apf_
+0000.190 () Site information: multisite=0
+0000.192 () New table prefix: wp_
+0000.197 () Processing table (InnoDB): apf_options - will restore as: wp_options
+0000.278 () Restoring prior UD configuration (table: wp_options; keys: 91)
+0000.463 () Table prefix has changed: changing options table field(s) accordingly (options)
+0000.464 () Options table fields changed OK
+0000.469 () Search and replacing table: wp_options: rows: 265
+0000.508 () Processing table (InnoDB): apf_users - will restore as: wp_users
+0000.533 () Search and replacing table: wp_users: rows: 3
+0000.534 () Processing table (InnoDB): apf_usermeta - will restore as: wp_usermeta
+0000.566 () Table prefix has changed: changing usermeta table field(s) accordingly
+0000.568 () Usermeta table fields changed OK
+0000.571 () Search and replacing table: wp_usermeta: rows: 68
+0000.575 () Processing table (InnoDB): apf_commentmeta - will restore as: wp_commentmeta
+0000.598 () Search and replacing table: wp_commentmeta: rows: 0
+0000.598 () Processing table (InnoDB): apf_comments - will restore as: wp_comments
+0000.625 () Search and replacing table: wp_comments: rows: 0
+0000.625 () Processing table (InnoDB): apf_links - will restore as: wp_links
+0000.658 () Search and replacing table: wp_links: rows: 0
+0000.658 () Processing table (InnoDB): apf_postmeta - will restore as: wp_postmeta
+0000.773 () Search and replacing table: wp_postmeta: rows: 37
+0000.784 () Processing table (InnoDB): apf_posts - will restore as: wp_posts
+0000.835 () Skipping search/replace on GUID column in posts table
+0000.835 () Search and replacing table: wp_posts: rows: 203
+0000.869 () Processing table (InnoDB): apf_term_relationships - will restore as: wp_term_relationships
+0000.890 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0000.890 () Processing table (InnoDB): apf_term_taxonomy - will restore as: wp_term_taxonomy
+0000.912 () Search and replacing table: wp_term_taxonomy: rows: 21
+0000.913 () Processing table (InnoDB): apf_termmeta - will restore as: wp_termmeta
+0000.940 () Search and replacing table: wp_termmeta: rows: 30
+0000.942 () Processing table (InnoDB): apf_terms - will restore as: wp_terms
+0000.967 () Search and replacing table: wp_terms: rows: 21
+0000.969 () Processing table (InnoDB): apf_swp_cf - will restore as: wp_swp_cf
+0000.990 () Search and replacing table: wp_swp_cf: rows: 0
+0000.990 () Processing table (InnoDB): apf_swp_index - will restore as: wp_swp_index
+0001.026 () Search and replacing table: wp_swp_index: rows: 325
+0001.049 () Processing table (InnoDB): apf_swp_log - will restore as: wp_swp_log
+0001.072 () Search and replacing table: wp_swp_log: rows: 0
+0001.072 () Processing table (InnoDB): apf_swp_tax - will restore as: wp_swp_tax
+0001.094 () Search and replacing table: wp_swp_tax: rows: 0
+0001.094 () Processing table (InnoDB): apf_swp_terms - will restore as: wp_swp_terms
+0001.109 () Database queries processed: 50 in 0.97 seconds
+0001.116 () Unlocking database and leaving maintenance mode
+0001.116 () Disabling Maintenance mode&#8230;
+0001.119 () Search and replacing table: wp_swp_terms: rows: 182
+0001.128 () Finished: lines processed: 54 in 0.99 seconds
+0001.128 () Cleaning up rubbish...
+0001.128 () Begin search and replace (updraftplus_restored_db)
+0001.129 () [Database-replace-site-url] Database: search and replace site URL
+0001.129 () Restored pre-migration site ID for this installation
+0001.133 () Database search and replace: replace http://apf.dev.perch.is in backup dump with http://localhost:8888/arperinatalforum
+0001.133 () Database search and replace: replace https://apf.dev.perch.is in backup dump with http://localhost:8888/arperinatalforum
+0001.133 () Search and replacing table: wp_commentmeta: already done
+0001.133 () Search and replacing table: wp_comments: already done
+0001.134 () Search and replacing table: wp_links: already done
+0001.134 () Search and replacing table: wp_options: already done
+0001.134 () Search and replacing table: wp_postmeta: already done
+0001.134 () Search and replacing table: wp_posts: already done
+0001.134 () Search and replacing table: wp_swp_cf: already done
+0001.134 () Search and replacing table: wp_swp_index: already done
+0001.134 () Search and replacing table: wp_swp_log: already done
+0001.134 () Search and replacing table: wp_swp_tax: already done
+0001.134 () Search and replacing table: wp_swp_terms: already done
+0001.134 () Search and replacing table: wp_term_relationships: already done
+0001.134 () Search and replacing table: wp_term_taxonomy: already done
+0001.134 () Search and replacing table: wp_termmeta: already done
+0001.134 () Search and replacing table: wp_terms: already done
+0001.134 () Search and replacing table: wp_usermeta: already done
+0001.134 () Search and replacing table: wp_users: already done
+0001.142 () Entity: plugins
+0001.142 () restore_backup(backup_file=backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:61:"/Applications/MAMP/htdocs/arperinatalforum/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0001.142 () Unpacking backup... (backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-plugins.zip, 7.5 Mb)
+0004.466 () Moving old data: filesystem method / updraft_dir is potentially possible
+0004.466 () Moving old data: can potentially use wp_filesystem method / -old
+0004.466 () Moving old data out of the way...
+0005.435 () Top-level entities being moved: index.php, akismet, advanced-custom-fields-pro, updraftplus, searchwp
+0005.436 () Moving unpacked backup into place...
+0006.313 () Top-level entities being moved: index.php, akismet, advanced-custom-fields-pro, updraftplus, searchwp
+0006.316 () Cleaning up rubbish...
+0006.320 () Entity: themes
+0006.320 () restore_backup(backup_file=backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-themes.zip, type=themes, info=a:2:{s:4:"path";s:60:"/Applications/MAMP/htdocs/arperinatalforum/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0006.320 () Unpacking backup... (backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-themes.zip, 1.9 Mb)
+0006.734 () Moving old data: filesystem method / updraft_dir is potentially possible
+0006.734 () Moving old data: can potentially use wp_filesystem method / -old
+0006.734 () Moving old data out of the way...
+0006.821 () Top-level entities being moved: .DS_Store, index.php, arperinatal, arperinatal_CUSTOM
+0006.822 () Moving unpacked backup into place...
+0006.929 () Top-level entities being moved: .DS_Store, index.php, arperinatal, arperinatal_CUSTOM
+0006.930 () Cleaning up rubbish...
+0006.934 () Entity: uploads
+0006.934 () restore_backup(backup_file=backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:61:"/Applications/MAMP/htdocs/arperinatalforum/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0006.934 () Unpacking backup... (backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-uploads.zip, 0.4 Mb)
+0006.956 () Moving old data: filesystem method / updraft_dir is potentially possible
+0006.956 () Moving old data: can potentially use wp_filesystem method / -old
+0006.956 () Moving old data out of the way...
+0006.960 () Moving unpacked backup into place...
+0006.963 () Cleaning up rubbish...
+0006.967 () Entity: others
+0006.967 () restore_backup(backup_file=backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-others.zip, type=others, info=a:2:{s:4:"path";s:53:"/Applications/MAMP/htdocs/arperinatalforum/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0006.968 () Unpacking backup... (backup_2018-04-22-0359_Arkansas_Perinatal_Forum_0d8e93868257-others.zip, 0 Mb)
+0006.993 () Cleaning up rubbish...
+0006.994 () Error: Failed to delete working directory after restoring. (/Applications/MAMP/htdocs/arperinatalforum/wp-content/upgrade/a49e4f15)
+0007.003 () Restore successful!
+0007.003 () Restore successful

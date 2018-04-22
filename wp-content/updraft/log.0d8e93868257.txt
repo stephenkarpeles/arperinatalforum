@@ -1,0 +1,4 @@
+0000.000 (1) Opened log file at time: Sun, 22 Apr 2018 04:04:19 +0000 on http://localhost:8888/arperinatalforum
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.14.5.24 WP: 4.9.5 PHP: 7.2.1 (apache2handler, Darwin BCLAP448-MBP (Stephen Karpeles) 17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64 x86_64) MySQL: 5.6.38 WPLANG: en_US Server: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 26.8M | 14M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (1) Free space on disk containing Updraft's temporary directory: 390381.2 MB
+0000.005 (1) This backup task (0d8e93868257) is either complete or began over 2 days ago: ending (1524369859.9043, ) (existing jobdata keys: )

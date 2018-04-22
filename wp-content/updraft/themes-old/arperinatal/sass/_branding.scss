@@ -1,0 +1,65 @@
+.site {
+  &__branding {
+    background: $default-background-color;
+    width: 13.75em; /* Set this to 20em if social block is showing */
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(mobile-tween, 'max-width') {
+      justify-content: flex-start;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    &--logo {
+      width: 5.625em;
+      padding: .95em 1.15em .9em 1.25em;
+      border-right: solid 1px $alt-background-color;
+
+      img {
+        width: 3.125em;
+      }
+    }
+
+    &--name {
+      width: 8em;
+      padding: 1em 1.4em;
+      font-size: 1em;
+      line-height: 1.06;
+      font-weight: 700;
+      font-family: $alt-font-stack;
+
+      a {
+        text-decoration: none;
+        color: $default-text-color;
+      }
+    }
+
+    &--social {
+      width: 6.25em;
+      background: $tertiary-color;
+      text-align: center;
+      padding-top: 1.75em;
+
+      @include mq(mobile-tween, 'max-width') {
+        display: none !important;
+      }
+
+      a {
+        margin: 0 5px;
+        display: inline-block;
+        
+        img {
+          width: 1.125em;
+        }
+
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+  }
+}

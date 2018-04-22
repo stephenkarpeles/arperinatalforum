@@ -1,0 +1,19 @@
+.cta {
+  position: relative;
+  color: $primary-color;
+  font-family: $alt-font-stack;
+  font-size: 1.125em;
+
+  &--fancy {
+    margin-top: 2.65em;
+
+    &:before {
+      content: '';
+      width: 3.125rem;
+      height: .25rem;
+      background: $alt-text-color;
+      position: absolute;
+      top: -1.25em;
+    }
+  }
+}

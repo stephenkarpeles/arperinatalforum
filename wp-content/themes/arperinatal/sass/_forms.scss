@@ -50,6 +50,69 @@
 	}
 }
 
+.wpcf7 {
+  .content & {
+  	p { 
+  		padding: 0;
+  	}
+  }
+
+  p:not(:last-of-type) {
+  	border: 1px solid $default-background-color;
+    padding: 1.25em 1.875em;
+    margin-bottom: 1.25em;
+  }
+
+  label {
+		font-size: 1.125rem;
+		color: $alt-text-color;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: .5em 0 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		font-size: 1.25rem;
+		font-family: $alt-font-stack;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	input[type="submit"] {
+		text-decoration: underline;
+		color: $primary-color;
+    text-align: left;
+    margin-top: 1em;
+	  display: block;
+	  font-family: $alt-font-stack;
+	  font-size: 1em;
+	  cursor: pointer;
+
+	  &:hover {
+	  	color: lighten($primary-color, .2);
+	  }
+	}
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $default-text-color;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: $default-text-color;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: $default-text-color;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: $default-text-color;
+	}
+}
+
 .select-block {
 	height: 6.25em;
 	position: relative;

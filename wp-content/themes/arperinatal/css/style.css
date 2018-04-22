@@ -287,6 +287,52 @@ blockquote {
       /* Firefox 18- */
       color: #3b3b3b; }
 
+.content .wpcf7 p {
+  padding: 0; }
+.wpcf7 p:not(:last-of-type) {
+  border: 1px solid #efefef;
+  padding: 1.25em 1.875em;
+  margin-bottom: 1.25em; }
+.wpcf7 label {
+  font-size: 1.125rem;
+  color: #a9a9a9; }
+.wpcf7 input,
+.wpcf7 textarea {
+  width: 100%;
+  padding: .5em 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  font-size: 1.25rem;
+  font-family: "Miriam Libre", Georgia, sans-serif; }
+  .wpcf7 input:focus,
+  .wpcf7 textarea:focus {
+    outline: none; }
+.wpcf7 input[type="submit"] {
+  text-decoration: underline;
+  color: #fd3d3d;
+  text-align: left;
+  margin-top: 1em;
+  display: block;
+  font-family: "Miriam Libre", Georgia, sans-serif;
+  font-size: 1em;
+  cursor: pointer; }
+  .wpcf7 input[type="submit"]:hover {
+    color: #fd3e3e; }
+.wpcf7 ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #3b3b3b; }
+.wpcf7 ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3b3b3b; }
+.wpcf7 :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #3b3b3b; }
+.wpcf7 :-moz-placeholder {
+  /* Firefox 18- */
+  color: #3b3b3b; }
+
 .select-block {
   height: 6.25em;
   position: relative; }
