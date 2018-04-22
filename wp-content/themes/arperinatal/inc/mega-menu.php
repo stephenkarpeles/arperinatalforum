@@ -26,8 +26,8 @@
     <div class="mega-menu__col">      
       <ul>
         <?php wp_list_categories( array(
-            'orderby' => 'id',
-            'include' => array( 4, 5, 6, 7, 8, 9 ),
+            'orderby' => 'name',
+            'include' => array( 4, 18, 1, 19, 22 ),
             'title_li' => '',
             'hide_empty' => false
         ) ); ?> 
@@ -37,8 +37,8 @@
     <div class="mega-menu__col">
       <ul>
         <?php wp_list_categories( array(
-            'orderby' => 'id',
-            'include' => array( 14, 15, 16, 17, 18, 19 ),
+            'orderby' => 'name',
+            'include' => array( 20, 17 ),
             'title_li' => '',
             'hide_empty' => false
         ) ); ?> 
@@ -48,10 +48,11 @@
     <div class="mega-menu__col">
       <ul>
         <?php wp_list_categories( array(
-            'orderby' => 'id',
-            'include' => array( 20, 21 ),
+            'orderby' => 'name',
+            'include' => array( 99 ),
             'title_li' => '',
-            'hide_empty' => false
+            'hide_empty' => false,
+            'show_option_none' => ''
         ) ); ?> 
       </ul>
       <a href="" class="view-all-link">See all workgroups</a>
