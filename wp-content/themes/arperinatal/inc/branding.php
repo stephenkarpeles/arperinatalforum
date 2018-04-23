@@ -1,5 +1,5 @@
 <div class="site__branding">
-  <a href="index.php" class="site__branding--logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+  <a class="site__branding--logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Arkansas Perinatal Forum">
   </a>
   <div class="site__branding--name">

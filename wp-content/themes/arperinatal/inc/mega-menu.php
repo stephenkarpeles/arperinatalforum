@@ -55,7 +55,7 @@
             'show_option_none' => ''
         ) ); ?> 
       </ul>
-      <a href="" class="view-all-link">See all workgroups</a>
+      <a href="<?php echo get_page_link(7); ?>" class="view-all-link">See all workgroups</a>
     </div>
 
   </div>

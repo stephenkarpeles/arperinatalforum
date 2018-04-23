@@ -149,7 +149,7 @@
               // $image = get_field('nameofimagefield', 'category_'.$category->term_id);
               // echo '<img src="' . $image . ' />'; //change depending on the return value of the image field
               echo '<div class="card__description">' . get_field('description', 'category_'.$category->term_id) . '</div>';
-              echo '<div class="card__link"><a href="' . get_field('contact_link', 'category_'.$category->term_id) . '">Learn More</a></div>';
+              echo '<div class="card__link"><a href="' . get_site_url() . "/workgroups/" . $category->slug . '">Learn More</a></div>';
 
             echo '</div>';
             echo '</div>';
