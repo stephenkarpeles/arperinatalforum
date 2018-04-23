@@ -1,14 +1,47 @@
 <div class="feat-post">
-  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mom_baby.jpg" alt="">
+
+  <?php
+    $args = array(
+      'post_type'       => 'news',
+      'posts_per_page'  => 1,
+      'offset'          => 1
+    );
+     
+    $news = new WP_Query( $args );
+      if( $news->have_posts() ) :
+    ?>
+          
+    <?php
+      while( $news->have_posts() ) :
+        $news->the_post();
+        ?>
+
+          <?php 
+            $thumb_id = get_post_thumbnail_id();
+            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+            $thumb_url = $thumb_url_array[0];
+          ?>
+  <img src="<?php echo $thumb_url ?>" alt="Featured Post">
   <div class="feat-post__content">
     <div class="feat-post__date">
-      March 16, 2018
+      <?php the_date(); ?>
     </div>
     <div class="feat-post__excerpt">
-      This is a news post title that cuts off after something like 75 characters or so…
+      <?php the_title(); ?>
     </div> 
     <div class="feat-post__cta">
-      <a href="">Read more</a>
+      <a href="<?php echo the_permalink(); ?>">Read more</a>
     </div>           
   </div>
+
+  <?php
+    endwhile;
+    wp_reset_postdata();
+  ?>              
+  <?php
+  else :
+    // no posts found
+  endif;
+  ?>
+
 </div>
