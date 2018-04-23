@@ -529,16 +529,16 @@ section {
         .resource-grid .third-col-block .grid__col {
           flex: 0 0 100% !important; } }
     .half-col-block .grid__col {
-      flex: 1 1 50%; }
+      flex: 0 0 50%; }
       @media screen and (max-width: 1023px) {
         .half-col-block .grid__col {
-          flex: 1 1 50%; } }
+          flex: 0 0 50%; } }
       @media screen and (max-width: 767px) {
         .half-col-block .grid__col {
-          flex: 1 1 50%; } }
+          flex: 0 0 50%; } }
       @media screen and (max-width: 479px) {
         .half-col-block .grid__col {
-          flex: 1 1 100%; } }
+          flex: 0 0 100%; } }
     @media screen and (max-width: 1023px) {
       .col-desktop-switch .grid__col {
         flex: 0 0 100%; } }

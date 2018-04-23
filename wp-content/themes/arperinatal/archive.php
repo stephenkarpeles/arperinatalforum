@@ -1,53 +1,127 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package arperinatal
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+<section class="hero" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
+	<div class="hero__overlay"></div>
+	<div class="hero__link--offset">
+		<a href="">Find more workgroups</a>
+	</div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div class="info-block info-block--tablet">
+		<div class="info-block__title">
+			ANSG
+		</div>
+	</div>
+</section>
 
-		<?php if ( have_posts() ) : ?>
+<section>
+	<div class="container container--flex-start">
 
-			<header class="page-header">
+		<aside class="aside aside--pulled-up-default">
+			<?php include('inc/info-block.php') ?>			
+			<?php include('inc/event-listing.php') ?>			
+		</aside>
+
+		<div class="content">
+			<div class="category-label category-label--b">Breastfeeding</div>
+			<h1><?php single_cat_title(); ?></h1>
+
+			<div class="hide-above-ipad info-block--mobile">
+				<div class="info-block__toggle">
+				  <div class="info-block__open is-visible">Show Contact Information <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-arrow-dark-down.svg" alt=""></div>
+				  <div class="info-block__close">Hide Contact Information <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-arrow-dark-up.svg" alt=""></div>
+				</div>
+				<?php include('inc/info-block.php') ?>
+			</div>
+
+			<p class="intro">
+				<?php get_field('intro'); ?>
+			</p>
+			<p>
+				<?php get_field('intro_secondary'); ?>
+			</p>
+
+			<h2>Latest Updates</h2>
+
+			<div class="grid grid--padding-left half-col-block col-desktop-switch">
+				
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+          $args = array(
+            'post_type'   => 'news',
+           );
+           
+          $news = new WP_Query( $args );
+            if( $news->have_posts() ) :
+          ?>
+            
+            <?php
+              while( $news->have_posts() ) :
+                $news->the_post();
+                ?>
+                  <div class="grid__col">
+                    <div class="card card--post">
+										  <div class="card__date">
+										    <?php the_date(); ?>
+										  </div>
+										  <div class="card__title">
+										    <h3><?php the_title(); ?></h3>
+										  </div>
+										  <div class="card__content">
+										    <div class="card__description">
+										      <?php the_field('brief_description'); ?>
+										    </div>
+										    <div class="card__link">
+										      <a href="<?php echo the_permalink(); ?>">Continue Reading</a>
+										    </div>
+										  </div>
+										</div>
+                  </div>
+                <?php
+              endwhile;
+              wp_reset_postdata();
+            ?>                
+          <?php
+          else :
+            // no posts found
+          endif;
+          ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			</div>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+			<div class="view-all-block">
+				<a href="">View all updates</a>
+			</div>
 
-			endwhile;
+			<h2>Resources</h2>
 
-			the_posts_navigation();
+			<div class="grid grid--padding-left half-col-block">
+				<div class="grid__col">
+					<?php include('inc/card-resource.php') ?>
+				</div>
+				<div class="grid__col">
+					<?php include('inc/card-resource.php') ?>
+				</div>
+				<div class="grid__col">
+					<?php include('inc/card-resource.php') ?>
+				</div>
+				<div class="grid__col">
+					<?php include('inc/card-resource.php') ?>
+				</div>
+			</div>
 
-		else :
+			<div class="view-all-block">
+				<a href="">View all resources</a>
+			</div>
 
-			get_template_part( 'template-parts/content', 'none' );
+			<h2>Partners</h2>
+			<p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscip.</p>
 
-		endif;
-		?>
+			<div class="hide-above-ipad">
+			  <?php include('inc/event-listing.php') ?>			
+			</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</div>
+		
+	</div>
+</section>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>

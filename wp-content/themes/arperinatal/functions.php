@@ -126,6 +126,8 @@ function arperinatal_scripts() {
 
 	wp_enqueue_style( 'arperinatal-style-custom', get_template_directory_uri() . '/css/style.css');
 
+	wp_enqueue_script( 'match-height', get_template_directory_uri() . '/js/matchHeight.js', array('jquery'), true);
+
 	wp_enqueue_script( 'arperinatal-main-scripts', get_template_directory_uri() . '/js/main.js', array('jquery'), '20151215', true);
 
 	wp_enqueue_script( 'arperinatal-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

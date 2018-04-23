@@ -151,6 +151,11 @@ window.addEventListener('scroll', function(){
     }
   });
 
+  // Equal Heights Columns
+  $(function() {
+    $('.card').matchHeight();
+  });
+
   // Smooth scroll top top
   $('a[href*="#"]')
     // Remove links that don't actually link to anything

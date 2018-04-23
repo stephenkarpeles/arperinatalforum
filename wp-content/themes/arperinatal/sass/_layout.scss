@@ -143,18 +143,18 @@ section {
     }
 
     .half-col-block & {
-      flex: 1 1 50%;
+      flex: 0 0 50%;
 
       @include mq(desktop, 'max-width') {
-        flex: 1 1 50%;
+        flex: 0 0 50%;
       }
 
       @include mq(ipad, 'max-width') {
-        flex: 1 1 50%;
+        flex: 0 0 50%;
       }
 
       @include mq(mobile-landscape, 'max-width') {
-        flex: 1 1 100%;
+        flex: 0 0 100%;
       }
     } 
 
