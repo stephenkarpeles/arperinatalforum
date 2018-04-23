@@ -1,0 +1,232 @@
+0000.000 (0) Opened log file at time: Mon, 23 Apr 2018 06:59:24 +0000 on http://localhost:8888/arperinatalforum
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.14.5.24 WP: 4.9.5 PHP: 7.2.1 (apache2handler, Darwin BCLAP448-MBP (Stephen Karpeles) 17.5.0 Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64 x86_64) MySQL: 5.6.38 WPLANG: en_US Server: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 37.1M | 10.3M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 389806.3 MB
+0000.006 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB: 1 (schedule: daily)
+0000.012 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.016 (0) Set semaphore last lock (fd) time to 2018-04-23 06:59:24
+0000.017 (0) Semaphore lock (fd) complete
+0000.022 (0) Backup run: resumption=0, nonce=bd7ae974e5bd, begun at=1524466764 (0s ago), job type=backup, label=localhost:8888/arperinatalforum
+0000.024 (0) Scheduling a resumption (1) after 300 seconds (1524467064) in case this run gets aborted
+0000.038 (0) Checking if we have a zip executable available
+0000.039 (0) Testing: /usr/bin/zip
+0000.046 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.048 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.049 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.050 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.051 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.064 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.065 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.082 (0) Working binary zip found: /usr/bin/zip
+0000.085 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.086 (0) Creation of backups of directories: beginning
+0000.092 (0) Beginning creation of dump of plugins (split every: 25 MB)
+0000.210 (0) Total entities for the zip file: 649 directories, 3535 files (0 skipped as non-modified), 41.9 MB
+0000.222 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.227 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.232 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.237 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.243 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.244 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.8 MB, 3535 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.655 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: size is now: 4.10 MB
+0000.661 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 600 files added (on-disk size: 4190.5 KB)
+0000.666 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 700 files added (on-disk size: 4190.5 KB)
+0000.671 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 800 files added (on-disk size: 4190.5 KB)
+0000.676 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 900 files added (on-disk size: 4190.5 KB)
+0000.680 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1000 files added (on-disk size: 4190.5 KB)
+0000.682 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4 MB, 3535 files batched, 501 (1002) added so far); re-opening (prior size: 4190.5 KB)
+0001.108 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: size is now: 5.10 MB
+0001.115 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1100 files added (on-disk size: 5245.1 KB)
+0001.119 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1200 files added (on-disk size: 5245.1 KB)
+0001.124 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1300 files added (on-disk size: 5245.1 KB)
+0001.128 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1400 files added (on-disk size: 5245.1 KB)
+0001.133 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1500 files added (on-disk size: 5245.1 KB)
+0001.134 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.7 MB, 3535 files batched, 501 (1503) added so far); re-opening (prior size: 5245.1 KB)
+0001.699 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: size is now: 7.40 MB
+0001.706 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1600 files added (on-disk size: 7542.9 KB)
+0001.710 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1700 files added (on-disk size: 7542.9 KB)
+0001.715 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1800 files added (on-disk size: 7542.9 KB)
+0001.719 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 1900 files added (on-disk size: 7542.9 KB)
+0001.724 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2000 files added (on-disk size: 7542.9 KB)
+0001.725 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11.2 MB, 3535 files batched, 501 (2004) added so far); re-opening (prior size: 7542.9 KB)
+0002.328 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: size is now: 9.90 MB
+0002.335 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2100 files added (on-disk size: 10146.1 KB)
+0002.340 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2200 files added (on-disk size: 10146.1 KB)
+0002.344 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2300 files added (on-disk size: 10146.1 KB)
+0002.348 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2400 files added (on-disk size: 10146.1 KB)
+0002.353 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2500 files added (on-disk size: 10146.1 KB)
+0002.354 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3 MB, 3535 files batched, 501 (2505) added so far); re-opening (prior size: 10146.1 KB)
+0002.947 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2600 files added (on-disk size: 11081.2 KB)
+0002.952 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2700 files added (on-disk size: 11081.2 KB)
+0002.956 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2800 files added (on-disk size: 11081.2 KB)
+0002.961 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 2900 files added (on-disk size: 11081.2 KB)
+0002.966 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 3000 files added (on-disk size: 11081.2 KB)
+0002.967 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2 MB, 3535 files batched, 501 (3006) added so far); re-opening (prior size: 11081.2 KB)
+0003.547 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 3100 files added (on-disk size: 11813.6 KB)
+0003.553 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 3200 files added (on-disk size: 11813.6 KB)
+0003.557 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 3300 files added (on-disk size: 11813.6 KB)
+0003.562 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 3400 files added (on-disk size: 11813.6 KB)
+0003.566 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip.tmp: 3500 files added (on-disk size: 11813.6 KB)
+0003.568 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.2 MB, 3535 files batched, 501 (3507) added so far); re-opening (prior size: 11813.6 KB)
+0004.589 (0) Created plugins zip (0) - 14097.8 KB in 4.5 s (3136 KB/s) (sha1: 9683589a744eea4f90e044c56f0fb3009424186b, sha256: 6c8fe582e26887148a5fbc799bc25ca114446795a3509db87612f48cb780bf07)
+0004.593 (0) Beginning creation of dump of themes (split every: 25 MB)
+0004.603 (0) Total entities for the zip file: 20 directories, 236 files (0 skipped as non-modified), 3.3 MB
+0004.607 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.612 (0) Zip: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.828 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip.tmp: size is now: 1.90 MB
+0004.875 (0) Created themes zip (0) - 1937.7 KB in 0.3 s (6925.8 KB/s) (sha1: 7f377b521e8dbcb5e77962aa93ae7fcf4ec2ee5f, sha256: 7f34e15490c1f73fdb3181afdf4fb4c4873f53476739800387162e15163f3d5a)
+0004.879 (0) Exclusion option setting (uploads): 
+0004.880 (0) Looking for candidates to back up in: /Applications/MAMP/htdocs/arperinatalforum/wp-content/uploads
+0004.881 (0) finding files: 2018: adding to list (1)
+0004.882 (0) Beginning creation of dump of uploads (split every: 25 MB)
+0004.886 (0) Total entities for the zip file: 2 directories, 3 files (0 skipped as non-modified), 0.5 MB
+0004.911 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip.tmp: size is now: 0.40 MB
+0004.927 (0) Created uploads zip (0) - 431.1 KB in 0 s (10053.3 KB/s) (sha1: fc2733f834d9380a1f45abeee32343f93372bdfe, sha256: 20defb6fdab93afea5f5193ad6b2957694f49304a4ccaf3e4cc4f2c59428bd5d)
+0004.929 (0) No backup of wpcore: excluded by user's options
+0004.932 (0) Beginning backup of other directories found in the content directory (index: 0)
+0004.933 (0) Exclusion option setting (others): 
+0004.934 (0) Looking for candidates to back up in: /Applications/MAMP/htdocs/arperinatalforum/wp-content
+0004.935 (0) finding files: .DS_Store-old: adding to list (1)
+0004.936 (0) finding files: upgrade: adding to list (2)
+0004.937 (0) finding files: .DS_Store: adding to list (3)
+0004.938 (0) finding files: index.php: adding to list (4)
+0004.939 (0) finding files: plugins: skipping: this is the plugins directory
+0004.939 (0) finding files: uploads: skipping: this is the uploads directory
+0004.941 (0) finding files: updraft: skipping: this is the updraft directory
+0004.942 (0) finding files: themes: skipping: this is the themes directory
+0004.946 (0) Total entities for the zip file: 1 directories, 3 files (0 skipped as non-modified), 0 MB
+0004.958 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip.tmp: size is now: 0.00 MB
+0004.966 (0) Created others zip (0) - 1.4 KB in 0 s (64.3 KB/s) (sha1: 2934a00fa69254a1fdfaf11c1d5ce4f8234ca0cc, sha256: bd3f94a2fa65d5a32f089b1b776c90be816d3fedf5bf989826e973823c6ca5e5)
+0004.968 (0) No backup of more: excluded by user's options
+0004.974 (0) Saving backup status to database (elements: 8)
+0004.978 (0) Beginning creation of database dump (WordPress DB)
+0004.993 (0) Table wp_options: Total expected rows (approximate): 279
+0005.043 (0) Table wp_options: Total rows added: 280 in 0.05 seconds
+0005.047 (0) Table wp_options: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_options.table.gz - 156.2 KB)
+0005.052 (0) Table wp_users: Total expected rows (approximate): 3
+0005.057 (0) Table wp_users: Total rows added: 3 in 0.00 seconds
+0005.058 (0) Table wp_users: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_users.table.gz - 0.8 KB)
+0005.064 (0) Table wp_usermeta: Total expected rows (approximate): 68
+0005.069 (0) Table wp_usermeta: Total rows added: 68 in 0.00 seconds
+0005.070 (0) Table wp_usermeta: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_usermeta.table.gz - 2 KB)
+0005.075 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0005.079 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0005.080 (0) Table wp_commentmeta: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0005.085 (0) Table wp_comments: Total expected rows (approximate): 0
+0005.090 (0) Table wp_comments: Total rows added: 0 in 0.00 seconds
+0005.091 (0) Table wp_comments: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_comments.table.gz - 0.5 KB)
+0005.096 (0) Table wp_links: Total expected rows (approximate): 0
+0005.100 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0005.102 (0) Table wp_links: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_links.table.gz - 0.4 KB)
+0005.107 (0) Table wp_postmeta: Total expected rows (approximate): 1974
+0005.139 (0) Table wp_postmeta: Total rows added: 1974 in 0.03 seconds
+0005.141 (0) Table wp_postmeta: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_postmeta.table.gz - 25 KB)
+0005.146 (0) Table wp_posts: Total expected rows (approximate): 224
+0005.163 (0) Table wp_posts: Total rows added: 224 in 0.02 seconds
+0005.164 (0) Table wp_posts: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_posts.table.gz - 12.9 KB)
+0005.169 (0) Table wp_term_relationships: Total expected rows (approximate): 21
+0005.174 (0) Table wp_term_relationships: Total rows added: 21 in 0.00 seconds
+0005.176 (0) Table wp_term_relationships: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0005.180 (0) Table wp_term_taxonomy: Total expected rows (approximate): 12
+0005.185 (0) Table wp_term_taxonomy: Total rows added: 12 in 0.00 seconds
+0005.186 (0) Table wp_term_taxonomy: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_term_taxonomy.table.gz - 0.6 KB)
+0005.192 (0) Table wp_termmeta: Total expected rows (approximate): 132
+0005.197 (0) Table wp_termmeta: Total rows added: 132 in 0.00 seconds
+0005.198 (0) Table wp_termmeta: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_termmeta.table.gz - 2.3 KB)
+0005.203 (0) Table wp_terms: Total expected rows (approximate): 12
+0005.207 (0) Table wp_terms: Total rows added: 12 in 0.00 seconds
+0005.208 (0) Table wp_terms: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_terms.table.gz - 0.6 KB)
+0005.213 (0) Table wp_psn_rules: Total expected rows (approximate): 0
+0005.216 (0) Table wp_psn_rules: Total rows added: 0 in 0.00 seconds
+0005.217 (0) Table wp_psn_rules: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_psn_rules.table.gz - 0.6 KB)
+0005.222 (0) Table wp_swp_cf: Total expected rows (approximate): 0
+0005.226 (0) Table wp_swp_cf: Total rows added: 0 in 0.00 seconds
+0005.227 (0) Table wp_swp_cf: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_cf.table.gz - 0.4 KB)
+0005.231 (0) Table wp_swp_index: Total expected rows (approximate): 317
+0005.239 (0) Table wp_swp_index: Total rows added: 317 in 0.01 seconds
+0005.240 (0) Table wp_swp_index: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_index.table.gz - 2.1 KB)
+0005.244 (0) Table wp_swp_log: Total expected rows (approximate): 0
+0005.247 (0) Table wp_swp_log: Total rows added: 0 in 0.00 seconds
+0005.248 (0) Table wp_swp_log: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_log.table.gz - 0.4 KB)
+0005.252 (0) Table wp_swp_tax: Total expected rows (approximate): 0
+0005.256 (0) Table wp_swp_tax: Total rows added: 0 in 0.00 seconds
+0005.257 (0) Table wp_swp_tax: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_tax.table.gz - 0.4 KB)
+0005.261 (0) Table wp_swp_terms: Total expected rows (approximate): 185
+0005.266 (0) Table wp_swp_terms: Total rows added: 185 in 0.00 seconds
+0005.268 (0) Table wp_swp_terms: finishing file (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_terms.table.gz - 2.9 KB)
+0005.276 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_options.table.gz (1/18): adding to final database dump
+0005.323 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_users.table.gz (2/18): adding to final database dump
+0005.326 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_usermeta.table.gz (3/18): adding to final database dump
+0005.328 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_commentmeta.table.gz (4/18): adding to final database dump
+0005.329 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_comments.table.gz (5/18): adding to final database dump
+0005.331 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_links.table.gz (6/18): adding to final database dump
+0005.333 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_postmeta.table.gz (7/18): adding to final database dump
+0005.345 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_posts.table.gz (8/18): adding to final database dump
+0005.352 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_term_relationships.table.gz (9/18): adding to final database dump
+0005.353 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_term_taxonomy.table.gz (10/18): adding to final database dump
+0005.355 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_termmeta.table.gz (11/18): adding to final database dump
+0005.357 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_terms.table.gz (12/18): adding to final database dump
+0005.359 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_psn_rules.table.gz (13/18): adding to final database dump
+0005.360 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_cf.table.gz (14/18): adding to final database dump
+0005.362 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_index.table.gz (15/18): adding to final database dump
+0005.364 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_log.table.gz (16/18): adding to final database dump
+0005.365 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_tax.table.gz (17/18): adding to final database dump
+0005.367 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db-table-wp_swp_terms.table.gz (18/18): adding to final database dump
+0005.369 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz: finished writing out complete database file (192 KB)
+0005.382 (0) Total database tables backed up: 18 (backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz, size: 209634, sha256)
+0005.388 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0005.389 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0005.390 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0005.391 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip: others: This file has not yet been successfully uploaded: will queue
+0005.392 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz: db: This file has not yet been successfully uploaded: will queue
+0005.392 (0) Saving backup history. Total backup size: 16.3 MB
+0005.395 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0005.399 (0) Cloud backup selection (1/1): remotesend with instance (1/1) (last)
+0005.399 (0) Beginning dispatch of backup to remote (remotesend)
+0005.400 (0) remotesend upload : attempt: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip
+0006.617 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip: existing size: 0
+0006.619 (0) Remote send upload: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip (chunks: 7, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip (0)
+0011.514 (0) Remotesend chunked upload: 14.5 % uploaded (1)
+0016.584 (0) Remotesend chunked upload: 29.1 % uploaded (2)
+0021.141 (0) Remotesend chunked upload: 43.6 % uploaded (3)
+0025.497 (0) Remotesend chunked upload: 58.1 % uploaded (4)
+0029.951 (0) Remotesend chunked upload: 72.6 % uploaded (5)
+0034.657 (0) Remotesend chunked upload: 87.2 % uploaded (6)
+0038.955 (0) Remotesend chunked upload: 100 % uploaded (7)
+0038.958 (0) Remote send upload: success
+0038.961 (0) Recording as successfully uploaded: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip (9e945d94a2b1cb174eae621a3aa5e8a1)
+0038.966 (0) Deleting local file: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-plugins.zip: skipped: user has unchecked updraft_delete_local option
+0038.967 (0) remotesend upload : attempt: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip
+0040.183 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip: existing size: 0
+0040.184 (0) Remote send upload: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip (0)
+0044.693 (0) Remotesend chunked upload: 100 % uploaded (1)
+0044.696 (0) Remote send upload: success
+0044.699 (0) Recording as successfully uploaded: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip (b720cda6b03dbde68ba905f363e92cb5)
+0044.703 (0) Deleting local file: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-themes.zip: skipped: user has unchecked updraft_delete_local option
+0044.704 (0) remotesend upload : attempt: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip
+0045.921 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip: existing size: 0
+0045.924 (0) Remote send upload: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip (0)
+0048.323 (0) Remotesend chunked upload: 100 % uploaded (1)
+0048.326 (0) Remote send upload: success
+0048.330 (0) Recording as successfully uploaded: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip (5ff04ada84e4ec48c8810f45552c375b)
+0048.335 (0) Deleting local file: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-uploads.zip: skipped: user has unchecked updraft_delete_local option
+0048.337 (0) remotesend upload : attempt: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip
+0049.463 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip: existing size: 0
+0049.465 (0) Remote send upload: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip (0)
+0050.600 (0) Remotesend chunked upload: 100 % uploaded (1)
+0050.603 (0) Remote send upload: success
+0050.606 (0) Recording as successfully uploaded: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip (c7a40ac4b07dd5d0413dcd2a3f82de12)
+0050.610 (0) Deleting local file: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-others.zip: skipped: user has unchecked updraft_delete_local option
+0050.611 (0) remotesend upload : attempt: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz
+0051.665 (0) backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz: existing size: 0
+0051.667 (0) Remote send upload: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz (chunks: 1, of size: 2097152) -> remotesend://http://apf.dev.perch.is/backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz (0)
+0053.302 (0) Remotesend chunked upload: 100 % uploaded (1)
+0053.305 (0) Remote send upload: success
+0053.309 (0) Recording as successfully uploaded: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz (c216afa479fbf230fcd53536364500f5)
+0053.314 (0) Deleting local file: backup_2018-04-23-0659_Arkansas_Perinatal_Forum_bd7ae974e5bd-db.gz: skipped: user has unchecked updraft_delete_local option
+0053.315 (0) Prune old backups from local store: skipping, as this was a remote send operation
+0053.316 (0) Resume backup (bd7ae974e5bd, 0): finish run
+0053.319 (0) Decremented the semaphore (fd) by 1
+0053.321 (0) Semaphore (fd) unlocked
+0053.322 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0053.327 (0) No email will/can be sent - the user has not configured an email address.
+0053.329 (0) The backup apparently succeeded and is now complete. To complete your migration/clone, you should now log in to the remote site and restore the backup set.
