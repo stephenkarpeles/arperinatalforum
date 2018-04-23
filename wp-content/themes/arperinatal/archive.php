@@ -26,12 +26,12 @@
 <section class="hero" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 	<div class="hero__overlay"></div>
 	<div class="hero__link--offset">
-		<a href="">Find more workgroups</a>
+		<a href=""></a>
 	</div>
 
 	<div class="info-block info-block--tablet">
 		<div class="info-block__title">
-			ANSG
+			<?php echo $abbreviation; ?>
 		</div>
 	</div>
 </section>

@@ -126,7 +126,7 @@
 							  <div class="card__content">
 							    <div class="card__contact">
 							      <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
-							      <a href="#">Email <?php echo $first; ?></a>
+							      <a href="mailto:<?php echo $email; ?>">Email <?php echo $first; ?></a>
 							    </div>
 							    <div class="card__description">
 							      <?php echo $blurb; ?>

@@ -1416,6 +1416,9 @@ section {
 
 .no-posts-displayed {
   padding: 0 0 3rem; }
+  @media screen and (max-width: 767px) {
+    .no-posts-displayed {
+      padding: 0 1.25rem 3rem; } }
 
 .floating-branding {
   position: absolute;
