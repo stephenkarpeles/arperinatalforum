@@ -54,7 +54,7 @@
                 <?php $get_cat = get_the_category(); ?>
                   <div class="col">
                     <div class="date"><?php the_date(); ?></div>
-                    <div class="title"><a href="workgroups/<?php echo $get_cat[0]->category_nicename; ?>"><?php echo $get_cat[0]->cat_name; ?></a></div>
+                    <div class="title"><a href="<?php echo get_site_url(); ?>/workgroups/<?php echo $get_cat[0]->category_nicename; ?>"><?php echo $get_cat[0]->cat_name; ?></a></div>
                   </div>
                   <div class="col">
                     <div class="category context-heading context-heading--c">News</div>
