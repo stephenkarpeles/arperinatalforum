@@ -37,14 +37,40 @@
         </div>
 
         <div class="footer__update-block">
+
+          <?php
+          $args = array(
+            'post_type'   => 'news',
+            'posts_per_page' => 1           
+          );
+           
+          $news = new WP_Query( $args );
+            if( $news->have_posts() ) :
+          ?>
+            
+            <?php
+              while( $news->have_posts() ) :
+                $news->the_post();
+                ?>
+                <?php $get_cat = get_the_category(); ?>
+
           <div class="col">
-            <div class="date">March 16, 2018</div>
-            <div class="title"><a href="">Arkansas Newborn Screening Group</a></div>
+            <div class="date"><?php the_date(); ?></div>
+            <div class="title"><a href="<?php echo get_site_url(); ?>/workgroups/<?php echo $get_cat[0]->category_nicename; ?>"><?php echo $get_cat[0]->cat_name; ?></a></div>
           </div>
           <div class="col">
             <div class="category context-heading context-heading--c">News</div>
-            <div class="excerpt"><a href="">New screening methods go into effect on May 1, 2018</a></div>
+            <div class="excerpt"><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></div>
           </div>
+          <?php
+              endwhile;
+              wp_reset_postdata();
+            ?>              
+          <?php
+          else :
+            // no posts found
+          endif;
+          ?> 
         </div>
 
         <div class="footer__copyright">
