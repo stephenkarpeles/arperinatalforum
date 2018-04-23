@@ -315,3 +315,20 @@ function custom_cpt_search( $query ) {
     return $query;
     
 }
+
+/**
+ * Custom login logo
+ */
+function custom_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/APF_logo.svg);
+						height: auto;
+						width: 320px;
+						background-size: 320px auto;
+						background-repeat: no-repeat;
+        	padding-bottom: 100px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'custom_login_logo' );
