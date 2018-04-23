@@ -1,4 +1,25 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+	// get the current taxonomy term
+	$term = get_queried_object();
+
+	// vars
+	$intro 							= get_field('intro', $term);
+	$intro_secondary 		= get_field('intro_secondary', $term);
+	$address 						= get_field('address', $term);
+	$contact_link 			= get_field('contact_link', $term);
+	$phone_number 			= get_field('phone_number', $term);
+	$email_address 		  = get_field('email_address', $term);
+	$website_address 		= get_field('website_address', $term);
+	$facebook_url 			= get_field('facebook_url', $term);
+  $twitter_url 				= get_field('twitter_url', $term);
+
+	$name 						= get_field('name', $term);
+	$abbreviation 		= get_field('abbreviation', $term);
+	$description 			= get_field('description', $term);
+	$region 					= get_field('region', $term);
+
+?>
 
 <section class="hero" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/apf_home-header.jpg') no-repeat; background-size: cover; background-position: center center;">
 	<div class="hero__overlay"></div>
@@ -34,10 +55,10 @@
 			</div>
 
 			<p class="intro">
-				<?php get_field('intro'); ?>
+				<?php echo $intro; ?>
 			</p>
 			<p>
-				<?php get_field('intro_secondary'); ?>
+				<?php echo $intro_secondary; ?>
 			</p>
 
 			<h2>Latest Updates</h2>
