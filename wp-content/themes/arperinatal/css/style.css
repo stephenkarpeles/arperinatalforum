@@ -1409,9 +1409,13 @@ section {
     margin-left: .5em; }
 
 .view-all-block {
+  width: 100%;
   padding: .5em 0 3em;
   text-align: center;
   font-family: "Miriam Libre", Georgia, sans-serif; }
+
+.no-posts-displayed {
+  padding: 0 0 3rem; }
 
 .floating-branding {
   position: absolute;
@@ -2074,6 +2078,12 @@ section {
       margin-left: .25em;
       position: relative;
       top: 1px; }
+    .info-block__content p {
+      font-weight: 700;
+      font-size: 1em;
+      font-family: "Miriam Libre", Georgia, sans-serif;
+      margin: 0;
+      padding: 0; }
     .info-block__content h2 {
       margin-top: 2em;
       padding-bottom: 1.25em; }

@@ -499,9 +499,14 @@
 }
 
 .view-all-block {
+  width: 100%;
   padding: .5em 0 3em;
   text-align: center;
   font-family: $alt-font-stack;
+}
+
+.no-posts-displayed {
+  padding: 0 0 3rem;
 }
 
 .floating-branding {
